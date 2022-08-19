@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box
+}
+
+.logoTCmovil{
+    margin-left: 67%;
+    position: fixed;
+    width: 8vh;
+    height: 8vh;
+    box-sizing: border-box
+}
+
+body{
+    background-image: url("");
+    background-size: 10rem;
+}
+
+.navegacion{
+    font-size: 10px;
+    background: salmon;
+    border-radius: 2vh;
+    display: inline-block;
+    top: 0;
+    margin-bottom: 1vh
+}
+
+.titulo{
+    font-size: 2.4vw;
+    color: white;
+    background-color: salmon;
+    padding: 1vh;
+    margin-top: 0%;
+    border-radius: 2vh;
+    box-sizing: border-box;
+    
+}
+
+
+
+.cursos {
+    margin-left: 1.7vh;
+    display: inline-block;
+    font-size: 2vh;
+    font-weight: bold;
+    color: white;
+    padding: 0.8vh 0.8vh;
+    text-decoration: none;
+    box-sizing: border-box;
+        
+}
+
+.comunidad{
+    display: inline-block;
+    font-size: 2vh;
+    font-weight: bold;
+    color: white;
+    padding: 0.8vh 0.8vh;
+    text-decoration: none;
+    box-sizing: border-box
+}
+
+.empresas{
+    display: inline-block;
+    font-size: 2vh;
+    font-weight: bold;
+    color: white;
+    padding: 0.8vh 0.8vh;
+    text-decoration: none;
+    box-sizing: border-box
+}
+
+.nosotros{
+    display: inline-block;
+    font-size: 2vh;
+    font-weight: bold;
+    background: salmon;
+    color: white;
+    padding: 0.8vh 0.8vh;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.cursos:hover , .comunidad:hover, .empresas:hover , .nosotros:hover {
+    color:rgb(109, 221, 216);
+}
+
+h2{
+    font-size: 1rem;
+    box-sizing: border-box
+}
+
+.logoTC{
+    box-sizing: border-box
+}
+
+.mensaje1{
+    font-size: 2vh;
+    box-sizing: border-box
+}
+
+.imagenBienvenida {
+    width: 45vh;
+    box-sizing: border-box;
+    margin-left: 0vh;
+}
+

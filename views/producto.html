@@ -27,14 +27,17 @@
         </div>
     </header>
     <main>
-        <div>
-            <h2> Nombre del curso </h2>
-            <img src="" alt="foto curso">
-            <p> Breve descripción del curso: Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusantium
-                architecto delectus, consequatur numquam ea laudantium quasi exercitationem iure commodi? </p>
-            <button> Inscribirme </button>
-        </div>
-        <section class="curso contenedor-curso">
+        <section class="contenedor-curso">
+            <div class="info-curso">
+                <h2> Nombre del curso </h2>
+                <img src="" alt="foto curso" class="imagen-curso">
+                <p> Breve descripción del curso: Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                    accusantium
+                    architecto delectus, consequatur numquam ea laudantium quasi exercitationem iure commodi? </p>
+                <button> Inscribirme </button>
+            </div>
+        </section>
+        <section class="contenedor-detalle-curso">
             <div class="detalle-curso">
                 <h2> Descripción completa del curso </h2>
                 <ul>
@@ -45,8 +48,8 @@
                 </ul>
             </div>
         </section>
-        <section class="curso contenedor-contenido">
-            <div class="detalle-temas">
+        <section class="contenedor-programa">
+            <div class="detalle-programa">
                 <h2> Contenido/programa del curso </h2>
                 <ol>
                     <li> Tema 1 </li>
@@ -57,23 +60,35 @@
                 </ol>
             </div>
         </section>
-        <section class="curso contenedor-proyectos">
+        <section class="contenedor-proyectos">
             <div>
-                <h2 class="proyecto1"> Proyectos y herramientas del curso </h2>
+                <h2 class="proyecto"> Proyectos y herramientas del curso </h2>
             </div>
             <div>
-                <img src="" alt="proyecto/herramienta">
-                <h3> Proyecto/herramienta 1 </h3>
-                <p> Descripción: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, corporis. </p>
-                <img src="" alt="proyecto/herramienta">
-                <h3> Proyecto/herramienta 2 </h3>
-                <p> Descripción: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, corporis. </p>
-                <img src="" alt="proyecto/herramienta">
-                <h3> Proyecto/herramienta 3 </h3>
-                <p> Descripción: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, corporis. </p>
+                <div class="proyecto1">
+                    <img src="" alt="imagen de proyecto/herramienta">
+                    <h3> Proyecto/herramienta 1 </h3>
+                    <p> Descripción: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis,
+                        corporis.
+                    </p>
+                </div>
+                <div class="proyecto2">
+                    <img src="" alt="imagen de proyecto/herramienta">
+                    <h3> Proyecto/herramienta 2 </h3>
+                    <p> Descripción: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis,
+                        corporis.
+                    </p>
+                </div>
+                <div class="proyecto3">
+                    <img src="" alt="imagen de proyecto/herramienta">
+                    <h3> Proyecto/herramienta 3 </h3>
+                    <p> Descripción: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis,
+                        corporis.
+                    </p>
+                </div>
             </div>
         </section>
-        <section class="curso precios-fechas">
+        <section class="contenedor-precios-fechas">
             <div class="proximo-curso1">
                 <h3> Fecha 1 </h3>
                 <h3> Precio 1 </h3>
@@ -94,7 +109,7 @@
             </div>
         </section>
     </main>
-    <footer class="contenedor-footer">
+    <footer class="footer">
         <div class="footer-cursos">
             <h4> Cursos</h4>
             <ul>

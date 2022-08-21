@@ -1,8 +1,8 @@
 {
   "name": "tp-integral",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Temática y descripción del sitio:\r Esta es una plataforma de aprendizaje en línea que ofrece una amplia variedad de cursos tanto iniciales como avanzados en programación. Los alumnos pueden estudiar a su ritmo y al final recibirán una certificación.",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariogadan/grupo12.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mariogadan/grupo12/issues"
+  },
+  "homepage": "https://github.com/mariogadan/grupo12#readme"
 }

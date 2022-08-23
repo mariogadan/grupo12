@@ -5,135 +5,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/home.css">
     <title> Tiddy Code </title>
 </head>
 
 <body>
-    <header>
-        <img src='/img/LogoTiddyCode.png' class="logoTC">
-        <div class="navegacion">
+    <header class="encabezado row">
+        <img src='/img/LogoTiddyCode.png' class="logoTC col-1">
+        <div class="navegacion col-8">
             <nav class="navegacion-items">
-                <a href="#" class="nav-cursos"> Cursos </a>
-                <a href="#" class="nav-comunidad"> Comunidad </a>
-                <a href="#" class="nav-empresas"> Para empresas </a>
-                <a href="#" class="nav-nosotros"> Nosotros </a>
+                <a href="#" class="nav-item"> Cursos </a>
+                <a href="#" class="nav-item"> Comunidad </a>
+                <a href="#" class="nav-item"> Para empresas </a>
+                <a href="#" class="nav-item"> Nosotros </a>
             </nav>
         </div>
-        <br>
-        <br>
-
-        <div class="usuario">
-            <button> Log in <img src="" alt="icono usuario"> </button>
+        <div class="usuario col-2">
+            <button> Log in <img src="" alt="iconousuario"> </button>
             <button> Crea tu cuenta <img src="" alt="icono crea tu cuenta"> </button>
         </div>
-        <h1>
-            <marquee class="mensaje1"> Clases online en vivo dictadas por expertos de la insdustria, enfoque 100%
-                práctico, mentorias personalizadas y acceso a una comunidad de +150.000 estudiantes.
-            </marquee>
-        </h1>
     </header>
+
     <main>
-        <section class="contenedor-bienvenida">
-            <h2 class="titulo-bienvenida"> Unite a la comunidad de aprendizaje online más grande</h2>
-            <img class="imagen-bienvenida"
-                src="https://st3.depositphotos.com/12731704/19024/i/450/depositphotos_190244392-stock-photo-team-business-people-using-laptops.jpg"
-                alt="">
-            <div class="texto-bienvenida">
-                <h2 class="texto-imagen-bienvenida"> Conocé todos nuestros cursos y descuentos! </h2>
-                <p class="parrafo-bienvenida"> 30% de descuento en tu primer curso </p>
+         <section class="contenedor-bienvenida row">
+            <img class="imagen-bienvenida col-6" src="img/personaEnPC.jpg" alt="">
+            <div class="texto-bienvenida col-6">
+                <h2 class="titulo-bienvenida"> Unite a la comunidad de aprendizaje online en vivo más grande de Latinoamérica</h2>
+                <button type="button" class="btn btn-dark botonVerLosCursos"> Ver todos los cursos</button>
             </div>
-            <button class="botonVerLosCursos"> Ver todos los cursos</button>
+        </section> 
 
-        </section>
+        <!--<section class="contenedor-bienvenida">
+            <img class="imagen-bienvenida" src="img/personaEnPC.jpg" alt="">
+            <div class="texto-bienvenida">
+                <h2 class="titulo-bienvenida"> Unite a la comunidad de aprendizaje online en vivo más grande de Latinoamérica</h2>
+                <button type="button" class="btn btn-dark botonVerLosCursos"> Ver todos los cursos</button>
+            </div>
+
+        </section>-->
+
+
         <section class="contenedor-colaboradores">
-            <div class="logos-colaboradores">
-                <h2>Nuestros colaboradores</h2>
-
-                <a href="https://sceu.frba.utn.edu.ar/e-learning/listado/Tipo[curso]"><img src="img/UTN.png"
-                        class="logoUTN"></a>
-                <a href="https://www.coderhouse.com/"><img src="img/Codder.png" class="logoCodder"></a>
+            <div class="logos-colaboradores row">
+                <h2 class="nuestros-colaboradores">Nuestros colaboradores</h2>
+                <a href="https://www.digitalhouse.com/ar" class="col-4"> <img src="img/DH.png" class="logo"> </a>
+                <a href="https://www.mercadolibre.com.ar/" class="col-4"> <img src="img/mercadoLibre.jpg" class="logo"> </a>
+                <a href="https://www.coderhouse.com/" class="col-4"> <img src="img/Codder.png" class="logo"> </a>
             </div>
         </section>
 
         <section class="contenedor-metodo-enseñanza">
-            <div class="titulo-enseñanza">
-                <h2> Como aprendemos:</h2>
+            <div class="titulo-metodo-enseñanza">
+                <h2> Como aprendemos</h2>
             </div>
-            <div class="metodo-enseñanza">
-                <img src="" alt="img/icono aprendiendo">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta laudantium ab doloremque ullam
+            <br>
+            <div class="metodo-enseñanza row">
+                <div class="metodo1 col-4">
+                    <img src="" alt="img/icono aprendiendo">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta laudantium ab doloremque ullam
                     aperiam quibusdam dignissimos ad quidem voluptatum repellendus dicta debitis tempore rerum, ex
                     recusandae, sequi commodi unde et.</p>
-                <img src="" alt="img/icono practicando">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta laudantium ab doloremque ullam
+                </div>
+                <div class="metodo2 col-4">    
+                    <img src="" alt="img/icono practicando">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta laudantium ab doloremque ullam
                     aperiam quibusdam dignissimos ad quidem voluptatum repellendus dicta debitis tempore rerum, ex
                     recusandae, sequi commodi unde et.</p>
-                <img src="" alt="img/icono ejecutando">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta laudantium ab doloremque ullam
+                </div>
+                <div class="metodo3 col-4">
+                    <img src="" alt="img/icono ejecutando">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta laudantium ab doloremque ullam
                     aperiam quibusdam dignissimos ad quidem voluptatum repellendus dicta debitis tempore rerum, ex
                     recusandae, sequi commodi unde et.</p>
+                </div>
             </div>
         </section>
 
-        <section class="contenedor-empleadores">
-            <h2>Lo que dicen nuestros empleadores:</h2>
-            <div>
-                <img src="/img/empleador1.jpeg" class="empleador1">
+        <section class="contenedor-empleadores row">
+            <h2 class="titulo-empleadores"> Lo que dicen nuestros empleadores </h2>
+            <div class="empleadores col-6">
+                <img src="/img/empleador1.jpeg" class="empleador">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nihil vitae facilis placeat
                     blanditiis a praesentium cupiditate nostrum. Doloremque, consequatur.</p>
             </div>
-            <div>
-                <img src="/img/empleador2.jpg" class="empleador1">
+            <div class="empleadores col-6">
+                <img src="/img/empleador2.jpg" class="empleador">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nihil vitae facilis placeat
                     blanditiis a praesentium cupiditate nostrum. Doloremque, consequatur.</p>
             </div>
         </section>
 
         <section class="contenedor-cursos">
-            <div class="todos los cursos">
-                <div class="curso1">
+            <div class="todos los cursos row">
+                <div class="curso1 col-3">
                     <h2>Nombre curso 1</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat doloribus quam ex minima,
                         corporis sit natus optio aut voluptatum ipsam.</p>
                     <button> Empezá!</button>
                 </div>
-                <div class="curso2">
+                <div class="curso2 col-3">
                     <h2>Nombre curso 2</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat doloribus quam ex minima,
                         corporis sit natus optio aut voluptatum ipsam.</p>
                     <button> Empezá!</button>
                 </div>
-                <div class="curso3">
+                <div class="curso3 col-3">
                     <h2>Nombre curso 2</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat doloribus quam ex minima,
                         corporis sit natus optio aut voluptatum ipsam.</p>
+                    <button> Empezá!</button>    
                 </div>
-                <button> Empezá!</button>
+                
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-cursos">
-            <h4> Cursos</h4>
+    <footer class="footer row">
+        <div class="footer-cursos col-3">
+            <h4 class="cursos-footer"> Cursos</h4>
             <ul>
                 <li><a href="#"> Back-end </a></li>
                 <li><a href="#"> Front-end </a></li>
                 <li><a href="#"> Full-stack </a></li>
             </ul>
         </div>
-        <div class="footer-contacto">
+        <div class="footer-contacto col-3">
             <h4> Contacto</h4>
             <ul>
                 <li>unmailinventado@tiddycode.com.ar</li>
                 <li><a href="#"> Por Whats App: 1155555555</a></li>
             </ul>
         </div>
-        <div class="footer-nuestras-redes">
+        <div class="footer-nuestras-redes col-3">
             <h4> Nosotros </h4>
             <ul>
                 <li> <a href="#"> <img src="" alt="logo-insta"> </a> </li>
@@ -143,5 +147,4 @@
         </div>
     </footer>
 </body>
-
 </html>

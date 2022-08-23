@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.logoTC{
+    width: 30%;
+    height: 200px;
+    padding:0
+}
+
+.navegacion{
+    font-size: 1.5rem;
+    padding: 0;
+    margin-top: 60px;
+    width: 40%
+}
+
+.navegacion-items{
+    background-color: white;
+    color: red;
+    text-decoration: none;
+}
+
+.nav-item{
+    margin: 0px 10px
+}
+
+
+.usuario{
+    padding: 0px;
+    width: 30%
+}
+
+/* MAIN */
+
+.contenedor-bienvenida{
+    margin-left: 0vh;
+    border: solid 10px purple
+}
+
+.imagen-bienvenida{
+    width:40vw
+}
+
+.texto-bienvenida{
+    width: 40vw;
+    background-color: #6f50f8;
+    color: white;
+    margin: 0
+}
+
+.titulo-bienvenida{
+    margin: 25vh 12vh 0vh 12vh;
+    font-size: 20px;
+}
+
+
+/*
+.contenedor-bienvenida{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    flex-wrap: wrap;
+    background-color: #6f50f8 ;
+}
+
+.imagen-bienvenida{
+    width: 40vw
+}
+
+.texto-bienvenida{
+    width: 30vw
+}
+*/
+
+.botonVerLosCursos{
+    margin-top: 40px;
+    margin-left: 40%;
+    font-size: 25px;
+    padding: 10px 10px
+}
+
+.logos-colaboradores{
+    width: 90vw
+}
+
+.logo{
+    width:40%
+}
+
+.empleador{
+    width: 30vw
+}

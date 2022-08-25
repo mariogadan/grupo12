@@ -5,134 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link>
-    <title> Tiddy Code | Productos </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <title> Tiddy Code </title>
 </head>
 
 <body>
-    <header>
-        <img src='/img/LogoTiddyCode.png' class="logoTC">
-        <div>
-            <nav class="navegacion">
-                <a href="#" class="cursos">Cursos</a>
-                <a href="#" class="comunidad">Comunidad</a>
-                <a href="#" class="empresas">Para empresas</a>
-                <a href="#" class="nosotros">Nosotros</a>
+    <header class="encabezado row">
+        <img src='/img/LogoTiddyCode.png' class="logoTC col-1">
+        <div class="navegacion col-8">
+            <nav class="navegacion-items">
+                <a href="#" class="nav-item"> Porque Tiddy? </a>
+                <a href="#" class="nav-item"> Cursos </a>
+              
             </nav>
         </div>
-        <div class="usuario">
-            <button> Log in <img src="" alt="icono usuario"> </button>
-            <button> Crea tu cuenta <img src="" alt="icono crea tu cuenta"> </button>
-        </div>
+        
     </header>
     <main>
-        <section class="contenedor-curso">
-            <div class="info-curso">
-                <h2> Nombre del curso </h2>
-                <img src="" alt="foto curso" class="imagen-curso">
-                <p> Breve descripción del curso: Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                    accusantium
-                    architecto delectus, consequatur numquam ea laudantium quasi exercitationem iure commodi? </p>
-                <button> Inscribirme </button>
+        <section class="contenedor-producto row">
+            <img class="imagen-producto col-6" src="img/Producto - imagen portada.png" alt="">
+            <div class="texto-bienvenida col-6">
+                <h2 class="titulo-producto"> Programacion Web Full Stuck</h2>
+                
+                <h3 class="titulo-producto"> Comenza a Programar tu futuro</h3>
+                <ol>
+                    <li> +Correccion de Proyectos </li>
+                    <li> +Tutoria personalizada </li>
+                    <li> +Aprovecha 2 clases de prueba! </li>
+                
+                </ol>
+                <button type="button" class="btn btn-dark botonReservatuLugar"> Reserva tu lugar</button>
+
             </div>
-        </section>
-        <section class="contenedor-detalle-curso">
-            <div class="detalle-curso">
-                <h2> Descripción completa del curso </h2>
-                <ul>
-                    <li> Duración del curso + ícono</li>
-                    <li> Clases por semana + ícono </li>
-                    <li> Cerficiado + ícono </li>
-                    <li> Requisitos de inscripción + ícono </li>
-                </ul>
-            </div>
-        </section>
+       
+        </section> 
+    
         <section class="contenedor-programa">
             <div class="detalle-programa">
-                <h2> Contenido/programa del curso </h2>
+                <h2> Acerca del curso </h2>
                 <ol>
-                    <li> Tema 1 </li>
-                    <li> Tema 2 </li>
-                    <li> Tema 3 </li>
-                    <li> Tema 4 </li>
-                    <li> Tema 5 </li>
+                    <li> Modalidad </li>
+                    <li> Duracion </li>
+                    <li> Dedicacion </li>
+                    <li> Encuentros </li>
+                    <li> Campus virtual </li>
                 </ol>
             </div>
         </section>
-        <section class="contenedor-proyectos">
-            <div>
-                <h2 class="proyecto"> Proyectos y herramientas del curso </h2>
-            </div>
-            <div>
-                <div class="proyecto1">
-                    <img src="" alt="imagen de proyecto/herramienta">
-                    <h3> Proyecto/herramienta 1 </h3>
-                    <p> Descripción: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis,
-                        corporis.
-                    </p>
-                </div>
-                <div class="proyecto2">
-                    <img src="" alt="imagen de proyecto/herramienta">
-                    <h3> Proyecto/herramienta 2 </h3>
-                    <p> Descripción: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis,
-                        corporis.
-                    </p>
-                </div>
-                <div class="proyecto3">
-                    <img src="" alt="imagen de proyecto/herramienta">
-                    <h3> Proyecto/herramienta 3 </h3>
-                    <p> Descripción: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis,
-                        corporis.
-                    </p>
-                </div>
+        <section class="contenedor-aprender">
+            <div class="detalle-aprender">
+                <h1> Que vas aprender? </h1>
+                <h3> Este curso esta compuesto por 8 modulos que veras: </h3>
+                <ol>
+                    <li> Modalidad </li>
+                    <li> Duracion </li>
+                    <li> Dedicacion </li>
+                    
+                </ol>
+                <button type="button" class="btn btn-dark botonReservatuLugar"> Reserva tu lugar</button>
             </div>
         </section>
-        <section class="contenedor-precios-fechas">
-            <div class="proximo-curso1">
-                <h3> Fecha 1 </h3>
-                <h3> Precio 1 </h3>
-                <h3> Día y horario 1 </h3>
-                <button> Inscribite </button>
-            </div>
-            <div class="proximo-curso2">
-                <h3> Fecha 2 </h3>
-                <h3> Precio 2 </h3>
-                <h3> Día y horario 2 </h3>
-                <button> Inscribite </button>
-            </div>
-            <div class="proximo-curso3">
-                <h3> Fecha 3 </h3>
-                <h3> Precio 3 </h3>
-                <h3> Día y horario 3 </h3>
-                <button> Inscribite </button>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-cursos">
-            <h4> Cursos</h4>
-            <ul>
-                <li><a href="#"> Back-end </a></li>
-                <li><a href="#"> Front-end </a></li>
-                <li><a href="#"> Full-stack </a></li>
-            </ul>
-        </div>
-        <div class="footer-contacto">
-            <h4> Contacto</h4>
-            <ul>
-                <li>unmailinventado@tiddycode.com.ar</li>
-                <li><a href="#"> Por Whats App: 1155555555</a></li>
-            </ul>
-        </div>
-        <div class="footer-nuestras-redes">
-            <h4> Nosotros </h4>
-            <ul>
-                <li> <a href="#"> <img src="" alt="logo-insta"> </a> </li>
-                <li> <a href="#"> <img src="" alt="logo-youtube"> </a> </li>
-                <li> <a href="#"> <img src="" alt="logo-twitter"> </a></li>
-            </ul>
-        </div>
+        
     </footer>
 </body>
 

@@ -5,48 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/carrito.css">
     <title> Tiddy Code | Carrito </title>
 </head>
 
 <body>
     <header>
-        <img src='/img/LogoTiddyCode.png' class="logoTC">
-        <h2> Mi carrito + ícono </h2>
+        <img src='/img/Home - Logo new.png' class="logoTC">
+        <div class="navegacion col-6">
+            <nav class="navegacion-items">
+                <a href="#" class="nav-item"> ¿Por qué Tidy? </a>
+                <a href="#" class="nav-item"> Cursos </a>
+            </nav>
     </header>
     <main>
         <section class="contenedor-carrito">
-        <div>
-            <img src="" alt="foto-curso">
-        </div>
-        <div class="carrito-curso">
-            <hr3> Nombre del curso </hr3>
-            <p> Breve descripción del curso </p>
-            <ul>
-                <li> Fechas </li>
-                <li> Días y horarios </li>
-                <li> Precio </li>
-            </ul>
-        </div>
-        <div>
-            <img src="" alt="foto-curso">
-        </div>
-        <div class="carrito-curso">
-            <hr3> Nombre del curso </hr3>
-            <p> Breve descripción del curso </p>
-            <ul>
-                <li> Fechas </li>
-                <li> Días y horarios </li>
-                <li> Precio </li>
-            </ul>
-        </div>
-        <button class="boton-pagar"> Pagar </button>
-        </section>
-        
-        <section class="recomendados"> 
-            <button> <a> <img src="" alt="recomendado 1"> </a> </button>
-            <button> <a> <img src="" alt="recomendado 2"> </a> </button>
-            <button> <a> <img src="" alt="recomendado 3"> </a> </button>
+            <article>
+                <form action="" method="POST">
+                    <h1> ¿Cómo querés pagar </h1>
+                    <div>
+                        <label for="medio-de-pago"> Visa </label>
+                        <input type="radio" name="medio-de-pago" value="Visa">
+                    </div>
+                    <div>
+                        <label for="medio-de-pago"> Mastercard </label>
+                        <input type="radio" name="medio-de-pago" value="Mastercard">
+                    </div>
+                    <div>
+                        <label for="medio-de-pago"> Mercado Pago </label>
+                        <input type="radio" name="medio-de-pago" value="Mercado Pago">
+                    </div>
+                    <div>
+                        <label for="medio-de-pago"> Transferencia bancaria </label>
+                        <input type="radio" name="medio-de-pago" value="Transferencia bancaria" checked>
+                    </div>
+                </form>
+            </article>
+
+            <article>
+                <img src="/img/Carrito - producto comprado.png" alt="producto comprado">
+                <div>
+                    <ul>
+                        <li> Fechas </li>
+                        <li> Días y horarios </li>
+                        <li> Precio </li>
+                    </ul>
+                </div>
+                <div>
+                    <p> Precio $32.290 </p>
+                </div>
+                <div>
+                    <button class="boton-pagar"> Pagar </button>
+                </div>
+            </article>
         </section>
     </main>
     <footer class="footer">

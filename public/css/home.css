@@ -1,0 +1,168 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* MAIN */
+
+/* SECCION BIENVENIDA */
+
+.contenedor-bienvenida{
+    margin-top: 40px
+}
+
+.imagen-bienvenida{
+    width: 45vw;
+    height: 80vh
+}
+
+.texto-bienvenida{
+    background-color: #6f50f8;
+    padding-top: 20vh;
+    
+}
+
+.titulo-bienvenida{
+    font-size: 2.8em;
+    color: white;
+    font-weight: bold;
+    margin: 0 2em 0 2em
+}
+
+.botonVerLosCursos{
+    align-items: center;
+    margin: 2em 0 0 8em;
+    font-size: 1.5em;
+}
+
+/* COLABORADORES */
+
+.contenedor-colaboradores{
+    margin-top: 60px
+}
+
+.titulo-colaboradores{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: white;
+    background-color: #6f50f8;
+    font-weight: bold;
+    padding: 0
+}
+
+.logo{
+    width: 25vw;
+    margin-bottom: 15px;
+}
+
+.logoML{
+    margin-left: 1vw;
+    margin-bottom: 4.5vh;
+    height: 25vh;
+}
+
+.logoDH{
+    height: 11.8em;
+    width: 15em;
+    margin-left: 6vw;
+}
+
+.logoGoogle{
+    margin-left: 1vw;
+    margin-bottom: 9vh
+}
+
+/* METODO DE ENSEÑANZA */
+
+.contenedor-metodo-enseñanza{
+    margin-top: 60px;
+    width: 85vw;
+    background-color: #f2f2f2;
+}
+
+.titulo-metodo-enseñanza{
+    text-align: center;
+    color:#6f50f8;
+    font-size: 45px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.subtitulo-colaboradores{
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.imagenes-enseñanza{
+    margin-left: 7vw;
+    width: 10vw;
+}
+
+.video{
+    margin-bottom: 4vh;
+}
+
+.video2{
+    width: 12vw;
+    margin-bottom: 5.5vh
+}
+
+.tareas{
+    width: 12vw;
+    height: 17vh;
+    margin-bottom: 3vh
+}
+
+/* EMPLEADORES */
+
+.contenedor-empleadores{
+    margin-top: 60px;
+}
+
+.titulo-empleadores{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: white;
+    background-color: #6f50f8;
+    font-weight: bold;
+    padding: 0
+}
+
+/* PRODUCTO */
+
+.contenedor-programa{
+    background-color: black;
+    color:white;
+}
+
+.acera-del-curso{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 40px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        padding: 0
+}
+
+.contenedor-quevasaprender{
+    margin-top: 60px;
+    width: 85vw;
+    background-color: #e9e6e6;
+    
+}
+
+.titulo-quevasaprender{
+    color:#6f50f8;
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    font-size: 40px;
+    margin-bottom: 40px;
+   
+}

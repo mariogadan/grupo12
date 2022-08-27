@@ -5,30 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link>
-    <title> Tiddy Code | Login </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <title> Tiddy Code </title>
 </head>
 
 <body>
-    <header>
-        <img src='/img/LogoTiddyCode.png' class="logoTC">
-        <h2>Nos alegramos de tenerte por acá!</h2>
+    <header class="encabezado row">
+        
+    
+            <nav class="navbar navbar- inverse bg-inverse">
+            <a class="navbar-brand" href="index.html">
+                    <img src="/img/LogoTiddyCode.png"  width="90" height="50" class="d-inline-block align-top" alt="Logo Tiddy Code">
+                </a>
+                <div class="navegacion col-8">
     </header>
     <main>
-        <h3>Acá va el ingreso de Usuario o email</h3>
-        <h3>Acá va la contraseña</h3>
-        <button> Ingresar </button>
-    </main>
-    <footer>
-        <div>
-        <button> Olvidé mi contraseña </button>
-        </div>
-        <div>
-        <button> Volver al inicio </button>
-        </div>
-    </footer>
+        <section class="contenedor-login row">
+            <img class="imagen-producto col-6" src="/img/Registro-Imagen.png" alt="" >
+            <div class="texto-bienvenida col-6">
+                <h2 class="titulo-producto"> Tiddy Code</h2>
 
-</body>
+         
 
-</html>
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>

@@ -137,6 +137,7 @@
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 .texto-empleador{
     font-weight: bold;
     font-size: 1.3em;    
@@ -205,4 +206,80 @@
 .incluye{
     font-size: 1em;
     font-weight: bold;
+}
+=======
+/* PRODUCTO */
+
+
+.contenedor-programa{
+    background-color: #4B4B4B ;
+    color:white;
+}
+
+.acera-del-curso{
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    font-size: 40px;
+    margin-left: 20;
+    margin-bottom: 40px;   
+}
+
+.contenedor-quevasaprender{
+    margin-top: 60px;
+    width: 85vw;
+    background-color: #e9e6e6;
+    
+}
+
+.titulo-quevasaprender{
+    color:#6f50f8;
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    font-size: 40px;
+    margin-bottom: 40px;
+   
+}
+
+.modalidad{
+    width: 8vw; 
+    margin: 10px;
+}
+
+.modulos{
+    text-align: center;
+}
+
+.boton-descarga-programa{
+    background-color:#6f50f8;
+    color:white;
+}
+
+.enseñanza{
+    background-color: white;
+}
+
+.titulo-recomiendan1{
+    text-align: center;
+    font-size: 1.5 em;
+    color: white;
+    font-weight: bold;
+    margin: 0 2em 0 2em
+}
+
+.titulo-recomiendan2{
+    font-size: 2.5 em;
+    color: white;
+    font-weight: bold;
+    margin: 0 2em 0 2em
+}
+
+.mercadolibre{
+    margin-left: 20vw;
+    margin-bottom: 4.5vh;
+    height: 7vh;
+    align-items: center;
+>>>>>>> d1f23327e569b04cfb4f0cef147675e437522dfd
 }

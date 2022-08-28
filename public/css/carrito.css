@@ -1,3 +1,68 @@
 * {
     font-family: 'DM Sans', sans-serif;
 }
+
+.logo-visa {
+    width: 10em;
+    height: 5vh;
+}
+
+.logo-master {
+    width: 10em;
+    height: 10vh;
+}
+
+.logo-mp {
+    width: 10em;
+    height: 5vh;
+}
+
+.imagen-producto {
+    width: 25vw;
+    height: 20vh;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 100px;
+}
+
+.carrito.container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #F2F2F2;
+}
+
+.mensaje-de-pago {
+    font-size: 40px;
+    color: black bold;
+    font-weight: bold;
+}
+
+.mensaje-transferencia {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.precio {
+    padding-top: 10px;
+    border-top: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.precio-2 {
+    padding-top: 10px;
+    border-top: 1px solid black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.boton-pagar {
+    margin-left: 50%;
+}
+

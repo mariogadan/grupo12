@@ -12,54 +12,63 @@
 </head>
 
 <body>
-    <header>
-        <img src='/img/Home - Logo new.png' class="logoTC">
-        <div class="navegacion col-6">
-            <nav class="navegacion-items">
-                <a href="#" class="nav-item"> ¿Por qué Tidy? </a>
-                <a href="#" class="nav-item"> Cursos </a>
-            </nav>
+    <header class="header container">
+        <div class="row">
+            <img src='/img/Home - Logo new.png' class="logoTC col-3">
+            <div class="navegacion col-6">
+                <nav class="navegacion-items">
+                    <a href="#" class="nav-item"> Cursos </a>
+                    <a href="#" class="nav-item"> Comunidad </a>
+                    <a href="#" class="nav-item"> Para empresas </a>
+                    <a href="#" class="nav-item"> Nosotros </a>
+                </nav>
+            </div>
+            <div class="usuario col-3">
+                <button> Log in <img src="" alt="iconousuario"> </button>
+                <button> Crea tu cuenta <img src="" alt="icono crea tu cuenta"> </button>
+            </div>
+        </div>
     </header>
     <main>
-        <section class="contenedor-carrito">
-            <article>
-                <form action="" method="POST">
-                    <h1> ¿Cómo querés pagar </h1>
-                    <div>
-                        <label for="medio-de-pago"> Visa </label>
-                        <input type="radio" name="medio-de-pago" value="Visa">
-                    </div>
-                    <div>
-                        <label for="medio-de-pago"> Mastercard </label>
-                        <input type="radio" name="medio-de-pago" value="Mastercard">
-                    </div>
-                    <div>
-                        <label for="medio-de-pago"> Mercado Pago </label>
-                        <input type="radio" name="medio-de-pago" value="Mercado Pago">
-                    </div>
-                    <div>
-                        <label for="medio-de-pago"> Transferencia bancaria </label>
-                        <input type="radio" name="medio-de-pago" value="Transferencia bancaria" checked>
-                    </div>
-                </form>
-            </article>
+        <section class="carrito container">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="mensaje-de-pago"> ¿Cómo querés pagar? </h1>
+                    <form action="" method="POST">
+                        <div>
+                            <label for="medio-de-pago"> <img src='/img/Carrito - Visa.png' alt="Visa" class="logo logo-visa"> </label>
+                            <input type="radio" name="medio-de-pago" value="Visa">
+                        </div>
+                        <div>
+                            <label for="medio-de-pago"> <img src='/img/Carrito - Mastercard.png' alt="Mastercard" class="logo logo-master"> </label>
+                            <input type="radio" name="medio-de-pago" value="Mastercard">
+                        </div>
+                        <div>
+                            <label for="medio-de-pago"> <img src='/img/Carrito - MP.png' alt="Mercado Pago" class="logo logo-mp"> </label>
+                            <input type="radio" name="medio-de-pago" value="Mercado Pago">
+                        </div>
+                        <div>
+                            <label for="medio-de-pago"> <h3 class="mensaje-transferencia"> Transferencia bancaria </h3> </label>
+                            <input type="radio" name="medio-de-pago" value="Transferencia bancaria" checked>
+                        </div>
+                    </form>
+                </div>
 
-            <article>
-                <img src="/img/Carrito - producto comprado.png" alt="producto comprado">
-                <div>
-                    <ul>
-                        <li> Fechas </li>
-                        <li> Días y horarios </li>
-                        <li> Precio </li>
-                    </ul>
+                <div class="col-6">
+                    <div class="contenedor-precio">
+                        <div>
+                            <img src="/img/Carrito - producto comprado.png" alt="producto comprado" class="imagen-producto">
+                        </div>
+                        <div class="contenedor-precio row">
+                            <p class="precio col-6"> Precio </p>
+                            <p class="precio-2 col-6"> $32.290 </p>
+                        </div>
+                        <div>
+                            <button class="boton-pagar"> Pagar </button>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <p> Precio $32.290 </p>
-                </div>
-                <div>
-                    <button class="boton-pagar"> Pagar </button>
-                </div>
-            </article>
+            </div>
         </section>
     </main>
     <footer class="footer">

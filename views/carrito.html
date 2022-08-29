@@ -30,46 +30,44 @@
         </div>
     </header>
     <main>
-        <section class="carrito container">
+        <section class="contenedor-carrito container">
             <div class="row">
-                <div class="col-6">
+                <div class="contenedor-formulario col-6">
                     <h1 class="mensaje-de-pago"> ¿Cómo querés pagar? </h1>
                     <form action="" method="POST">
-                        <div>
+                        <div class="medios-de-pago">
                             <label for="medio-de-pago"> <img src='/img/Carrito/Carrito - Visa.png' alt="Visa" class="logo logo-visa"> </label>
-                            <input type="radio" name="medio-de-pago" value="Visa">
+                            <input type="radio" name="medio-de-pago" value="Visa" class="input-radio">
                         </div>
-                        <div>
+                        <div class="medios-de-pago">
                             <label for="medio-de-pago"> <img src='/img/Carrito/Carrito - Mastercard.png' alt="Mastercard" class="logo logo-master"> </label>
-                            <input type="radio" name="medio-de-pago" value="Mastercard">
+                            <input type="radio" name="medio-de-pago" value="Mastercard" class="input-radio">
                         </div>
-                        <div>
+                        <div class="medios-de-pago">
                             <label for="medio-de-pago"> <img src='/img/Carrito/Carrito - MP.png' alt="Mercado Pago" class="logo logo-mp"> </label>
-                            <input type="radio" name="medio-de-pago" value="Mercado Pago">
+                            <input type="radio" name="medio-de-pago" value="Mercado Pago" class="input-radio">
                         </div>
-                        <div>
+                        <div class="medios-de-pago">
                             <label for="medio-de-pago"> <h3 class="mensaje-transferencia"> Transferencia bancaria </h3> </label>
-                            <input type="radio" name="medio-de-pago" value="Transferencia bancaria" checked>
+                            <input type="radio" name="medio-de-pago" value="Transferencia bancaria" checked class="input-radio">
                         </div>
                     </form>
                 </div>
 
-                <div class="col-6">
-                    <div class="contenedor-precio">
-                        <div>
+                <div class="contenedor-producto col-6">
+                        <div class="contenedor-curso">
                             <img src="/img/Carrito/Carrito - producto comprado.png" alt="producto comprado" class="imagen-producto">
                         </div>
+                        <hr>
                         <div class="contenedor-precio row">
-                            <p class="precio col-6"> Precio </p>
+                            <p class="precio col-6"> Total </p>
                             <p class="precio-2 col-6"> $32.290 </p>
+                            <button class= "btn btn-dark boton-pagar"> Pagar </button>
                         </div>
-                        <div>
-                            <button class="boton-pagar"> Pagar </button>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
+    </form>
     </main>
     <footer class="footer">
         <div class="footer-cursos">

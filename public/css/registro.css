@@ -1,0 +1,40 @@
+*{
+  font-family: 'DM Sans', sans-serif;
+  margin:0
+}
+
+.div-imagen{
+    background-color: grey;
+}
+  
+.center-imagen {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 399px;
+    height: 421px;
+}
+
+.cohete-imagen {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;/*550px;*/
+    height: 95%;/*580px;*/
+}
+  
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-tiddy {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 179px;
+  height: 50px;
+}

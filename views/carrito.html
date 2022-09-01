@@ -32,66 +32,93 @@
     <main>
         <section class="contenedor-carrito container">
             <div class="row">
-                <div class="contenedor-formulario col-6">
+                <div class="contenedor-formulario col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <h1 class="mensaje-de-pago"> ¿Cómo querés pagar? </h1>
                     <form action="" method="POST">
-                        <div class="medios-de-pago">
-                            <label for="medio-de-pago"> <img src='/img/Carrito/Carrito - Visa.png' alt="Visa" class="logo logo-visa"> </label>
-                            <input type="radio" name="medio-de-pago" value="Visa" class="input-radio">
+                        <div class="form-check medios-de-pago">
+                            <label for="medio-de-pago" class="form-check-label"> <img
+                                    src='/img/Carrito/Carrito - Visa.png' alt="Visa" class="logo logo-visa"> </label>
+                            <input type="radio" name="medio-de-pago" value="Visa"
+                                class="form-check-input-reverse input-radio">
                         </div>
-                        <div class="medios-de-pago">
-                            <label for="medio-de-pago"> <img src='/img/Carrito/Carrito - Mastercard.png' alt="Mastercard" class="logo logo-master"> </label>
-                            <input type="radio" name="medio-de-pago" value="Mastercard" class="input-radio">
+                        <div class="form-check medios-de-pago">
+                            <label for="medio-de-pago" class="form-check-label"> <img
+                                    src='/img/Carrito/Carrito - Mastercard.png' alt="Mastercard"
+                                    class="logo logo-master"> </label>
+                            <input type="radio" name="medio-de-pago" value="Mastercard"
+                                class="form-check-input-reverse input-radio">
                         </div>
-                        <div class="medios-de-pago">
-                            <label for="medio-de-pago"> <img src='/img/Carrito/Carrito - MP.png' alt="Mercado Pago" class="logo logo-mp"> </label>
-                            <input type="radio" name="medio-de-pago" value="Mercado Pago" class="input-radio">
+                        <div class="form-check medios-de-pago">
+                            <label for="medio-de-pago" class="form-check-label"> <img
+                                    src='/img/Carrito/Carrito - MP.png' alt="Mercado Pago" class="logo logo-mp">
+                            </label>
+                            <input type="radio" name="medio-de-pago" value="Mercado Pago"
+                                class="form-check-input-reverse input-radio">
                         </div>
-                        <div class="medios-de-pago">
-                            <label for="medio-de-pago"> <h3 class="mensaje-transferencia"> Transferencia bancaria </h3> </label>
-                            <input type="radio" name="medio-de-pago" value="Transferencia bancaria" checked class="input-radio">
+                        <div class="form-check medios-de-pago">
+                            <label for="medio-de-pago" class="form-check-label">
+                                <h3 class="mensaje-transferencia"> Transferencia bancaria </h3>
+                            </label>
+                            <input type="radio" name="medio-de-pago" value="Transferencia bancaria" checked
+                                class="form-check-input-reverse input-radio">
                         </div>
                     </form>
                 </div>
 
-                <div class="contenedor-producto col-6">
-                        <div class="contenedor-curso">
-                            <img src="/img/Carrito/Carrito - producto comprado.png" alt="producto comprado" class="imagen-producto">
-                        </div>
-                        <hr>
+                <div class="contenedor-producto col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="contenedor-curso">
+                        <img src="/img/Carrito/Carrito - producto comprado.png" alt="producto comprado"
+                            class="imagen-producto">
+                    </div>
+                    <div class="container">
                         <div class="contenedor-precio row">
-                            <p class="precio col-6"> Total </p>
-                            <p class="precio-2 col-6"> $32.290 </p>
-                            <button class= "btn btn-dark boton-pagar"> Pagar </button>
+                            <p class="precio col-sm-12 col-md-12 col-lg-6 col-xl-6"> Total </p>
+                            <p class="precio-2 col-sm-12 col-md-12 col-lg-6 col-xl-6"> $32.290 </p>
+                            <button class="btn btn-dark boton-pagar"> Pagar </button>
                         </div>
+                    </div>
                 </div>
             </div>
+
         </section>
-    </form>
+        </form>
     </main>
-    <footer class="footer">
-        <div class="footer-cursos">
-            <h4> Cursos</h4>
-            <ul>
-                <li><a href="#"> Back-end </a></li>
-                <li><a href="#"> Front-end </a></li>
-                <li><a href="#"> Full-stack </a></li>
-            </ul>
+    <footer class="footer container">
+        <div class="row">
+            <div class="links-TC col-12">
+                <h4 class="links-utiles"> LINKS ÚTILES</h4>
+                <ul>
+                    <li class="items-footer"><a href="#" class="todos-los-links"> Cursos </a></li>
+                    <li class="items-footer"><a href="#" class="todos-los-links"> Términos y condiciones </a></li>
+                    <li class="items-footer"><a href="#" class="todos-los-links"> FAQ's</a></li>
+                    <li class="items-footer"><a href="#" class="todos-los-links"> Contacto</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-contacto">
-            <h4> Contacto</h4>
-            <ul>
-                <li>unmailinventado@tiddycode.com.ar</li>
-                <li><a href="#"> Por Whats App: 1155555555</a></li>
-            </ul>
-        </div>
-        <div class="footer-nuestras-redes">
-            <h4> Nosotros </h4>
-            <ul>
-                <li> <a href="#"> <img src="" alt="logo-insta"> </a> </li>
-                <li> <a href="#"> <img src="" alt="logo-youtube"> </a> </li>
-                <li> <a href="#"> <img src="" alt="logo-twitter"> </a></li>
-            </ul>
+        <div class="footer2 row">
+            <div class="año-footer col-9">
+                <p class="footer-2022">@ 2022 Tidy Code</p>
+            </div>
+            <div class="redes-sociales col-3">
+                <div class="row">
+                    <div class="redes linkedin col-3">
+                        <a href="https://www.linkedin.com/"> <img src="/img/Home/Home - linkedin.png" alt=""
+                                class="img-redes img-linkedin"> </a>
+                    </div>
+                    <div class="redes twitter col-3">
+                        <a href="https://twitter.com/"> <img src="/img/Home/Home - twitter.png" alt=""
+                                class="img-redes img-twitter"> </a>
+                    </div>
+                    <div class="redes instagram col-3">
+                        <a href="https://www.instagram.com"> <img src="/img/Home/Home - instagram.png" alt=""
+                                class="img-redes img-instagram "> </a>
+                    </div>
+                    <div class="redes youtube col-3">
+                        <a href="https://www.youtube.com/"> <img src="/img/Home/Home- Youtube.png" alt=""
+                                class="img-redes img-youtube"> </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

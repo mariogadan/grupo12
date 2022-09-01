@@ -108,7 +108,7 @@
 
 .precio {
     margin-top: 20px;
-    padding-top: 10px;
+    padding-top: 0px;
     text-align: center;
     font-size: 2em;
     font-weight: bold;
@@ -129,7 +129,7 @@
     display: block;
     background-color: #6f50f8;
     border-color: #6f50f8;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: bold;
     border-radius: 5px;
     width: 25%;

@@ -8,31 +8,32 @@
 /* SECCION BIENVENIDA */
 
 .contenedor-bienvenida{
+    box-sizing: border-box;
     margin-top: 40px
 }
 
 .imagen-bienvenida{
-    width: 45vw;
+    width: 100%;
     height: 80vh
 }
 
 .texto-bienvenida{
     background-color: #6f50f8;
     padding-top: 20vh;
+    padding-bottom: 10vh; 
     margin:0
     
 }
 
 .titulo-bienvenida{
-    font-size: 2.8em;
+    font-size: 2.9em;
     color: white;
     font-weight: bold;
-    margin: 0 2em 0 2.5em
+    margin: 0 1.6em 0 2em
 }
 
 .botonVerLosCursos{
-    align-items: center;
-    margin: 2em 0 0 9em;
+    margin: 2em 0 0 18vw;
     font-size: 1.5em;
 }
 
@@ -54,25 +55,28 @@
 }
 
 .logo{
-    width: 25vw;
     margin-bottom: 15px;
+    padding: 2em
 }
 
 .logoML{
     margin-left: 1vw;
+    width: 100%;
     margin-bottom: 4.5vh;
-    height: 25vh;
+    height: 30vh;
 }
 
 .logoDH{
-    height: 11.8em;
-    width: 15em;
-    margin-left: 6vw;
+    height: 32vh;
+    width: 95%;
+    margin-left: 0vw;
 }
 
 .logoGoogle{
     margin-left: 1vw;
-    margin-bottom: 9vh
+    margin-bottom: 9vh;
+    width: 100%;
+    height: 25vh;
 }
 
 /* METODO DE ENSEÑANZA */
@@ -126,8 +130,10 @@
 /* EMPLEADORES */
 
 .contenedor-empleadores{
+    width: 95%;
     margin-top: 60px;
     margin-left: 4vw;
+    border: 2px solid #6f50f8;
     
 }
 
@@ -153,63 +159,101 @@
 
 .imagen-empleador{
     width: 40vw;
+    padding:0;
+    text-align: center;
 }
 
 
 /* CURSOS */
 
-.elegi-tu-curso{
-    color: white;
-    background-color: #2e2f36;
-    width: 98%;
-    padding-top: 55px;
-    padding-bottom: 45px;
-    font-weight: bold;
-    text-align: center;
-    margin: 25px 0 0 0
-}
-
-.todos-los-cursos{
-    background-color: #2e2f36; 
-    width: 98%;
-    margin-left: 0;
-    padding-bottom: 45px;   
-}
-
-.cursos{
-    background-color: #f2f2f2;
-    margin: 30px 4.5vw 50px 4.5vw ;
-    width: 22vw;
-    border-top: #f2f2f2 30px solid;
-    border-right: #f2f2f2 10px solid;
-    border-bottom: #f2f2f2 20px solid;
-    border-left: #f2f2f2 10px solid;
-    border-radius: 6px;
+.contenedor-cursos{
+    padding-top: 0px;
     
 }
 
-.boton{
-    background-color: #6f50f8;
-    padding: 8px 60px 8px 60px;
-    margin-left: 1.7vw
+.elegi-tu-curso{
+    color: white;
+    background-color: #2e2f36;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+    margin-top:60px;
+    margin-bottom: 0;
+    font-size: 3em;
+    word-spacing: 15px;
+    letter-spacing: 7px
 }
+
+.cursos{
+    padding-top: 25px;
+    padding-bottom: 25px;
+     
+       
+}
+
+.curso{
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 10px 0vw 10px 0vw;
+    border-top: solid #6f50f8 2px;
+    border-bottom: solid #6f50f8 2px;
+    border-left: solid #6f50f8 1px;
+    border-right: solid #6f50f8 1px;
+} 
 
 .nombre-curso{
-    font-size: 1.1em;
-    font-weight: bold;
     text-decoration: underline;
+    text-align: center;
 }
 
-.texto-curso{
-    font-size: 0.9em;
+.curso1{
+    border-left: solid #6f50f8 2px;
 }
 
+.curso3{
+    border-right: solid #6f50f8 2px;
+}
+
+.tiempo-curso{
+    margin-top: 3vh
+}
+.calendario{
+    font-size: 2em;
+    margin-left: 5vw;
+    
+}
+
+.reloj{
+    font-size: 2em;
+    margin-left: 4vw
+}
+
+.texto-tiempo-curso{
+    font-size: 1.3em;
+    margin-left: 3vw;
+}
+
+.texto-dias-clase{
+    font-size: 1.3em;
+    margin-left: 2vw;
+}
+    
 .incluye{
-    font-size: 1em;
     font-weight: bold;
+    font-size: 1.2em;
 }
 
+ul{
+    margin-left: 4.5vw;
+}
 
+.boton-curso{
+    margin-left: 6.5vw;
+    padding: 10px 4vw 10px 4vw;
+    font-size: 1.4em;
+}
 
 /* FOOTER */
 
@@ -251,9 +295,34 @@
 .img-redes{
     padding:0;
     margin:0;
+    width: 3vw;
+}
+
+.img-linkedin{
+    height: 45px;
     width: 40px;
 }
 
+.img-twitter{
+    height: 45px;
+    width: 40px;
+    margin-left: 5px;
+}
+
+.img-instagram{
+    height: 45px;
+    width: 40px;
+}
+
+.img-youtube{
+    height: 45px;
+    width: 40px;
+    padding: 0;
+}
+
+
+
+/*
 .linkedin{
     padding: 0;
     margin:0
@@ -266,29 +335,11 @@
   
 }
 
-.img-twitter{
-    height: 45px;
-    width: 40px;
-    margin-left: 5px
-}
-
-.instagram{
-    padding: 0;
-    margin:0
-}
-
-.img-instagram{
-    height: 45px;
-    width: 40px;
-}
-
 .youtube{
     padding: 0;
     margin:0
 }
 
-.img-youtube{
-    height: 40px;
-    width: 45px;
-}
+
+*/
 

@@ -17,11 +17,21 @@
 }
 
 .cohete-imagen {
-    margin-top: 15px;
+    display: block;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 95%;/*550px;*/
-    height: 95%;/*580px;*/
+    width: 90%;/*550px;*/
+    height: 90%;/*580px;*/
+}
+
+.cohete2-imagen {
+  display: block;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;/*550px;*/
+  height: 80%;/*580px;*/
 }
   
 .icon {
@@ -35,6 +45,6 @@
   margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 143px;
-  height: 40px;
+  max-width: 20%; /*143px;*/
+  height: auto; /*40px;*/
 }

@@ -31,10 +31,10 @@
 
 
 .titulo-bienvenida2{
-    font-size: 1em;
+    font-size: 20px;
     color: white;
     font-weight: bold;
-    margin: 0 1.6em 0 6em;
+    margin: 0 3em 0 4.5em;
 }
 
 
@@ -45,10 +45,17 @@
 }
 
 .texto{
-    margin-left: 6em;
+    margin-left: 5em;
+    color:white;
+    margin-top: 1em;
 
 }
 
+.contenedor-bienvenida2{
+    box-sizing: border-box;
+    margin-top: 60px;
+
+}
 /* PRODUCTO */
 
 
@@ -61,7 +68,7 @@
     background-color: #4B4B4B;
     color:white;
     font-weight: bold;
-   margin-left: 60;
+    margin-left: 60;
 }
 
 .contenedor-quevasaprender{
@@ -79,17 +86,35 @@
     color:#6f50f8;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
    
 }
 
 .modalidad{
     width: 8vw; 
-    margin: 10px;
+    margin-left: 25px;
+    width: 30%;
+    height: 30%;
+}
+
+.modalidad1{
+    width: 8vw; 
+    margin-left: 35px;
+    margin-top: 10px;
+    width: 30%;
+    height: 30%;
 }
 
 .modulos{
     text-align: center;
+    margin: 0 3em 0 4.5em;
+
+}
+
+.texto2{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left:35px;
 }
 
 .boton-descarga-programa{
@@ -103,14 +128,14 @@
 
 .titulo-recomiendan1{
     text-align: center;
-    font-size: 1.5 em;
+    font-size: 22px;
     color: white;
     font-weight: bold;
     margin: 0 2em 0 2em
 }
 
 .titulo-recomiendan2{
-    font-size: 1 em;
+    font-size: 40px;
     color: white;
     font-weight: bold;
     margin: 0 2em 0 2em

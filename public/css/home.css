@@ -45,7 +45,6 @@
 /* COLABORADORES */
 
 .contenedor-colaboradores{
-<<<<<<< HEAD
     margin-top: 60px;
     margin-left: 5vw;
     margin-right: 15vw;
@@ -55,10 +54,6 @@
 
 .colaboradores{
     width: 100%;
-=======
-    margin-top: 20px;
-    width: 100%
->>>>>>> 40f58d4fd77ca95b9f4471d502978ad31be5865a
 }
 
 .titulo-colaboradores{

@@ -3,6 +3,15 @@
     margin:0
 }
 
+.icon-tiddy {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10x;
+    width: 179px; /*143px;*/
+    height: 50px; /*40px;*/
+}
+
 /* MAIN */
 
 /* SECCION BIENVENIDA */
@@ -249,7 +258,7 @@
     font-size: 1.2em;
 }
 
-ul{
+.ul-class{
     margin-left: 4.5vw;
 }
 

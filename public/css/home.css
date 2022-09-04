@@ -7,7 +7,7 @@
 
 
 
-/* MAIN */
+
 
 /* SECCION BIENVENIDA */
 
@@ -45,6 +45,7 @@
 /* COLABORADORES */
 
 .contenedor-colaboradores{
+<<<<<<< HEAD
     margin-top: 60px;
     margin-left: 5vw;
     margin-right: 15vw;
@@ -54,6 +55,10 @@
 
 .colaboradores{
     width: 100%;
+=======
+    margin-top: 20px;
+    width: 100%
+>>>>>>> 40f58d4fd77ca95b9f4471d502978ad31be5865a
 }
 
 .titulo-colaboradores{
@@ -248,12 +253,12 @@
     margin-left: 2vw;
 }
     
-.incluye{
+.incluye {
     font-weight: bold;
     font-size: 1.2em;
 }
 
-.ul-class{
+.ul-class {
     margin-left: 4.5vw;
 }
 

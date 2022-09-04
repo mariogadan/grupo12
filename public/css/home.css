@@ -5,9 +5,13 @@
 
 /* HEADER */
 
-
-
-
+#barraNavegacion{ 
+    justify-content: center;
+}
+.nav-link { 
+    font-weight: bold;
+    color: #6f50f8
+}
 
 /* SECCION BIENVENIDA */
 

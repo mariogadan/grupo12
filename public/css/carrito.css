@@ -4,14 +4,23 @@
 
 /* HEADER */
 
-
+#barraNavegacion{ 
+    justify-content: right;
+    margin-right: 100px;
+}
+.nav-link { 
+    font-weight: bold;
+    color: #6f50f8
+}
 
 /* CARRITO */
 
 .contenedor-carrito {
+    width: 90%;
     box-sizing: border-box;
     margin-top: 25px; 
-    background-color: #f2f2f2; 
+    background-color: #f2f2f2;
+    padding-bottom: 20px;
 }
 
 /* MEDIOS DE PAGO */
@@ -20,6 +29,7 @@
     margin-top: 5px;
     font-size: 2.5em;
     font-weight: bold;
+    text-align: center;
 }
 
 .medios-de-pago {
@@ -28,27 +38,52 @@
     border: 3px solid #6f50f8;
     border-radius: 25px;
     width: 90%;
+    padding: 5px 0 5px 0;
+    background-color: white;
 }
 
-.icono {
-    font-size: 3.5em;
+.logo-visa {
+    width: 20%;
+    margin-left: 10px;
+    padding: 10px 0 10px 0;
+}
+
+
+.logo-mastercard {
+    width: 20%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.logo-mercadopago {
+    width: 25%;
+    margin-left: 10px;
+    padding: 8px 0 8px 0;
+}
+
+.mensaje-transferencia {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 15px 0 10px 0;
 }
 
 .input-radio {
-    display: inline-block;
+    width: 5%;
 }
 
 /* PRODUCTO */
 
 .contenedor-curso {
     background-color: white;
+    margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .contenedor-producto {
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .imagen-producto {

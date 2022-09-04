@@ -32,8 +32,8 @@
     margin: 0 1.6em 0 2em
 }
 
-.botonVerLosCursos{
-    margin: 2em 0 0 18vw;
+.boton-ver-los-cursos{
+    margin: 2em 0 0 15vw;
     font-size: 1.5em;
 }
 
@@ -46,12 +46,16 @@
 
 .titulo-colaboradores{
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 40px;
     color: white;
     background-color: #6f50f8;
     font-weight: bold;
-    padding: 0
+    padding-top: 20px;
+    padding-bottom: 20px;
+    word-spacing: 15px;
+    letter-spacing: 5px
+    
 }
 
 .logo{
@@ -69,11 +73,11 @@
 .logoDH{
     height: 32vh;
     width: 95%;
-    margin-left: 0vw;
+    margin-left: 1vw;
 }
 
 .logoGoogle{
-    margin-left: 1vw;
+    margin-left: 0vw;
     margin-bottom: 9vh;
     width: 100%;
     height: 25vh;

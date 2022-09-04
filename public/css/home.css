@@ -3,14 +3,9 @@
     margin:0
 }
 
-.icon-tiddy {
-    margin-top: 15px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10x;
-    width: 179px; /*143px;*/
-    height: 50px; /*40px;*/
-}
+/* HEADER */
+
+
 
 /* MAIN */
 
@@ -18,7 +13,8 @@
 
 .contenedor-bienvenida{
     box-sizing: border-box;
-    margin-top: 40px
+    margin-top: 40px;
+    width: 80%;
 }
 
 .imagen-bienvenida{
@@ -42,7 +38,7 @@
 }
 
 .boton-ver-los-cursos{
-    margin: 2em 0 0 15vw;
+    margin: 2em 0 0 13vw;
     font-size: 1.5em;
 }
 
@@ -50,10 +46,18 @@
 
 .contenedor-colaboradores{
     margin-top: 60px;
-    width: 100%
+    margin-left: 5vw;
+    margin-right: 15vw;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.colaboradores{
+    width: 100%;
 }
 
 .titulo-colaboradores{
+    width: 100%;
     text-align: center;
     font-size: 3em;
     margin-bottom: 40px;
@@ -63,36 +67,17 @@
     padding-top: 20px;
     padding-bottom: 20px;
     word-spacing: 15px;
-    letter-spacing: 5px
-    
+    letter-spacing: 5px 
 }
 
 .logo{
     margin-bottom: 15px;
-    padding: 2em
+    width: 100%
 }
 
-.logoML{
-    margin-left: 1vw;
-    width: 100%;
-    margin-bottom: 4.5vh;
-    height: 30vh;
-}
-
-.logoDH{
-    height: 32vh;
-    width: 95%;
-    margin-left: 1vw;
-}
-
-.logoGoogle{
-    margin-left: 0vw;
-    margin-bottom: 9vh;
-    width: 100%;
-    height: 25vh;
-}
 
 /* METODO DE ENSEÑANZA */
+
 
 .contenedor-metodo-enseñanza{
     align-items: center;
@@ -106,48 +91,59 @@
 .titulo-metodo-enseñanza{
     text-align: center;
     color:#6f50f8;
-    font-size: 45px;
+    font-size: 3em;
     margin-top: 10px;
     background-color: #f2f2f2;
     font-weight: bold;
     
 }
 
-.subtitulo-colaboradores{
+.subtitulo-enseñanza{
     color:black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.5em;
     margin-top: 15px;
     text-align: center;
 }
 
-.imagenes-enseñanza{
-    margin-left: 7vw;
-    width: 10vw;
+.contenedor-metodos{
+    margin: 20px 0 60px 0px;
 }
 
-.video{
-    margin-bottom: 4vh;
+.caja-enseñanza{
+    background-color: white;
+    min-width: 100px;
+    max-width: 400px;
 }
 
-.video2{
-    width: 12vw;
-    margin-bottom: 5.5vh
+.texto-enseñanza{
+    margin-top: 20px;
 }
 
-.tareas{
-    height: 17vh;
-    margin-bottom: 3.6vh;
+.icono-enseñanza{
+    font-size: 8em;
+    color: #6f50f8;
+    text-align: center;
+    margin-top: 20px;
 }
+
+
 
 /* EMPLEADORES */
+
+
 
 .contenedor-empleadores{
     width: 95%;
     margin-top: 60px;
-    margin-left: 4vw;
+    margin-left: 2.5vw;
+    margin-right: 0vw;
     border: 2px solid #6f50f8;
-    
+    box-sizing: border-box;    
+}
+
+.empleadores{
+    width: 100%;
 }
 
 .titulo-empleadores{
@@ -171,7 +167,7 @@
 }
 
 .imagen-empleador{
-    width: 40vw;
+    width: 40%;
     padding:0;
     text-align: center;
 }
@@ -200,8 +196,7 @@
 .cursos{
     padding-top: 25px;
     padding-bottom: 25px;
-     
-       
+
 }
 
 .curso{

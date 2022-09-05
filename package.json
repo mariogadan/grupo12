@@ -4,6 +4,7 @@
   "description": "Temática y descripción del sitio:\r Esta es una plataforma de aprendizaje en línea que ofrece una amplia variedad de cursos tanto iniciales como avanzados en programación. Los alumnos pueden estudiar a su ritmo y al final recibirán una certificación.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

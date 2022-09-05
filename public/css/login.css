@@ -1,12 +1,3 @@
-/* HEADER */
-
-#barraNavegacion{ 
-    justify-content: center;
-}
-.nav-link { 
-    font-weight: bold;
-}
-
 .contenedor-bienvenida{
     box-sizing: border-box;
     margin-top: 40px
@@ -65,18 +56,22 @@
 
 }
 
+
 /* HEADER */
 
 #barraNavegacion{ 
-    justify-content: center;
+    justify-content: right;
+    margin-right: 100px;
 }
 .nav-link { 
     font-weight: bold;
     color: #6f50f8
 }
+
+
+
+
 /* PRODUCTO */
-
-
 .contenedor-programa{
     background-color: #4B4B4B ;
     color:white;
@@ -111,14 +106,16 @@
 .modalidad{
     width: 8vw; 
     margin-left: 25px;
-    
+    width: 30%;
+    height: 30%;
 }
 
 .modalidad1{
     width: 8vw; 
     margin-left: 35px;
     margin-top: 10px;
-  
+    width: 30%;
+    height: 30%;
 }
 
 .modulos{
@@ -368,6 +365,15 @@ ul{
       width: 90%;/*550px;*/
       height: 90%;/*580px;*/
   }
+
+  .cohete-imagen2 {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;/*550px;*/
+    height: 70%;/*580px;*/
+}
   
   .cohete2-imagen {
     display: block;

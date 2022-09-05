@@ -1,3 +1,11 @@
+/* HEADER */
+
+#barraNavegacion{ 
+    justify-content: center;
+}
+.nav-link { 
+    font-weight: bold;
+}
 
 .contenedor-bienvenida{
     box-sizing: border-box;

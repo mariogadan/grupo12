@@ -75,10 +75,12 @@
 /* PRODUCTO */
 
 .contenedor-curso {
+    width: 90%;
     background-color: white;
     margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-left: 3vw
 }
 
 .contenedor-producto {
@@ -94,15 +96,15 @@
     background-color: #6f50f8
 }
 
-.contenedor-precio {
-    
+.contenedor-precio{
+    width: 95%;
 }
 
 .precio {
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
 }
 

@@ -10,7 +10,6 @@
 }
 .nav-link { 
     font-weight: bold;
-    color: #6f50f8
 }
 
 /* SECCION BIENVENIDA */
@@ -27,6 +26,7 @@
 }
 
 .texto-bienvenida{
+    font-size: 1em ;
     background-color: #6f50f8;
     padding-top: 20vh;
     padding-bottom: 10vh; 
@@ -142,7 +142,6 @@
     margin-top: 60px;
     margin-left: 2.5vw;
     margin-right: 0vw;
-    border: 2px solid #6f50f8;
     box-sizing: border-box;    
 }
 

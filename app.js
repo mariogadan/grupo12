@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const path = require('path')
 
-app.listen(3030, function(){
+app.listen(process.env.PORT || 3030, function(){
     console.log('Servidor activo')
 })
 

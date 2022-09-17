@@ -1,29 +1,20 @@
 const express = require('express')
 const app = express()
-const path = require('path')
+const path = require('path');
+const port = process.env.PORT || 3030
+const mainRoutes = require("./src/routes/main.routes");
+const usuarioRoutes = require("./src/routes/usuario.routes");
 
-app.listen(process.env.PORT || 3030, function(){
+app.set('view engine', 'ejs');
+
+app.set("views", "./src/views")
+
+app.listen(port, function(){
     console.log('Servidor activo')
 })
 
 app.use(express.static(path.join(__dirname , './public')))
 
-app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname , './views/home.html'))
-})
+app.use("/", mainRoutes);
 
-app.get('/producto', function(req, res){
-    res.sendFile(path.join(__dirname , './views/producto.html'))
-})
-
-app.get('/carrito', function(req, res){
-    res.sendFile(path.join(__dirname , './views/carrito.html'))
-})
-
-app.get('/login', function(req, res){
-    res.sendFile(path.join(__dirname , './views/login.html'))
-})
-
-app.get('/registro', function(req, res){
-    res.sendFile(path.join(__dirname , './views/registro.html'))
-})
+app.use("/usuario", usuarioRoutes);

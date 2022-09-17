@@ -3,6 +3,17 @@
   margin:0
 }
 
+/* HEADER */
+
+#barraNavegacion{ 
+  justify-content: right;
+  margin-right: 100px;
+}
+.nav-link { 
+  font-weight: bold;
+  color: #6f50f8
+}
+
 .div-imagen{
     background-color: grey;
 }
@@ -21,8 +32,8 @@
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;/*550px;*/
-    height: 90%;/*580px;*/
+    width: 70%;/*550px;*/
+    height: 70%;/*580px;*/
 }
 
 .cohete2-imagen {

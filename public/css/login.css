@@ -72,6 +72,8 @@
 
 
 /* PRODUCTO */
+
+.titulo
 .contenedor-programa{
     background-color: #4B4B4B ;
     color:white;
@@ -362,8 +364,8 @@ ul{
       margin-top: 30px;
       margin-left: auto;
       margin-right: auto;
-      width: 90%;/*550px;*/
-      height: 90%;/*580px;*/
+        width: 80%;
+        height: 40vh
   }
 
   .cohete-imagen2 {
@@ -397,4 +399,8 @@ ul{
     margin-right: auto;
     max-width: 20%; /*143px;*/
     height: auto; /*40px;*/
+  }
+
+  .formlogin{
+    margin-left: 30px;
   }

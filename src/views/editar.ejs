@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  
+<head>        
+<title >Creá tu cuenta'</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/editar.css"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" media="screen and (min-width: 769px)" href="/css/editar.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1169px)" href="/css/editar.css" />
+    
+  </head>    
+<body class="body"> 
+    <header>
+        <div class="header">
+                <div class="caja-logo"> 
+                    <div> <img src="/img/logo.jpg" alt="Logo de la empresa" class="logo"></div>
+              </div>  
+        </div>  
+        
+ 
+          
+        </header>
+   
+   
+        
+        
+
+
+    <div class="body-background">
+      
+      <div class="caja-formulario">
+        <i class="menu-icon"> <a href="./" style="text-decoration: none"><i class="fa-solid fa-xmark"></i> </i> </a>
+        <h3 class="Crea-cuenta"> ¡Cargá un nuevo curso!</h3>
+        <div class= "icono-titulo">
+                
+                <i class="icono"> <i  class="fa-regular fa-pen-to-square" ></i> </i> 
+                <div class="titulo">  Comenzamos con una breve descripción </div> 
+        </div> 
+        <form action="/registro" method="POST" class="formulario">
+          <div class="campos1"> 
+            <input type="text" name="nombre"  placeholder="Nombre del curso" class="campo" required>
+            <input type="text" name="usuario"  placeholder="Descripción" class="campo" required>
+            <input type="text" name="Modalidad" placeholder="Modalidad" class="campo" required> 
+            <input type="text" name="Duracion" placeholder="Duracion" class="campo" required>
+            <input type="text" name="Encuentros" placeholder="Encuentros" class="campo" required>  
+          </div>
+          <div class= "icono-titulo">
+                
+            <i class="icono"> <i class="far fa-window-restore"></i></i> 
+            <div class="titulo">  ¿Qué contenidos se brindarán en cada módulo? </div> 
+            </div> 
+          <div class="campos2"> 
+          <input type="text" name="titulo1"  placeholder="Título modulo 1" class="campo" required>
+          <input type="text" name="descripcionmodulo"  placeholder="Descripción modulo 1" class="campo" required>
+          <input type="text" name="titulo2"  placeholder="Título mdoluo 2" class="campo" >
+          <input type="text" name="descripcionmodulo2"  placeholder="Descripción modulo 2" class="campo" >
+          <input type="text" name="titulo3"  placeholder="Título modulo 3" class="campo" >
+          <input type="text" name="descripcionmodulo3"  placeholder="Descripción modulo 3" class="campo" >
+        </div>
+        <div class= "icono-titulo">
+                
+            <i class="icono"><i class="fas fa-medal"></i></i> 
+            <div class="titulo">  ¿Qué dicen las personas que recomiendan este curso? </div> 
+            </div> 
+            <div class="campos2"> 
+                <input type="text" name="referenciatitulo"  placeholder="Referencias: Frase principal" class="campo" required>
+                <input type="text" name="referenciadescripcion"  placeholder="Referencias: Testimonio completo" class="campo" required>
+                 </div>
+                 <div class= "icono-titulo">
+                
+                    <i class="icono"><i class="fas fa-chalkboard-teacher"></i></i> 
+                    <div class="titulo">  Comisiones </div> 
+                    </div> 
+                    <div class="campos2"> 
+                        <input type="date" name="fechainicio"  placeholder="Fecha de inicio" class="campo" required>
+                        <input type="text" name="dias"  placeholder="Días" class="campo" required>
+                        <input type="text" name="horas"  placeholder="Horas" class="campo" required>
+                        <input type="text" name="precioreserva"  placeholder="Precio de reserva" class="campo" required>
+                        <input type="text" name="precio"  placeholder="Precio final" class="campo" required>
+                    </div>
+        
+        
+        <button  class="boton"> <a href="./" style="text-decoration: none"> Guardar cambios</button></a> 
+          <button type="reset" class="resetear">Borrar cambios</button> 
+      </form>
+      </div>
+     
+    </div>
+
+ 
+
+    
+     
+  </body></html>

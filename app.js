@@ -5,6 +5,7 @@ const port = process.env.PORT || 3030
 const mainRoutes = require("./src/routes/main.routes");
 const usuarioRoutes = require("./src/routes/usuario.routes");
 
+
 app.use(express.static(path.join(__dirname , './public')))
 
 app.set('view engine', 'ejs');
@@ -18,3 +19,5 @@ app.listen(port, function(){
 app.use("/", mainRoutes);
 
 app.use("/usuario", usuarioRoutes);
+
+

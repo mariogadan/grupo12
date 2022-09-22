@@ -1,0 +1,385 @@
+
+
+
+*{
+    box-sizing: border-box;
+   
+
+}
+.body{
+    
+    font-family:  'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+
+
+.header{
+        background-color:#6F50F8;
+        padding:22px;
+        display: absolute;
+        height: 100px;
+       
+       
+     
+        
+        
+        
+        }
+    
+    
+        .caja-logo{
+            width:150px;
+            flex-grow: 1;
+            position: absolute;
+        
+        }
+        
+        .logo{
+            width:100px;
+            margin-left: 11%;
+        }
+    
+
+
+
+
+.body-background{
+
+    background:  #ebebeb;
+    height:1300px;
+    margin:0px; 
+    display: flex;
+    align-items: center;
+
+    
+
+    
+  
+    
+
+}
+
+.caja-formulario{
+    text-align: center;
+    background: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 22px;
+    margin-top: -1%;
+    
+ 
+  
+    
+    
+   
+
+}
+
+.icono-titulo{  font-size: 12px;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.titulo{
+    display: inline;
+}
+
+.icono{
+
+    position: relative;
+}
+
+
+
+.menu-icon{
+    margin-left: 90%;
+    justify-content: right;
+}
+
+
+
+h3{
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10%;
+   
+}
+
+
+
+
+.titulo{
+    position: relative;
+}
+
+.Crea-cuenta{
+    font-size: 18px;
+color:#6F50F8;
+text-align: center;
+margin-left:-5%;
+margin-bottom: 35px;
+}
+
+.campos{
+    padding: 10px;
+}
+
+.campo{
+    margin:10px;
+    padding: 8px;
+    border-radius: 6px ;
+    border: solid #666 1px; 
+    font-size: 11px;
+    width: 80%;
+    color: #666;
+}
+
+.boton{
+    margin:0px;
+    background-color: #6F50F8;
+    color: white;
+    padding: 8px;
+    border-radius: 6px ;
+    border: solid #666 1px; 
+    font-size: 12px;
+    width: 80%;
+    font-weight: bold ;
+    margin-top: 20px ;
+
+}
+
+.resetear{
+    margin-top:12px;
+    background-color: white;
+    color: #6F50F8;
+    padding: 8px;
+    border-radius: 6px ;
+    border: solid white 1px; 
+    font-size: 12px;
+    width: 74%;
+    font-weight: bold ;
+
+}
+
+
+
+.copy{
+    color: #666;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 5%;
+   
+}
+
+
+
+.campos3{
+    display:flex;
+    margin-left: 10%;
+    font-size: 12px;
+   
+   
+}
+
+.campos4{
+    margin-left: 10%;
+    font-size: 12px;
+    text-align: left;
+   
+}
+
+@media only screen and (min-width: 769px) {
+
+
+    .caja-logo{
+        width:50px;
+        flex-grow: 1;
+        position: flex;
+    
+    }
+    
+    .logo{
+        width:150px;
+        margin-left: 11%;
+    }
+
+
+    .header{
+        background-color:#6F50F8;
+        padding:22px;
+        display: absolute;    
+        height:200px; 
+       
+     
+        
+        
+        
+        }
+
+        .body-background{
+
+            background:  #ebebeb;
+            height:1250px;
+            margin:0px; 
+            display: flex;
+            align-items: center;
+            
+        
+            
+          
+            
+        
+        }
+        
+        .caja-formulario{
+            text-align: center;
+            background: white;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            justify-content: center;
+            padding:15px;
+            margin-bottom: 12px;
+            border-radius: 4px;
+            margin-top: -160px;
+            
+            
+        
+        }
+        
+        
+h3{
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10%;
+    margin-top:15px;
+   
+}
+
+.Crea-cuenta{
+    font-size: 18px;
+color:#6F50F8;
+text-align: center;
+margin-left:-5%;
+margin-bottom: 35px;
+}
+
+.campos{
+    padding: 10px;
+}
+
+.campo{
+    margin:10px;
+    padding: 8px;
+    border-radius: 6px ;
+    border: solid #666 1px; 
+    font-size: 11px;
+    width: 80%;
+    color: #666;
+}
+
+.boton{
+    margin:0px;
+    background-color: #6F50F8;
+    color: white;
+    padding: 8px;
+    border-radius: 6px ;
+    border: solid #666 1px; 
+    font-size: 12px;
+    width: 80%;
+    font-weight: bold ;
+    margin-top: 20px ;
+
+}
+
+.resetear{
+    margin-top:12px;
+    background-color: white;
+    color: #6F50F8;
+    padding: 8px;
+    border-radius: 6px ;
+    border: solid white 1px; 
+    font-size: 12px;
+    width: 74%;
+    font-weight: bold ;
+
+}
+
+.footer{
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    display: absolute;
+    align-items: flex-end;
+    
+   
+   
+    
+   
+   
+
+
+
+    
+}
+
+.copy{
+    color: #666;
+    font-size: 11px;
+    text-align: center;
+    
+   
+   
+}
+
+.subir-imagen{
+    margin-top:12px;
+    background-color: white;
+    color: #666;
+    padding: 8px;
+    border-radius: 6px ;
+    border: solid white 1px; 
+    font-size: 12px;
+    width: 74%;
+    text-align: left;
+  
+}
+
+.campos3{
+    display:flex;
+    margin-left: 10%;
+    font-size: 12px;
+   
+   
+}
+
+.campos4{
+    margin-left: 10%;
+    font-size: 12px;
+    text-align: left;
+
+   
+}
+        
+         
+
+        
+.copy{
+    color: #666;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2%;
+}    
+        
+       
+}

@@ -11,6 +11,10 @@ const controlador = {
         res.render("carrito")
 },
 
+editar: function (req, res) {
+    res.render("editar")
+},
+
 };
 
 module.exports = controlador

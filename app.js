@@ -9,7 +9,6 @@ const usuarioRoutes = require("./src/routes/usuario.routes");
 app.use(express.static(path.join(__dirname , './public')))
 
 app.set('view engine', 'ejs');
-
 app.set("views", "./src/views");
 
 app.listen(port, function(){

@@ -7,6 +7,7 @@
 #barraNavegacion{ 
     justify-content: center;
 }
+
 .nav-link { 
     font-weight: bold;
 }
@@ -29,8 +30,7 @@
     background-color: #6f50f8;
     padding-top: 20vh;
     padding-bottom: 10vh; 
-    margin:0
-    
+    margin:0    
 }
 
 .titulo-bienvenida{
@@ -178,8 +178,7 @@
 /* CURSOS */
 
 .contenedor-cursos{
-    padding-top: 0px;
-    
+    padding-top: 0px;  
 }
 
 .elegi-tu-curso{

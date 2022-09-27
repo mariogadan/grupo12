@@ -48,7 +48,7 @@
 .body-background{
 
     background:  #ebebeb;
-    height:1300px;
+    height:700px;
     margin:0px; 
     display: flex;
     align-items: center;
@@ -71,7 +71,7 @@
     justify-content: center;
     border-radius: 4px;
     padding: 22px;
-    margin-top: -1%;
+    margin-top: -11%;
     
  
   
@@ -86,16 +86,25 @@
     text-align: left;
     margin-left: 10%;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .titulo{
     display: inline;
+    position: relative;
+}
+
+.subtitulo {
+    font-size: 10px;
+    text-align: left;
+    margin-left: 10%;
+    
 }
 
 .icono{
 
     position: relative;
+    justify-content: left;
 }
 
 
@@ -115,11 +124,28 @@ h3{
 }
 
 
-
-
-.titulo{
+.botonfoto{
     position: relative;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
+.selecionafoto{
+   
+    background-color: #E0DEDE;
+    color: #2E2F36;
+    border-radius: 6px ;
+    border: none; 
+    font-size: 11px;
+    width: 145px;
+    margin-left: 10%;
+    height: 20px;
+    padding: 4px;
+   
+   
+
+}
+
 
 .Crea-cuenta{
     font-size: 18px;
@@ -149,7 +175,7 @@ margin-bottom: 35px;
     color: white;
     padding: 8px;
     border-radius: 6px ;
-    border: solid #666 1px; 
+    border: none; 
     font-size: 12px;
     width: 80%;
     font-weight: bold ;
@@ -182,20 +208,7 @@ margin-bottom: 35px;
 
 
 
-.campos3{
-    display:flex;
-    margin-left: 10%;
-    font-size: 12px;
-   
-   
-}
 
-.campos4{
-    margin-left: 10%;
-    font-size: 12px;
-    text-align: left;
-   
-}
 
 @media only screen and (min-width: 769px) {
 
@@ -228,7 +241,7 @@ margin-bottom: 35px;
         .body-background{
 
             background:  #ebebeb;
-            height:1250px;
+            height:600px;
             margin:0px; 
             display: flex;
             align-items: center;

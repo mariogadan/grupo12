@@ -7,6 +7,8 @@ router.get("/", controlador.home);
 
 router.get("/producto", controlador.producto);
 
+router.get("/productobeta", controlador.productobeta);
+
 router.get("/carrito", controlador.carrito);
 
 router.get("/editar", controlador.editar);

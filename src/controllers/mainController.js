@@ -15,6 +15,10 @@ editar: function (req, res) {
     res.render("editar")
 },
 
+productobeta: function (req, res) {
+    res.render("productobeta")
+}
+
 };
 
 module.exports = controlador

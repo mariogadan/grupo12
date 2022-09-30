@@ -1,10 +1,31 @@
+const fs = require('fs')
+const path = require('path')
+
+const cursos = require('../database/cursosDataBase.json')
+
 const controlador = {
     home: function (req, res) {
-    res.render("home")
+    res.render("home", {cursos: cursos})
 },
 
     producto: function (req, res) {
-    res.render("producto")
+        let idCurso = req.params.id
+        let cursoBuscado = null
+
+        for (let c of cursos){
+            if( idCurso == c.id){
+                cursoBuscado = c;
+                break
+            }
+        }
+
+        if (cursoBuscado!=null){
+            res.render("producto", {curso: cursoBuscado})
+        } else {
+            res.send("Error al encontrar curso")
+        }
+
+    
 },
 
     carrito: function (req, res) {

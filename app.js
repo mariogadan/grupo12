@@ -15,6 +15,7 @@ app.use(methodOverride('_method'));
 app.set('view engine', 'ejs');
 app.set("views", "./src/views");
 
+
 app.listen(port, function(){
     console.log('Servidor activo')
 });

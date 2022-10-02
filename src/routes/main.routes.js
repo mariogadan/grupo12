@@ -5,7 +5,7 @@ const controlador = require("../controllers/mainController");
 
 router.get("/", controlador.home);
 
-router.get('/producto/:id', controlador.producto);
+router.get('/productobeta/:id', controlador.productobeta);
 
 router.get("/productobeta", controlador.productobeta);
 

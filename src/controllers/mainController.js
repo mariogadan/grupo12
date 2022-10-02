@@ -20,7 +20,7 @@ const controlador = {
         }
 
         if (cursoBuscado!=null){
-            res.render("producto", {curso: cursoBuscado})
+            res.render("productobeta", {curso: cursoBuscado})
         } else {
             res.send("Error al encontrar curso")
         }
@@ -37,7 +37,7 @@ editar: function (req, res) {
 },
 
 productobeta: function (req, res) {
-    res.render("productobeta")
+    res.render("productobeta");
 }
 
 };

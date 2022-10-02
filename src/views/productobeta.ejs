@@ -42,7 +42,7 @@
             
             <div class="violetabienvenida">
                 <div class="textobienvenida">
-                   <h2 class="titulo-bienvenida"> Programacion Web Full Stack</h2> <!-- TEXTO DINÁMICO -->
+                   <h2 class="titulo-bienvenida"> <%= curso.nombreCurso %></h2> <!-- TEXTO DINÁMICO -->
                    <div class="titulo-bienvenida2"> Comenza a programar tu futuro</div>
                 <ul class="descripcionbienvenida">
                     <li class="texto">Correccion de Proyectos </li>
@@ -55,7 +55,7 @@
 
             <div class="blockimagenbienvenida">
                 <img class="imagen-bienvenida" src="img/Producto - imagen portada.png" alt=""> <!-- TEXTO DINÁMICO -->
-                <img class="imagen-azul" src="img/imagenazul.png" alt=""> <!-- TEXTO DINÁMICO -->
+                <img class="imagen-azul" src="img/<%= curso.imagenCurso %>" alt=""> <!-- TEXTO DINÁMICO -->
           </div> 
         </div>
  
@@ -67,7 +67,7 @@
             <div class="base"> </div>
             <div class="block-descripcion-curso">
                 
-                <div class="descripcion-curso">En este curso aprenderás a crear tu sitio web partiendo del prototipo en papel. Te sumergirás en las mejores prácticas del desarrollo web, trabajando con HTML y CSS. Conocerás herramientas para optimizar al máximo tu sitio web, implementando prácticas de versionado de código con GIT, y preprocesadores como SASS. </div> <!-- TEXTO DINÁMICO -->
+                <div class="descripcion-curso"> <%= curso.descripcion %> </div> <!-- TEXTO DINÁMICO -->
                 <div class="gran-contenedor">
                 <div  class="contenedores"> 
                     <div  class="contenedores-imagen"> <img class="imagen-modalidad" src="img/Producto -Modalidad.png" alt="">   </div>
@@ -107,7 +107,7 @@
                     Los empleadores nos recomiendan
                 </div>
                 <div class="recomiendan-quote">  <!-- DINAMICO -->
-                    "Nuestra experiencia con el curso Full Stack fue excelente"
+                    <%= curso.recomienda %> 
                 </div>
                 <div class="recomiendan-logo">  <!-- DINAMICO -->
                     <img class="imagen-logo" src="img/Home/Home - MercadoLibre.jpg" alt=""> 
@@ -139,7 +139,7 @@
                 <div class="blanco"> </div>
                 <div class="fechas-block-cuadrado">
                     <div class="texto-fechas"> 
-                    <div class="fecha"> 20 de noviembre </div>  <!-- DINÁMICO -->
+                    <div class="fecha"> <%= curso.fechadeInicio %></div>  <!-- DINÁMICO -->
                     <div class="fecha-titulos-pequeños">Días</div>
                     <div class="fecha-subtitulos-pequeños">Lunes y miércoles</div>
                     <div class="fecha-block-icons">
@@ -152,7 +152,7 @@
                     </div>
                     <div class="fecha-titulos-pequeños">Pago</div>
                     <div class="fecha-subtitulos-pequeños">12 cuotas sin interés</div>
-                    <div class="fecha-precio">$8.600</div> <!-- DINÁMICO -->
+                    <div class="fecha-precio"><%= curso.precio %></div> <!-- DINÁMICO -->
 
                   
                 

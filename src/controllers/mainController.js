@@ -37,10 +37,29 @@ editar: function (req, res) {
 },
 
 productobeta: function (req, res) {
-    res.render("productobeta");
+    let idCurso = req.params.id;
+    let cursoBuscado =[];
+
+    for (let o of cursos)
+    {
+        if (o.id == idCurso)
+        {
+            cursoBuscado = o;
+           
+            break;
+        }
+    }
+
+    if (cursoBuscado.length!=0){
+        res.render("productobeta",{curso:cursoBuscado});
+    }
+    else
+    {   
+        res.send ("Error al buscar curso");
+    }
 }
 
 };
 
-module.exports = controlador
+module.exports = controlador;
 

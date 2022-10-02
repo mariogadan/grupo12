@@ -5,7 +5,8 @@
         "descripcion": "La programación es una habilidad fundamental para el mundo de hoy y, por lo tanto, altamente demandada. Es muy amplia y puede abarcar muchos aspectos, industrias y tecnologías por lo que resulta clave poder brindar un curso que no solo sea teórico, sino que se mantenga alineado con las expectativas y búsquedas laborales actuales.",
         "fechaInicio": "10/10/2022",
         "fechaFin": "15/10/2023",
-        "precio": 150000,
+        "precio": 190000,
+        "recomienda": "Nuestra experiencia con el curso Full Stack fue excelente",
         "imagenCurso": "imagenProgramacion.jpg"
     },
     {
@@ -15,6 +16,7 @@
         "fechaInicio": "15/11/2022",
         "fechaFin": "21/12/2023",
         "precio": 150000,
+        "recomienda": "Nuestra experiencia con el curso Certified Tech Developer fue excelente",
         "imagenCurso": "imagenTech.jpg"
     },
     {
@@ -23,7 +25,8 @@
         "descripcion": "Capacitate para utilizar cualquier volumen de datos (pequeño y grande) de forma eficaz, posibilitando la toma de decisiones informadas, seguras y confiables. Para ello usarás herramientas y lenguajes de manipulación y análisis de datos como SQL, Power BI y de análisis de comportamiento digital.",
         "fechaInicio": "17/10/2022",
         "fechaFin": "25/10/2023",
-        "precio": 150000,
+        "precio": 170000,
+        "recomienda": "Nuestra experiencia con el curso Data Analytics fue excelente",
         "imagenCurso": "imagenAnalytics.jpg"
     },
     {
@@ -32,7 +35,8 @@
         "descripcion": "Preparate para realizar el proceso de extracción, procesamiento y análisis de grandes cantidades de datos, con el objetivo de apoyar la toma de decisiones estratégicas en organizaciones de todo tipo.",
         "fechaInicio": "24/09/2022",
         "fechaFin": "27/09/2023",
-        "precio": 150000,
+        "precio": 140000,
+        "recomienda": "Nuestra experiencia con el curso Data Science fue excelente",
         "imagenCurso": "imagenScience.jpg"
     }
 ]

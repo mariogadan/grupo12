@@ -5,13 +5,16 @@ const controlador = require("../controllers/mainController");
 
 router.get("/", controlador.home);
 
-router.get('/productobeta/:id', controlador.productobeta);
+router.get("/crear", controlador.crear);
+router.post("/crear", controlador.crearCurso);
 
-router.get("/productobeta", controlador.productobeta);
+router.get('/:id', controlador.detalleCurso);
+router.delete("/:id", controlador.borrarCurso)
+
+router.get("/editar/:id", controlador.editar);
+router.put("/editar/:id", controlador.editarCurso);
 
 router.get("/carrito", controlador.carrito);
-
-router.get("/editar", controlador.editar);
 
 module.exports = router
 

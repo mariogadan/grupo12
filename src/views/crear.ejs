@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+  <title>Creá tu cuenta</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/editar.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" media="screen and (min-width: 769px)" href="/css/editar.css" />
+  <link rel="stylesheet" media="screen and (min-width: 1169px)" href="/css/editar.css" />
+
+</head>
+
+<body class="body">
+  <header>
+    <div class="header">
+      <div class="caja-logo">
+        <div> <img src="/img/logo.jpg" alt="Logo de la empresa" class="logo"></div>
+      </div>
+    </div>
+
+
+
+  </header>
+
+
+
+
+
+
+  <div class="body-background">
+
+    <div class="caja-formulario">
+      <i class="menu-icon"> <a href="./" style="text-decoration: none"><i class="fa-solid fa-xmark"></i> </i> </a>
+      <h3 class="Crea-cuenta"> ¡Cargá un nuevo curso!</h3>
+      <div class="icono-titulo">
+
+        <i class="icono"> <i class="fa-regular fa-pen-to-square"></i> </i>
+        <div class="titulo"> Comenzamos con una breve descripción </div>
+      </div>
+      <form action="/producto/crear" method="POST" class="formulario">
+        <div class="campos1">
+          <label for="nombreCurso" class="form-label"> </label>
+          <input type="text" name="nombreCurso" placeholder="Nombre del curso" class="campo" required>
+          <label for="descripcion" class="form-label"> </label>
+          <textarea type="text" name="descripcion" class="campo" required> Descripción </textarea>
+        </div>
+
+        <div class="icono-titulo">
+          <i class="icono"> <i class="fa-sharp fa-solid fa-image"></i> </i>
+          <div class="titulo"> Seleccioná la imagen del curso </div>
+        </div>
+
+        <!--  <div class="botonfoto">
+              <button  class="selecionafoto"> 
+              <label for="files" class="btn">Seleccioná un archivo jpg</label>
+              <input id="files" style="visibility:hidden;" type="file">
+            </button>
+            </div> -->
+
+        <div class="icono-titulo">
+
+
+          <i class="icono"><i class="fas fa-chalkboard-teacher"></i></i>
+          <div class="titulo"> Próxima comisión </div>
+        </div>
+        <div class="campos2">
+          <div>
+            <label for="fechaInicio" class="form-label"> ¿Cuándo comienza? </label>
+            <input type="date" name="fechaInicio" placeholder="Fecha de inicio" class="campo" required>
+          </div>
+          <div>
+            <label for="fechaFin" class="form-label"> ¿Cuándo finaliza? </label>
+            <input type="date" name="fechaFin" placeholder="Fecha de finalización" class="campo" required>
+          </div>
+          <div>
+            <label for="precio" class="form-label"> Precio </label>
+            <input type="text" name="precio" class="campo" required>
+          </div>
+
+
+          <button type="submit" class="boton"> <a style="text-decoration: none"> Guardar cambios</button></a>
+          <button type="reset" class="resetear">Borrar cambios</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -136,110 +136,22 @@
 
         <!-- CURSOS -->
 
-
+        <h2 class="elegi-tu-curso">¡Elegí tu curso!</h2>
+        
         <section class="contenedor-cursos container">
-            <h2 class="elegi-tu-curso">¡Elegí tu curso!</h2>
             <div class="cursos d-flex justify-content-around row">
+                <% for (let c of cursos) { %>
                 <div class="curso curso1 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 w-15">
                     <div class="row">
-                        <h3 class="nombre-curso col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Full Stack Developer
-                        </h3>
-                        <p class="texto-curso col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Lorem ipsum dolor sit
-                            amet consectetur adipisicing elit. Repellat doloribus quam ex minima, corporis sit natus
-                            optio aut voluptatum ipsam.</p>
+                        <h3 class="nombre-curso col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <%= c.nombreCurso %> </h3>
+                        <p class="texto-curso col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"><%= c.descripcion %></p>
                     </div>
-                    <div class="row tiempo-curso">
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 w-40">
-                            <i class="fa-regular fa-calendar calendario"></i>
-                            <p class="texto-tiempo-curso"> 6 meses</p>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 w-40">
-                            <i class="fa-regular fa-clock reloj"></i>
-                            <p class="texto-dias-clase"> 2 clases semanales</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 herramientas-curso">
-                            <h5 class="incluye">Incluye:</h5>
-                            <ul class="ul-class">
-                                <li> Javascript </li>
-                                <li> CSS </li>
-                                <li> HTML </li>
-                                <li> React</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-dark boton boton-curso"> Ver curso </button>
-                    </div>
+                    <a href="/producto/<%= c.id %>">
+                        <button  type="button" class="btn btn-dark boton boton-curso"> Reservá tu lugar </button>
+                    </a>
                 </div>
-
-                <div class="curso curso2 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 w-15">
-                    <div class="row">
-                        <h3 class="nombre-curso col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Data Analytics</h3>
-                        <p class="texto-curso col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Lorem ipsum dolor sit
-                            amet consectetur adipisicing elit. Repellat doloribus quam ex minima, corporis sit natus
-                            optio aut voluptatum ipsam.</p>
-                    </div>
-                    <div class="row tiempo-curso">
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                            <i class="fa-regular fa-calendar calendario"></i>
-                            <p class="texto-tiempo-curso"> 6 meses</p>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                            <i class="fa-regular fa-clock reloj"></i>
-                            <p class="texto-dias-clase"> 2 clases semanales</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 herramientas-curso">
-                            <h5 class="incluye">Incluye:</h5>
-                            <ul>
-                                <li> Javascript </li>
-                                <li> CSS </li>
-                                <li> HTML </li>
-                                <li> React</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button boton-curso" class="btn btn-dark boton boton-curso"> Ver curso </button>
-                    </div>
-                </div>
-
-                <div class="curso curso3 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 w-15">
-                    <div class="row">
-                        <h3 class="nombre-curso col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Certified Tech
-                            Developer</h3>
-                        <p class="texto-curso col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Lorem ipsum dolor sit
-                            amet consectetur adipisicing elit. Repellat doloribus quam ex minima, corporis sit natus
-                            optio aut voluptatum ipsam.</p>
-                    </div>
-                    <div class="row tiempo-curso">
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                            <i class="fa-regular fa-calendar calendario"></i>
-                            <p class="texto-tiempo-curso"> 6 meses</p>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                            <i class="fa-regular fa-clock reloj"></i>
-                            <p class="texto-dias-clase"> 2 clases semanales</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 herramientas-curso">
-                            <h5 class="incluye">Incluye:</h5>
-                            <ul>
-                                <li> Javascript </li>
-                                <li> CSS </li>
-                                <li> HTML </li>
-                                <li> React</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button boton-curso" class="btn btn-dark boton boton-curso"> Ver curso </button>
-                    </div>
-                </div>
+                <% } %>
+                
             </div>
         </section>
     </main>

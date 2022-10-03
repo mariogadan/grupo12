@@ -32,6 +32,10 @@ const controlador = {
         res.render("carrito")
     },
 
+    homebeta: function (req, res) {
+        res.render("homebeta")
+    },
+
     crear: function (req, res) {
         res.render("crear")
     },

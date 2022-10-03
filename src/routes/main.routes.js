@@ -15,6 +15,7 @@ router.get("/editar/:id", controlador.editar);
 router.put("/editar/:id", controlador.editarCurso);
 
 router.get("/carrito", controlador.carrito);
+router.get("/homebeta", controlador.homebeta);
 
 module.exports = router
 

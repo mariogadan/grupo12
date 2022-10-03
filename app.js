@@ -26,4 +26,6 @@ app.use("/producto", mainRoutes);
 
 app.use("/usuario", usuarioRoutes);
 
+app.use("/homebeta", usuarioRoutes);
+
 

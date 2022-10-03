@@ -17,7 +17,13 @@ editar: function (req, res) {
 
 productobeta: function (req, res) {
     res.render("productobeta")
+},
+
+homebeta: function (req, res) {
+    res.render("homebeta")
 }
+
+
 
 };
 

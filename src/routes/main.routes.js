@@ -9,7 +9,7 @@ router.get("/crear", controlador.crear);
 router.post("/crear", controlador.crearCurso);
 
 router.get('/:id', controlador.detalleCurso);
-router.delete("/:id", controlador.borrarCurso)
+router.delete("/:id", controlador.borrarCurso);
 
 router.get("/editar/:id", controlador.editar);
 router.put("/editar/:id", controlador.editarCurso);

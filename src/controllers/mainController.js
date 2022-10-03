@@ -98,38 +98,7 @@ const controlador = {
 
         let nuevaListaDeCursos = cursos.filter(function(c){
             return c.id!=idCursoABorrar;
-        });
-
-<<<<<<< HEAD
-productobeta: function (req, res) {
-    let idCurso = req.params.id;
-    let cursoBuscado =[];
-
-    for (let o of cursos)
-    {
-        if (o.id == idCurso)
-        {
-            cursoBuscado = o;
-           
-            break;
-        }
-    }
-
-    if (cursoBuscado.length!=0){
-        res.render("productobeta",{curso:cursoBuscado});
-    }
-    else
-    {   
-        res.send ("Error al buscar curso");
+        })
     }
 }
-=======
-        fs.writeFileSync(cursosFilePath,JSON.stringify(nuevaListaDeCursos, null, " "), "utf-8");
->>>>>>> 17f4cd639e93c894fbb5b62f64ed576117e3f63e
-
-        res.redirect("/");
-    },
-};
-
-module.exports = controlador;
-
+module.exports = controlador

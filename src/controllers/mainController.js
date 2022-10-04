@@ -4,7 +4,12 @@ const path = require('path')
 const cursosFilePath = path.join(__dirname, '../database/cursosDataBase.json');
 const cursos = JSON.parse(fs.readFileSync(cursosFilePath, 'utf-8'));
 
-const controlador = {
+const controlador = {    
+
+    beta: function (req, res) {
+        res.render("beta")
+    },
+
     home: function (req, res) {
         const cursos = JSON.parse(fs.readFileSync(cursosFilePath, 'utf-8'));    
         res.render("home", { cursos: cursos })
@@ -30,10 +35,6 @@ const controlador = {
 
     carrito: function (req, res) {
         res.render("carrito")
-    },
-
-    homebeta: function (req, res) {
-        res.render("homebeta")
     },
 
     crear: function (req, res) {

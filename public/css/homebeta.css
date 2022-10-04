@@ -82,6 +82,17 @@ body{
    
 }
 
+.iniciar-boton{
+    display:none
+}
+
+.regitrate-boton{
+    display:none
+}
+
+.cursos-menu{
+    display:none
+}
 
 /* BIENVENIDA */
 
@@ -572,16 +583,55 @@ body{
 
 
 .contenedor-boton{         
-            width: 70%
+       width: 80%;
         }
 
 
 .boton-menu{
-        color: black;  
-        margin-right: 10px;
-        
+        display: none;       
         
        
+    }
+
+    .cursos-menu{
+        display:inline;
+        font-size: 12px;
+        font-weight: 600;
+        margin-right: 30px;
+        font-style: normal;
+    }
+    
+.iniciar-boton{
+        display:inline;
+        margin:0px;
+        background-color: #6F50F8;
+       
+        padding: 8px;
+        border-radius: 6px ;
+        border: #6F50F8 solid 2px; 
+        font-size: 12px;
+        width:100px; 
+        margin-top: 5px ;
+        font-weight: bold;
+        margin-right: 10px;
+        text-decoration: none; 
+        color: white;
+    }
+    
+.regitrate-boton{
+        display:inline;
+        margin:0px;
+        background-color: white ;
+        color: #6F50F8 ;
+        padding: 8px;
+        border-radius: 6px ;
+        border: #6F50F8 solid 2px; 
+        font-size: 12px;
+        width:100px; 
+        margin-top: 5px ;
+        font-weight: bold;
+        margin-right: 10px;
+        text-decoration: none; 
     }
 
     
@@ -654,6 +704,7 @@ body{
 .descripcionbienvenida{
     display: inline;
     color: white;
+
    
   
     
@@ -661,7 +712,7 @@ body{
 
 .texto{
     text-align: left;
-    margin-left: 20%;
+    margin-left: 22%;
     margin-top: 7px;
     font-size: 14px;
 }
@@ -923,9 +974,7 @@ body{
 
     /* HEADER */
 
-    .contenedor-boton{         
-    width: 75%
-    }
+  
 
 
     /* BIENVENIDA */

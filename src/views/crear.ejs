@@ -44,7 +44,7 @@
         <i class="icono"> <i class="fa-regular fa-pen-to-square"></i> </i>
         <div class="titulo"> Comenzamos con una breve descripción </div>
       </div>
-      <form action="/producto/crear" method="POST" class="formulario">
+      <form action="/producto/crear" method="POST" class="formulario"> <!-- para multer agrego enctype="multipar/form-data"-->
         <div class="campos1">
           <div class="primera-parte">
           <label for="nombreCurso" class="form-label"> </label>
@@ -62,7 +62,7 @@
         <!--  <div class="botonfoto">
               <button  class="selecionafoto"> 
               <label for="files" class="btn">Seleccioná un archivo jpg</label>
-              <input id="files" style="visibility:hidden;" type="file">
+              <input id="files" style="visibility:hidden;" type="file"> agregar name="cargaImagen"
             </button>
             </div> -->
 

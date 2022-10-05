@@ -54,6 +54,7 @@ const controlador = {
             "fechaFin": datosCurso.fechaFin,
             "precio": parseInt(datosCurso.precio),
             "imagenCurso": imagenNuevoCurso
+            //"imagenCurso": req.file.filename
         }
 
         cursos.push(nuevoCurso);
@@ -89,6 +90,7 @@ const controlador = {
                 o.fechaInicio = datosCurso.fechaInicio,
                 o.fechaFin = datosCurso.fechaFin,
                 o.precio = parseInt(datosCurso.precio);
+                //o.imagenCurso = req.file.filename
                 break
             }
         }

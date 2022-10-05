@@ -17,7 +17,7 @@ const multerDiskStorage = multer.diskStorage({
 const subirImagen = multer({storage: multerDiskStorage}); 
 // fin apartado Multer
 
-router.get("/beta", controlador.beta);
+//router.get("/beta", controlador.beta);  CONSULTAR QUE VISTA ES LA QUE VA
 router.get("/", controlador.home);
 router.get("/crear", controlador.crear);
 router.post("/crear", controlador.crearCurso);

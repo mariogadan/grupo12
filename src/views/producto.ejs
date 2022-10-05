@@ -22,8 +22,9 @@
         <div class="header">
             <div class="caja-logo">
                 <div class="contenedor-logo">
-                    <div> <img src="/img/logo.jpg" alt="Logo de la empresa" class="logo"></div>
-                    <div> <img src="/img/logoNegro.jpg" alt="Logo de la empresa" class="logo-black"></div>
+                    <a href="/" class="navbar-brand">
+                        <img class="d-inline-block align-top" src="/img/Home/Home - Logo new.png" width="170" height="50">
+                    </a>
                 </div>
                 <div class="contenedor-boton">
                     <div class="boton-menu"> <i class="fa-solid fa-bars"></i></div>
@@ -43,9 +44,7 @@
 
             <div class="violetabienvenida">
                 <div class="textobienvenida">
-                    <h2 class="titulo-bienvenida">
-                        <%= curso.nombreCurso %>
-                    </h2>
+                    <h2 class="titulo-bienvenida"> <%= curso.nombreCurso %> </h2>
                     <div class="titulo-bienvenida2"> Comenza a programar tu futuro</div>
                     <ul class="descripcionbienvenida">
                         <li class="texto">Correccion de Proyectos </li>
@@ -57,7 +56,7 @@
             </div>
 
             <div class="blockimagenbienvenida">
-                <img class="imagen-bienvenida" src="img/imagenProgramacion.png" alt=""> <!-- TEXTO DINÁMICO -->
+                <img class="imagen-bienvenida" src="../img/<%= curso.imagenCurso %>" alt=""> <!-- TEXTO DINÁMICO -->
     
             </div>
         </div>
@@ -70,13 +69,11 @@
             <div class="base"> </div>
             <div class="block-descripcion-curso">
 
-                <div class="descripcion-curso">
-                    <%= curso.descripcion %>
-                </div> <!-- TEXTO DINÁMICO -->
+                <div class="descripcion-curso"> <%= curso.descripcion %> </div>
+                
                 <div class="gran-contenedor">
                     <div class="contenedores">
-                        <div class="contenedores-imagen"> <img class="imagen-modalidad"
-                                src="img/Producto -Modalidad.png" alt=""> </div>
+                        <div class="contenedores-imagen"> <img class="imagen-modalidad" src="img/Producto -Modalidad.png" alt=""> </div>
                         <div class="contenedores-bloque-texto">
                             <div class="titulo-contenedores-bloque-texto"> Modalidad </div>
                             <div class="subtitulo-contenedores-bloque-texto">Virtual </div>

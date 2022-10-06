@@ -106,6 +106,13 @@ const controlador = {
         let nuevaListaDeCursos = cursos.filter(function(c){
             return c.id!=idCursoABorrar;
         })
+
+        fs.writeFileSync(cursosFilePath,JSON.stringify(nuevaListaDeCursos, null, " "),'utf-8');
+
+		res.redirect('/');
     }
+
+    
+
 }
 module.exports = controlador

@@ -3,18 +3,9 @@ const express = require('express');
 const router = express.Router();
 const controlador = require("../controllers/mainController");
 const path = require('path');
-// inicio apartado Multer
-const multer = require('multer');
-const multerDiskStorage = multer.diskStorage({
-    destination: function(req, file, cb) {   
-     cb(null, path.join(__dirname,'../../public/img'));    // Ruta donde almacenamos el archivo
-    },
-    filename: function(req, file, cb) {          // request, archivo y callback que almacena archivo en destino
-     let imageName = Date.now() + path.extname(file.originalname);   // milisegundos y extensión de archivo original
-     cb(null, imageName);         
-    }
-});
-const subirImagen = multer({storage: multerDiskStorage}); 
+const subirImagen = require('../middlewares/multerMid')
+
+
 // fin apartado Multer
 
 router.get("/beta", controlador.beta);  

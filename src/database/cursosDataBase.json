@@ -2,7 +2,7 @@
  {
   "id": 1,
   "nombreCurso": "Programación Web Full Stack",
-  "descripcion": "La programación es una habilidad fundamental para el mundo de hoy y, por lo tanto, altamente demandada. Es muy amplia y puede abarcar muchos aspectos, industrias y tecnologías por lo que resulta clave poder brindar un curso que no solo sea teórico, sino que se mantenga alineado con las expectativas y búsquedas laborales actuales.",
+  "descripcion": "En este curso aprenderás a crear tu sitio web partiendo del prototipo en papel. Trabajarás con HTML, Javascript, React y CSS.",
   "fechaInicio": "10/10/2022",
   "fechaFin": "15/10/2023",
   "precio": 190000,
@@ -12,7 +12,7 @@
  {
   "id": 2,
   "nombreCurso": "Certified Tech Developer",
-  "descripcion": "Certified Tech Developer es una iniciativa educativa co-creada por Digital House, Mercado Libre y Globant para formar desarrolladores siguiendo los más altos estándares de la industria. En el programa, aprenderás los conocimientos técnicos y habilidades blandas que demandan las empresas más disruptivas del sector.",
+  "descripcion": "Aprenderás los conocimientos técnicos y habilidades blandas que demandan las empresas más disruptivas del sector.",
   "fechaInicio": "15/11/2022",
   "fechaFin": "21/12/2023",
   "precio": 150000,
@@ -22,7 +22,7 @@
  {
   "id": 3,
   "nombreCurso": "Data Analytics",
-  "descripcion": " Capacitate para utilizar cualquier volumen de datos (pequeño y grande) de forma eficaz, posibilitando la toma de decisiones informadas, seguras y confiables. Para ello usarás herramientas y lenguajes de manipulación y análisis de datos como SQL, Power BI y de análisis de comportamiento digital. ",
+  "descripcion": " Capacitate en herramientas y lenguajes de manipulación y análisis de datos como SQL, Power BI y de análisis de comportamiento digital. ",
   "fechaInicio": "2022-11-03",
   "fechaFin": "2023-01-04",
   "precio": 170000,
@@ -32,7 +32,7 @@
  {
   "id": 4,
   "nombreCurso": "Data Science",
-  "descripcion": "Preparate para realizar el proceso de extracción, procesamiento y análisis de grandes cantidades de datos, con el objetivo de apoyar la toma de decisiones estratégicas en organizaciones de todo tipo.",
+  "descripcion": "Preparate para realizar todo el proceso de extracción, procesamiento y análisis de grandes volúmenes de datos.",
   "fechaInicio": "24/09/2022",
   "fechaFin": "27/09/2023",
   "precio": 140000,

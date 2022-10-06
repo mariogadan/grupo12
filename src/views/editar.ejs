@@ -5,6 +5,7 @@
 <head>        
 <title >Creá tu cuenta</title> 
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content ="width=device-width, initial-scale=1.0">   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,8 +37,9 @@
     <div class="body-background">
       
       <div class="caja-formulario">
-        <i class="menu-icon"> <a href="./" style="text-decoration: none"><i class="fa-solid fa-xmark"></i> </i> </a>
-        <h3 class="Crea-cuenta"> Editá un curso</h3>
+        <i class="menu-icon"> <a href="/producto/<%= curso.id %>" style="text-decoration: none"><i class="fa-solid fa-xmark"></i> </i> </a>
+        <h3 class="Crea-cuenta"> Editá el curso </h3>
+        <h3 class="nombre-curso"> <%= curso.nombreCurso %></h3>
         <div class= "icono-titulo">
                 
                 <i class="icono"> <i  class="fa-regular fa-pen-to-square" ></i> </i> 
@@ -79,13 +81,18 @@
               <input type="date" name="fechaFin" placeholder="Fecha de finalización" value="<%=curso.fechaFin%>" class="campo" required>
             </div>
             <div>
+              <div class="precio2"> 
               <label for="precio" class="form-label"> Precio </label>
+            </div>
               <input type="text" name="precio" value="<%=curso.precio%>" class="campo" required>
             </div>
   
   
             <button type="submit" class="boton"> <a style="text-decoration: none"> Guardar cambios</button></a>
             <button type="reset" class="resetear">Borrar cambios</button>
+            <form action="/producto/<%= curso.id %>?_method=DELETE" method="POST">
+              <button type="submit" class="action-button-delete">X Eliminar curso</button>
+          </form>
           </div>
         </form>
       </div>

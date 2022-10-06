@@ -29,6 +29,9 @@ body{
 /* HEADER */
 
 
+/* HEADER */
+
+
 .header{
     background-color:#6F50F8;
     padding:22px;
@@ -80,6 +83,25 @@ body{
     
    
    
+}
+
+.iniciar-boton{
+    display:none
+}
+
+.regitrate-boton{
+    display:none
+}
+
+.cursos-menu{
+    display:none
+}
+
+
+.contenedor-editar{
+  
+    display:none;
+    
 }
 
 
@@ -158,11 +180,10 @@ body{
     
 }
 
-.imagen-bienvenida{display:none}
-.imagen-azul{
+.imagen-bienvenida{
     margin-top: 30px ;
-    width: 100%;
-    margin-left: 50%;
+    width: 80%;
+    margin-left: 55%;
  
 
 }
@@ -271,6 +292,10 @@ body{
    
 }
 
+.block-recomiendan-texto{
+    text-align: left;
+}
+
 .recomiendan-titulo{
     font-size: 13px;
     font-weight: bold;
@@ -309,6 +334,7 @@ body{
 .fechas-block{
     background-color: #f2f2f2;
     margin-top: -50px;
+    text-align: left;
 }
 
 .fechas-todo-texto{
@@ -411,6 +437,7 @@ body{
 
 .links{
     margin-left: 37px;
+    text-align: left;
 }
 
 .links-utiles{
@@ -451,7 +478,7 @@ body{
 
 
 
-  @media only screen and (min-width: 509px) {
+  @media only screen and (min-width: 637px) {
 
 
 /* HEADER */
@@ -459,56 +486,96 @@ body{
 
 
 .header{
-        background-color:white;
-        padding:22px;
-        display: absolute;
-        height: 50px;
-       
-     
-        
-        
-        
-        }
+    background-color:white;
+    padding:22px;
+    display: absolute;
+    height: 50px;
+   
+ 
     
     
+    
+    }
+
+
 .caja-logo{
-            width:100%;
-            flex-grow: 1;
-           
-            
-           
-          
+        width:100%;
+        flex-grow: 1;
+       
         
-        }
+       
+      
+    
+    }
 .contenedor-logo{
-    width:20%;
+width:20%;
 }
 
 .logo{
-    display: none;
+display: none;
 }        
 
 
 .logo-black{ display: inline;
-            width:120px;
-            margin-left: 11%;
-            position: inline
-        }
-    
+        width:120px;
+        margin-left: 11%;
+        position: inline
+    }
+
 
 
 .contenedor-boton{         
-            width: 70%
-        }
+   width: 80%;
+    }
 
 
 .boton-menu{
-        color: black;  
-        margin-right: 10px;
-        
-        
-       
-    }
+    display: none;       
+    
+   
+}
+
+.cursos-menu{
+    display:inline;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 30px;
+    font-style: normal;
+}
+
+.iniciar-boton{
+    display:inline;
+    margin:0px;
+    background-color: #6F50F8;
+   
+    padding: 8px;
+    border-radius: 6px ;
+    border: #6F50F8 solid 2px; 
+    font-size: 12px;
+    width:100px; 
+    margin-top: 5px ;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none; 
+    color: white;
+}
+
+.regitrate-boton{
+    display:inline;
+    margin:0px;
+    background-color: white ;
+    color: #6F50F8 ;
+    padding: 8px;
+    border-radius: 6px ;
+    border: #6F50F8 solid 2px; 
+    font-size: 12px;
+    width:100px; 
+    margin-top: 5px ;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none; 
+}
+
 
     
 /* BIENVENIDA PRODUCTO FULL STACK */
@@ -683,10 +750,20 @@ body{
 
     /* HEADER */
 
-    .contenedor-boton{         
-    width: 75%
+   
+    .contenedor-editar{
+        display: inline;
+        position: fixed;    
+        margin-left:92%;
+        
     }
 
+    .editar{
+        width: 60px;
+        text-align: right;    
+        
+       
+    }
 
     /* BIENVENIDA PRODUCTO FULL STACK */
 

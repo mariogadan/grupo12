@@ -14,7 +14,7 @@ router.get("/crear", controlador.crear);
 router.post("/crear", controlador.crearCurso);
 //router.post("/crear",subirImagen.single('crearCargaImagen'),controlador.crearCurso); // middleware subirImagen chequear
 
-router.get('/:id', controlador.detalleCurso);
+router.get('/detalle/:id', controlador.detalleCurso);
 router.delete("/:id", controlador.borrarCurso);
 
 router.get("/editar/:id", controlador.editar);

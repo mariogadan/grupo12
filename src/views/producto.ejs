@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/6d9e623f2f.js" crossorigin="anonymous"> </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/productobeta.css">
-    <link rel="stylesheet" media="screen and (min-width: 509px)" href="/css/productobeta.css" />
+    <link rel="stylesheet" media="screen and (min-width: 637px)" href="/css/productobeta.css" />
     <link rel="stylesheet" media="screen and (min-width: 889px)" href="/css/productobeta.css" />
     <title> Tidy Code | Producto </title>
 </head>
@@ -20,20 +20,24 @@
     <header>
         <!-- HEADER -->
         <div class="header">
-            <div class="caja-logo">
-                <div class="contenedor-logo">
-                    <a href="/" class="navbar-brand">
-                        <img class="d-inline-block align-top" src="/img/Home/Home - Logo new.png" width="170" height="50">
-                    </a>
+            <div class="caja-logo"> 
+                <div class="contenedor-logo"> 
+                    <a href="/" > <div> <img src="/img/logo.jpg" alt="Logo de la empresa" class="logo"></div> </a>
+                    <a href="/" > <div> <img src="/img/logoNegro.jpg" alt="Logo de la empresa" class="logo-black"> </div></a>
                 </div>
-                <div class="contenedor-boton">
-                    <div class="boton-menu"> <i class="fa-solid fa-bars"></i></div>
+                    <div class="contenedor-boton"> 
+                    <div class="boton-menu"> <i class="fa-solid fa-bars"></i></div>                           
+                    
+                    <i class="cursos-menu"> Lanzamientos <a href="./" style="text-decoration: none"></a> </i>
+                    <i class="cursos-menu"> Cursos <a href="./" style="text-decoration: none"></a> </i>
+                    <a href="/usuario/login" style="color: inherit; text-decoration: none"  target="_blank"> <button type="button" class="iniciar-boton">  Iniciar sesión </button> </a>
+                    <a href="/usuario/registro" style="color: inherit; text-decoration: none"  target="_blank"> <button type="button" class="regitrate-boton"> Registrate </button> </a>
                 </div>
-            </div>
-        </div>
+            </div>  
+    </div>  
+    
 
-
-
+      
     </header>
 
     <main>
@@ -61,6 +65,11 @@
             </div>
         </div>
 
+        
+        <div class="contenedor-editar">
+        <a href="/producto/editar/<%= curso.id %>" ><img class="editar" src="../img/edit.png" alt=""> </a>
+        </div>
+ 
 
         <!-- ACERCA DEL CURSO -->
         <div class="block-acerca-curso">
@@ -73,7 +82,7 @@
                 
                 <div class="gran-contenedor">
                     <div class="contenedores">
-                        <div class="contenedores-imagen"> <img class="imagen-modalidad" src="img/Producto -Modalidad.png" alt=""> </div>
+                        <div class="contenedores-imagen"> <img class="imagen-modalidad" src="../img/Producto -Modalidad.png" alt=""> </div>
                         <div class="contenedores-bloque-texto">
                             <div class="titulo-contenedores-bloque-texto"> Modalidad </div>
                             <div class="subtitulo-contenedores-bloque-texto">Virtual </div>
@@ -82,7 +91,7 @@
 
 
                     <div class="contenedores">
-                        <div class="contenedores-imagen"> <img class="imagen-duracion" src="img/Producto-duracion.png"
+                        <div class="contenedores-imagen"> <img class="imagen-duracion" src="../img/Producto-duracion.png"
                                 alt="">
                         </div>
                         <div class="contenedores-bloque-texto">
@@ -92,7 +101,7 @@
                     </div>
 
                     <div class="contenedores">
-                        <div class="contenedores-imagen"> <img class="imagen-clases" src="img/productos-encuentros.png"
+                        <div class="contenedores-imagen"> <img class="imagen-clases" src="../img/productos-encuentros.png"
                                 alt=""> 
                         </div>
                         <div class="contenedores-bloque-texto">
@@ -104,10 +113,10 @@
 
                 <div> <!-- BOTONES AGREGADOS PARA EDITAR Y BORRAR CURSO -->
                     
-                    <a href="/producto/editar/<%= curso.id %>" class="action-button edit">EDITAR CURSO</a>
-                    <form action="/producto/<%= curso.id %>?_method=DELETE" method="POST">
+                   
+                   <!--  <form action="/producto/<%= curso.id %>?_method=DELETE" method="POST">
                         <button type="submit" class="action-button delete">ELIMINAR CURSO</button>
-                    </form>
+                    </form> -->
                 </div>
                 <div class="base"> </div>
             </div>
@@ -125,7 +134,7 @@
                     </div>
                     <div class="recomiendan-logo">
                         <!-- DINAMICO -->
-                        <img class="imagen-logo" src="img/Home/Home - MercadoLibre.jpg" alt="">
+                        <img class="imagen-logo" src="../img/Home/Home - MercadoLibre.jpg" alt="">
                     </div>
                     <div class="recomiendan-texto">
                         Este curso forma parte de nuestro programa de formación para nuevos empleados. Los resultados
@@ -138,7 +147,7 @@
 
                 <div class="block-recomiendan-imagen">
 
-                    <img class="imagen-recomiendan" src="...img/Productos -Empleadores.png" alt="">
+                    <img class="imagen-recomiendan" src="../img/Productos -Empleadores.png" alt="">
 
 
                 </div>

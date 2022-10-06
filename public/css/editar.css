@@ -48,7 +48,7 @@
 .body-background{
 
     background:  #ebebeb;
-    height:700px;
+    height:850px;
     margin:0px; 
     display: flex;
     align-items: center;
@@ -156,6 +156,14 @@ h3{
 color:#6F50F8;
 text-align: center;
 margin-left:-5%;
+margin-bottom: 0px;
+}
+
+.nombre-curso{
+font-size: 15px;
+color:#2E2F36;
+text-align: center;
+margin-left:-5%;
 margin-bottom: 35px;
 }
 
@@ -213,6 +221,19 @@ margin-bottom: 35px;
 
 }
 
+.action-button-delete{
+ 
+    margin-top:0px;
+    background-color: white;
+    color: #EE601A;
+    padding: 8px;
+    border-radius: 6px ;
+    border: solid white 1px; 
+    font-size: 12px;
+    width: 74%;
+    font-weight: bold ;
+    margin-left: 6%;
+}
 
 
 .copy{
@@ -258,7 +279,7 @@ margin-bottom: 35px;
         .body-background{
 
             background:  #ebebeb;
-            height:600px;
+            height:750px;
             margin:0px; 
             display: flex;
             align-items: center;
@@ -301,7 +322,7 @@ h3{
 color:#6F50F8;
 text-align: center;
 margin-left:-5%;
-margin-bottom: 35px;
+margin-bottom: 4px;
 }
 
 .campos{

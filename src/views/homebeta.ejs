@@ -20,9 +20,9 @@
             <!-- HEADER -->
             <div class="header">
                     <div class="caja-logo"> 
-                        <a href="/" class="navbar-brand">
-                            <img class="d-inline-block align-top" src="/img/Home/Home - Logo new.png" width="170" height="50">
-                        </a>
+                        <div class="contenedor-logo"> 
+                            <a href="/" > <div> <img src="/img/logo.jpg" alt="Logo de la empresa" class="logo"></div> </a>
+                            <a href="/" > <div> <img src="/img/logoNegro.jpg" alt="Logo de la empresa" class="logo-black"> </div></a>
                         </div>
                             <div class="contenedor-boton"> 
                             <div class="boton-menu"> <i class="fa-solid fa-bars"></i></div>                           
@@ -152,25 +152,28 @@
                 <div class="fechas-todo-texto"> 
                 <div class="fechas-titulo">Conocé nuestros cursos</div>
                 <div class="cursos-block"> 
-                <div class="curso-1"> 
+                    <% for (let c of cursos) { %>   
+                    <div class="curso-1"> 
                     
                 <div class="blanco"> </div>  
-                <% for (let c of cursos) { %>          
+                     
                 <div class="fechas-block-cuadrado">
+                    
                     <img class="imagen-fullstack" src="img/imagenProgramacion.png" alt=""> 
                     <div class="texto-fechas"> 
                     <div class="fecha"> <%= c.nombreCurso %> </div>  <!-- DINÁMICO -->
                     <div class="fecha-subtitulos-pequeños"><%= c.descripcion %> </div> 
                     </div>
                 <a href="/producto/<%= c.id %>"> <button type="button" class="fechas-reserva">Ver curso</button> </a>
-                    
+                 
                 </div>
                 <div class="base"> </div>        
-            
-            </div>
-            <% } %>   
-            
+                
+            </div>           
+            <% } %> 
         </div>
+    </div>
+</div>
 
         <!-- footer -->
         <footer class="footer">

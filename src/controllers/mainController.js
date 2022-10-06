@@ -16,22 +16,21 @@ const controlador = {
     },
 
     detalleCurso: function (req, res) {
-        let idCurso = req.params.id
-        let cursoBuscado = null
 
-        for (let c of cursos) {
-            if (idCurso == c.id) {
-                cursoBuscado = c;
-                break
-            }
-        }
+        let idCurso = req.params.id;
+        let curso = cursos.find((c) => c.id == idCurso)
+        res.render("producto", {curso: curso})
 
-        if (cursoBuscado != null) {
-            res.render("producto", { curso: cursoBuscado })
-        } else {
-            res.send("Error al encontrar curso")
-        }
-    },
+//        let idCurso = req.params.id
+//        let cursoEncontrado;
+
+//        if (cursos.find((c) => c.id == idCurso)){
+ //           let cursoEncontrado = c
+ //           return c
+ //       }
+        
+ //       res.render("producto", { curso: cursoEncontrado })
+ },
 
     carrito: function (req, res) {
         res.render("carrito")

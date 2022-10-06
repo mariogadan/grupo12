@@ -13,7 +13,7 @@ router.post("/crear",subirImagen.single('crearCargaImagen'),controlador.crearCur
 //router.post("/crear", controlador.crearCurso);
 
 
-router.get('/:id', controlador.detalleCurso);
+router.get('/detalle/:id', controlador.detalleCurso);
 router.delete("/:id", controlador.borrarCurso);
 
 router.get("/editar/:id", controlador.editar);

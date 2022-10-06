@@ -6,13 +6,12 @@ const path = require('path');
 const subirImagen = require('../middlewares/multerMid')
 
 
-// fin apartado Multer
-
 router.get("/beta", controlador.beta);  
 router.get("/", controlador.home);
 router.get("/crear", controlador.crear);
-router.post("/crear", controlador.crearCurso);
-//router.post("/crear",subirImagen.single('crearCargaImagen'),controlador.crearCurso); // middleware subirImagen chequear
+router.post("/crear",subirImagen.single('crearCargaImagen'),controlador.crearCurso); // middleware
+//router.post("/crear", controlador.crearCurso);
+
 
 router.get('/:id', controlador.detalleCurso);
 router.delete("/:id", controlador.borrarCurso);

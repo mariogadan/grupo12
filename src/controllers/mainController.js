@@ -44,7 +44,7 @@ const controlador = {
     crearCurso: function (req, res) {
         let datosCurso = req.body;
         let idNuevoCurso = (cursos[cursos.length-1].id)+1;
-        let imagenNuevoCurso = "qqqq.jpg"; //Revisar cuando apliquemos multer//
+        //let imagenNuevoCurso = "qqqq.jpg"; //Revisar cuando apliquemos multer//
 
         let nuevoCurso = {
             "id": idNuevoCurso,
@@ -53,8 +53,8 @@ const controlador = {
             "fechaInicio": datosCurso.fechaInicio,
             "fechaFin": datosCurso.fechaFin,
             "precio": parseInt(datosCurso.precio),
-            "imagenCurso": imagenNuevoCurso
-            //"imagenCurso": req.file.filename
+            "imagenCurso": req.file.filename
+            //"imagenCurso": imagenNuevoCurso
         }
 
         cursos.push(nuevoCurso);

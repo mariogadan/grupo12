@@ -21,14 +21,14 @@ router.get("/beta", controlador.beta);
 router.get("/", controlador.home);
 router.get("/crear", controlador.crear);
 router.post("/crear", controlador.crearCurso);
-//router.post("/crear",subirImagen.single('cargaImagen'),controlador.crearCurso); // middleware subirImagen chequear
+//router.post("/crear",subirImagen.single('crearCargaImagen'),controlador.crearCurso); // middleware subirImagen chequear
 
 router.get('/:id', controlador.detalleCurso);
 router.delete("/:id", controlador.borrarCurso);
 
 router.get("/editar/:id", controlador.editar);
 router.put("/editar/:id", controlador.editarCurso);
-//router.post("/editar/:id",subirImagen.single('cargaImagen'),controlador.editarCurso); // middleware subirImagen
+//router.post("/editar/:id",subirImagen.single('editarCargaImagen'),controlador.editarCurso); // middleware subirImagen
 
 router.get("/carrito", controlador.carrito);
 

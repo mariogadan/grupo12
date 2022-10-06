@@ -481,8 +481,12 @@ body{
  
 
 }
+.contenedor-imagen-cursos{
+    height: 190px;
+}
 
 .imagen-fullstack{
+   
     width: 50%;
     margin-left: 25%;
     margin-top:17px;

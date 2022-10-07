@@ -6,8 +6,9 @@ const cursos = JSON.parse(fs.readFileSync(cursosFilePath, 'utf-8'));
 
 const controlador = {    
 
-    beta: function (req, res) {
-        res.render("beta")
+    cursos: function (req, res) {
+        const cursos = JSON.parse(fs.readFileSync(cursosFilePath, 'utf-8'));    
+        res.render("cursos", { cursos: cursos })
     },
 
     home: function (req, res) {

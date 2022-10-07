@@ -1,0 +1,688 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    margin-right: 0%;
+
+   
+   
+
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body{
+    
+    font-family:  'DM Sans', sans-serif;
+    margin: 0px;
+  
+}
+
+
+
+
+
+/* HEADER */
+
+
+.header{
+    background-color:#6F50F8;
+    padding:22px;
+    display: absolute;
+    height: 60px;
+   
+ 
+    
+    
+    
+    }
+
+
+.caja-logo{
+        width:100%;
+        flex-grow: 1;        
+        display: flex; 
+    
+        
+       
+      
+    
+    }
+
+.contenedor-logo{
+        width:20%;
+    }
+
+.logo-black{
+        display: none;
+    }
+    
+.logo{
+        width:100px;
+        margin-left: 15%;
+        position: inline
+    }
+
+.contenedor-boton{
+    position: inline;
+    text-align: right;
+    width: 65%
+}
+
+.boton-menu{
+    color: white;
+    position: inline;
+    margin-top: 2%;
+    
+   
+   
+}
+
+.iniciar-boton{
+    display:none
+}
+
+.regitrate-boton{
+    display:none
+}
+
+.cursos-menu{
+    display:none
+}
+
+
+.contenedor-editar{
+  
+    display:none;
+    
+}
+
+
+/* BANNER */
+    .contenedor-banner{
+        display:flex;
+        width:100%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    
+    
+    .banner-sub{
+        width:100%
+    }
+
+
+/* EMPLEADORES RECOMIENDAN */
+
+.block-recomiendan{
+    margin: 80px;
+    margin-top: 14%;
+    margin-left: 20%;
+   
+}
+
+.recomiendan-titulo{
+    font-size: 13px;
+    font-weight: bold;
+    color:#6F50F8;
+}
+
+.recomiendan-quote{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height:28px;    
+    color: #333333 ;
+    
+}
+
+.imagen-logo{
+    width: 80px;
+    margin-top: 18px;
+}
+
+.recomiendan-texto{
+    font-size: 14px;
+    margin-top: 18px;
+    line-height:20px;
+    
+}
+
+.imagen-recomiendan{
+    width: 100%;
+    margin-top: 18px;
+    margin-left: -1%
+}
+
+
+
+/* CURSOS */
+
+.base{
+    background-color:#f2f2f2;
+    height: 35px;
+   
+}
+
+.curso-1{
+    margin-left: -10px;
+   
+}
+.fechas-block{
+    background-color: #f2f2f2;
+    margin-top: -50px;
+}
+
+.fechas-todo-texto{
+    margin-left: 20%;
+    
+}
+
+.fechas-titulo{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.blanco{
+    background-color: white;
+    width: 250px;
+    height: 32px;
+    border-radius: 6px;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.fechas-block-cuadrado{
+    background-color: white;
+    width: 250px;
+    border-radius: 6px;
+    margin-top: -6px;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.texto-fechas{
+    margin-left: 3%;
+}
+
+
+.fecha{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 15px;
+   
+}
+
+
+.fecha-titulos-pequeños{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+.fecha-subtitulos-pequeños{
+    font-size: 12px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 25px;
+    line-height: 20px;
+}
+
+
+.fecha-block-icons{
+    font-size: 12px;
+    margin-top: 25px;
+    display: flex;
+}
+.icon{
+    display: inline;
+    margin-left: 17px;
+   
+}
+
+.fecha-icons-text{
+    margin-left: 5px;
+}
+
+
+.fecha-precio{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 17px;
+    margin-top: 11px;
+    margin-bottom:12px;
+}
+
+.fechas-reserva{
+    background-color: #6F50F8;
+    color: white;
+    padding: 8px;
+    border-radius: 6px ;
+    border: none; 
+    font-size: 13px;
+    width:80%; 
+    font-weight: bold;
+    margin-left: 10%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+ 
+
+}
+.contenedor-imagen-cursos{
+    height: 190px;
+}
+
+.imagen-fullstack{
+   
+    width: 50%;
+    margin-left: 25%;
+    margin-top:17px;
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #333333;
+    margin-top: 50px;
+}
+
+.links{
+    margin-left: 37px;
+    text-align: left;
+}
+
+.links-utiles{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.basefooter{
+    background-color:#333333;
+    height: 35px;
+   
+}
+.items-footer{
+    color: white;
+    margin-top: 12px;
+}
+
+.todos-los-links{
+    color: white;
+    text-decoration: none; 
+    font-size: 12px;
+  
+}
+
+.linea{
+    border-top: 1px solid white;
+    margin-top: 20px;
+    margin-right: 5%;
+}
+.footer-2022{
+    color: white;
+    font-size: 9px;
+    margin-top: 20px;
+    
+    
+}
+
+
+
+  @media only screen and (min-width: 637px) {
+
+
+/* HEADER */
+
+
+
+.header{
+    background-color:white;
+    padding:22px;
+    display: absolute;
+    height: 50px;
+   
+ 
+    
+    
+    
+    }
+
+
+.caja-logo{
+        width:100%;
+        flex-grow: 1;
+       
+        
+       
+      
+    
+    }
+.contenedor-logo{
+width:20%;
+}
+
+.logo{
+display: none;
+}        
+
+
+.logo-black{ display: inline;
+        width:120px;
+        margin-left: 11%;
+        position: inline
+    }
+
+
+
+.contenedor-boton{         
+   width: 80%;
+    }
+
+
+.boton-menu{
+    display: none;       
+    
+   
+}
+
+.cursos-menu{
+    display:inline;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 30px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.iniciar-boton{
+    display:inline;
+    margin:0px;
+    background-color: #6F50F8;
+   
+    padding: 8px;
+    border-radius: 6px ;
+    border: #6F50F8 solid 2px; 
+    font-size: 12px;
+    width:100px; 
+    margin-top: 5px ;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none; 
+    color: white;
+}
+
+.regitrate-boton{
+    display:inline;
+    margin:0px;
+    background-color: white ;
+    color: #6F50F8 ;
+    padding: 8px;
+    border-radius: 6px ;
+    border: #6F50F8 solid 2px; 
+    font-size: 12px;
+    width:100px; 
+    margin-top: 5px ;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none; 
+}
+
+/* EMPLEADORES RECOMIENDAN */
+
+.block-recomiendan{
+    margin: 80px;
+    margin-top: 7%;
+    margin-left: 100px;
+   
+}
+
+.recomiendan-titulo{
+    font-size: 15px;
+    font-weight: bold;
+    color:#6F50F8;
+}
+
+.recomiendan-quote{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height:28px;    
+    color: #333333 ;
+    
+}
+
+
+
+.recomiendan-texto{
+    font-size: 14px;
+    margin-top: 18px;
+    line-height:20px;
+    margin-right: 80px;
+    
+}
+
+.imagen-recomiendan{
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 6%
+}
+
+/* CURSOS */
+
+.cursos-block{
+    display: flex;
+}
+
+.curso-1{
+    margin-left: 30px;
+}
+
+.fechas-block{
+    background-color: #f2f2f2;
+    margin-top: -50px;
+}
+
+.fechas-todo-texto{
+    margin-left: 0%;
+    
+}
+
+.fechas-titulo{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
+.blanco{
+    background-color: white;
+    width: 250px;
+    height: 32px;
+    border-radius: 6px;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.fechas-block-cuadrado{
+    background-color: white;
+    width: 250px;
+    border-radius: 6px;
+    margin-top: -6px;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.texto-fechas{
+    margin-left: 3%;
+}
+
+
+.fecha{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 15px;
+   
+}
+
+
+.fecha-titulos-pequeños{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+.fecha-subtitulos-pequeños{
+    font-size: 12px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 25px;
+    line-height: 20px;
+}
+
+
+.fecha-block-icons{
+    font-size: 12px;
+    margin-top: 25px;
+    display: flex;
+}
+.icon{
+    display: inline;
+    margin-left: 17px;
+   
+}
+
+.fecha-icons-text{
+    margin-left: 5px;
+}
+
+
+.fecha-precio{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 17px;
+    margin-top: 11px;
+    margin-bottom:12px;
+}
+
+.fechas-reserva{
+    background-color: #6F50F8;
+    color: white;
+    padding: 8px;
+    border-radius: 6px ;
+    border: none; 
+    font-size: 13px;
+    width:80%; 
+    font-weight: bold;
+    margin-left: 10%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+ 
+
+}
+
+.imagen-fullstack{
+    width: 50%;
+    margin-left: 25%;
+    margin-top:17px;
+    margin-bottom:20px;
+}
+
+
+
+  }
+
+  @media only screen and (min-width: 889px) {
+
+    /* HEADER */
+
+   
+    .contenedor-editar{
+        display: inline;
+        position: fixed;    
+        margin-left:92%;
+        
+    }
+
+    .editar{
+        width: 60px;
+        text-align: right;    
+        
+       
+    }
+
+   
+
+/* EMPLEADORES RECOMIENDAN */
+
+.block-recomiendan{
+    margin: 80px;
+    margin-top: 7%;
+    margin-left: 100px;
+    display: flex;
+   
+}
+
+.block-recomiendan-texto{
+    margin-left: 80px;
+    
+ 
+   
+}
+
+
+.recomiendan-titulo{
+    font-size: 15px;
+    font-weight: bold;
+    color:#6F50F8;
+}
+
+.recomiendan-quote{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height:35px;    
+    color: #333333 ;
+    width: 450px;
+    
+}
+
+.imagen-logo{
+    width: 100px;
+    margin-top: 18px;
+}
+
+.recomiendan-texto{
+    font-size: 14px;
+    margin-top: 18px;
+    line-height:20px;
+    margin-right: 100px;
+    width: 300px;
+  
+    
+}
+
+.imagen-recomiendan{
+    width: 350px;
+    margin-top: -70px;
+    margin-left: 150px;
+    
+}
+
+
+  }

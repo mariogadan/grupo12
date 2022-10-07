@@ -28,7 +28,7 @@ app.use("/producto", mainRoutes);
 
 app.use("/usuario", usuarioRoutes);
 
-app.use("/homebeta", usuarioRoutes);
+app.use("/cursos", usuarioRoutes);
 
 app.use(error404)
 

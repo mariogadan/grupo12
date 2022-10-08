@@ -90,7 +90,7 @@ const controlador = {
                 o.fechaInicio = datosCurso.fechaInicio,
                 o.fechaFin = datosCurso.fechaFin,
                 o.precio = parseInt(datosCurso.precio);
-                //o.imagenCurso = req.file.filename
+                o.imagenCurso = req.file.filename // nueva linea
                 break
             }
         }

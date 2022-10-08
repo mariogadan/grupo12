@@ -62,6 +62,7 @@ const controlador = {
         fs.writeFileSync(cursosFilePath,JSON.stringify(cursos, null, " "), "utf-8");
 
         res.redirect("/");
+        
     },
 
     editar: function (req, res) {

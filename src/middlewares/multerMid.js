@@ -1,4 +1,5 @@
 
+const path = require('path'); // agrego esta linea, abajo usamos path y no estaba requerido
 const multer = require('multer');
 
 const multerDiskStorage = multer.diskStorage({

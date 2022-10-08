@@ -7,9 +7,6 @@ const usuarioRoutes = require("./src/routes/usuario.routes");
 const methodOverride = require('method-override');
 const error404 = require('./src/middlewares/error404Mid')
 
-
-
-
 app.use(express.static(path.join(__dirname , './public')))
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());

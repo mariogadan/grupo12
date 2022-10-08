@@ -42,8 +42,9 @@ const controlador = {
     },
 
     crearCurso: function (req, res) {
-        console.log(req.file)
+        //console.log(req.file)
         let datosCurso = req.body;
+        console.log(datosCurso)
         let idNuevoCurso = (cursos[cursos.length-1].id)+1;
         //let imagenNuevoCurso = "qqqq.jpg"; //Revisar cuando apliquemos multer//
 

@@ -45,7 +45,7 @@
                 <i class="icono"> <i  class="fa-regular fa-pen-to-square" ></i> </i> 
                 <div class="titulo">  Comenzamos con una breve descripción </div> 
         </div> 
-        <form action="/producto/editar/<%= curso.id %>?_method=PUT" method="POST" class="formulario" enctype="multipar/form-data"> <!-- para multer agrego enctype="multipar/form-data"-->
+        <form action="/producto/editar/<%= curso.id %>?_method=PUT" method="POST" class="formulario" enctype="multipart/form-data"> 
           <div class="campos1">
             <label for="nombreCurso" class="form-label"> </label>
             <input type="text" name="nombreCurso" placeholder="Nombre del curso" value="<%=curso.nombreCurso%>" class="campo" required>
@@ -57,13 +57,13 @@
             <i class="icono"> <i class="fa-sharp fa-solid fa-image"></i> </i>
             <div class="titulo"> Seleccioná la imagen del curso </div>
           </div>
-  
-      <div class="botonfoto">
-                <button  class="selecionafoto"> 
-                <label for="files" class="btn">Seleccioná un archivo jpg</label>
-                <input id="files" style="visibility:hidden;" type="file" name="editarCargaImagen"> <!-- agregar name="editarCargaImagen"-->
-              </button>
-              </div> 
+          
+          <div class="botonfoto">
+            <button  class="selecionafoto">
+              <label for="editarCargaImagen" class="btn">Seleccioná un archivo jpeg</label>
+              <input id="editarCargaImagen" style="visibility:hidden;" type="file" name="editarCargaImagen"></input> 
+            </button>
+          </div> 
   
           <div class="icono-titulo">
   

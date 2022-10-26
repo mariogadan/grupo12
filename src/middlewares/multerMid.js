@@ -12,5 +12,6 @@ const multerDiskStorage = multer.diskStorage({
      cb(null, imageName);      
     }
 });
+
 const subirImagen = multer({storage: multerDiskStorage}); 
 module.exports = subirImagen

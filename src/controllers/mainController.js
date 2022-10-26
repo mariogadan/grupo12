@@ -54,7 +54,7 @@ const controlador = {
             "fechaInicio": datosCurso.fechaInicio,
             "fechaFin": datosCurso.fechaFin,
             "precio": parseInt(datosCurso.precio),
-            "imagenCurso": req.file.filename
+            "imagenCurso": req.file.filename,
             //"imagenCurso": imagenNuevoCurso
         }
 

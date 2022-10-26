@@ -2,9 +2,9 @@
  {
   "id": 1,
   "nombreCurso": "Programación Web Full Stack",
-  "descripcion": "En este curso aprenderás a crear tu sitio web partiendo del prototipo en papel. Trabajarás con HTML, Javascript, React y CSS.",
-  "fechaInicio": "10/10/2022",
-  "fechaFin": "15/10/2023",
+  "descripcion": " En este curso aprenderás a crear tu sitio web partiendo del prototipo en papel. Trabajarás con HTML, Javascript, React y CSS. ",
+  "fechaInicio": "2022-10-15",
+  "fechaFin": "2022-10-20",
   "precio": 190000,
   "recomienda": "Nuestra experiencia con el curso Full Stack fue excelente",
   "imagenCurso": "imagenProgramacion.png"

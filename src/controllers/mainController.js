@@ -42,10 +42,8 @@ const controlador = {
     },
 
     crearCurso: function (req, res) {
-        console.log(req.file)
         let datosCurso = req.body;
         let idNuevoCurso = (cursos[cursos.length-1].id)+1;
-        //let imagenNuevoCurso = "qqqq.jpg"; //Revisar cuando apliquemos multer//
 
         let nuevoCurso = {
             "id": idNuevoCurso,
@@ -82,7 +80,6 @@ const controlador = {
     },
 
     editarCurso: function (req, res) {
-        console.log(req.file)
         let idCurso = req.params.id;
         let datosCurso = req.body;
 
@@ -92,8 +89,8 @@ const controlador = {
                 o.descripcion = datosCurso.descripcion,
                 o.fechaInicio = datosCurso.fechaInicio,
                 o.fechaFin = datosCurso.fechaFin,
-                o.precio = parseInt(datosCurso.precio);
-                o.imagenCurso = req.file.filename // nueva linea
+                o.precio = parseInt(datosCurso.precio),
+                o.imagenCurso = req.file.filename 
                 break
             }
         }

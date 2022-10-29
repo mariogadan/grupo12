@@ -34,7 +34,7 @@
         <% })
            }    %>
 
-        <form method="POST" action="/usuario/registro">
+        <form method="POST" action="/usuario/registro" class="formulario" enctype="multipart/form-data">
 
           <div class="mb-3 my-4">
             <label for="nombre" class="form-label" >Nombre </label>
@@ -62,6 +62,15 @@
             <input type="password" class="form-control" name="password" id="password" placeholder="Introducir contraseña" require>
             <div class="form-text">Debe ser de al menos 8 caracteres alfanuméricos.</div>
           </div>
+
+          <p>Ingresá tu imagen de perfil</p>
+          <div class="botonfoto">
+          <button  class="selecionafoto"> 
+            <label for="files" class="btn">Seleccioná un archivo jpg</label> <!-- for="files"-->
+            <input id="crearCargaImagen" type="file" name="subirImagenRegistro" style=""> </input> <!-- style="visibility:hidden;" -->
+          </button>
+        </div>
+        <br>
           
           <div class="container">Fecha de nacimiento
             <div class="row">

@@ -32,6 +32,7 @@ const controlador = {
                 "email": usuario.email,
                 "password": usuario.password,
                 "fechaNacimiento": usuario.dia + "/" + usuario.mes + "/" + usuario.año,
+                "avatar": req.file.filename,
                 
             }
 
@@ -40,9 +41,9 @@ const controlador = {
 
             res.redirect('/')
         } else {
-            res.render("registro", { errores: errores.array(),
-            old: req.body });
-        }
+            res.render("registro", { errores: errores.array(),   
+                                         old: req.body });
+               }
  
     }
 };

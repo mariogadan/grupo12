@@ -1,52 +1,20 @@
 [
-    {
-        "id": 1,
-        "nombre": "Mario",
-        "apellido": "Gadan",
-        "email": "mgadan@gmail.com",
-        "usuario": "mgadan",
-        "contraseña": "gadanmario001",
-        "dni": 326783421,
-        "administrador": 1
-    },
-    {
-        "id": 2,
-        "nombre": "Delfina",
-        "apellido": "Vilieri",
-        "email": "dvilieri@gmail.com",
-        "usuario": "dvilieri",
-        "contraseña": "vilieridelfina002",
-        "dni": 34743984,
-        "administrador": 1
-    },
-    {
-        "id": 3,
-        "nombre": "Macarena",
-        "apellido": "Zappe",
-        "email": "mzappe@gmail.com",
-        "usuario": "mzappe",
-        "contraseña": "zappemacarena003",
-        "dni": 37738988,
-        "administrador": 1
-    },
-    {
-        "id": 4,
-        "nombre": "Flavio",
-        "apellido": "Ogrizovic",
-        "email": "fogrizovic@gmail.com",
-        "usuario": "fogrizovic",
-        "contraseña": "ogrizovicf004",
-        "dni": 37249839,
-        "administrador": 1
-    },
-    {
-        "id": 5,
-        "nombre": "Damian",
-        "apellido": "Palla",
-        "email": "dpalla@gmail.com",
-        "usuario": "dpalla",
-        "contraseña": "palladamian005",
-        "dni": 36786411,
-        "administrador": 1
-    }
+ {
+  "id": 1,
+  "nombre": "Damian",
+  "apellido": "Palla",
+  "nombreUsuario": "Damito",
+  "email": "damian.palla@live.com",
+  "password": "damianpalla19",
+  "fechaNacimiento": "19/10/1992"
+ },
+ {
+  "id": 2,
+  "nombre": "Flavio",
+  "apellido": "Ogrizovic",
+  "nombreUsuario": "FOgrizovic",
+  "email": "FOgrizovic93@gmail.com",
+  "password": "ogrizovic93",
+  "fechaNacimiento": "21/03/1993"
+ }
 ]

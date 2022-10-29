@@ -25,19 +25,41 @@
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <img src="/img/Home/Home - Logo new.png" class="icon-tiddy">
-        <form>
+
+        <% if (locals.errores) {
+           errores.forEach(function(e){  %>
+
+            <p> - <%= e.msg %> </p>
+
+        <% })
+           }    %>
+
+        <form method="POST" action="/usuario/registro">
+
           <div class="mb-3 my-4">
-            <label for="nombre" class="form-label">Nombre de usuario</label>
-            <input type="text" class="form-control" id="nombreusuario" placeholder="Introducir nombre de usuario" require>
+            <label for="nombre" class="form-label" >Nombre </label>
+            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Introducir nombre" value="<%= locals.old && old.nombre ? old.nombre : ''  %>"  require>
+          </div>
+          <!-- es un IF abreviado, primero se pone la condicion, despues el ? y lo que debe pasar y despues el : que es el ELSE. SIEMPRE TIENE QUE TENER UN ELSE -->
+
+
+          <div class="mb-3 my-4">
+            <label for="apellido" class="form-label" >Apellido</label>
+            <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Introducir apellido" value="<%= locals.old && old.apellido ? old.apellido : ''  %>" require>
+          </div>
+
+          <div class="mb-3 my-4">
+            <label for="nombreUsuario" class="form-label" >Nombre de usuario</label>
+            <input type="text" class="form-control" name="nombreUsuario" id="nombreUsuario" placeholder="Introducir nombre de usuario" value="<%= locals.old && old.nombreUsuario ? old.nombreUsuario : ''  %>" require>
           </div>
           <div class="mb-3">
-            <label for="correo" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="Introducir tu correo electrónico" require>
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" name="email" id="correo" aria-describedby="emailHelp" placeholder="Introducir tu correo electrónico" value="<%= locals.old && old.email ? old.email : ''  %>" require>
             <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con terceros.</div>
           </div>   
           <div class="mb-3">
             <label for="password" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="password" placeholder="Introducir contraseña" require>
+            <input type="password" class="form-control" name="password" id="password" placeholder="Introducir contraseña" require>
             <div class="form-text">Debe ser de al menos 8 caracteres alfanuméricos.</div>
           </div>
           
@@ -45,22 +67,22 @@
             <div class="row">
               <div class="col">
                 <label for="Día" class="form-label"></label>
-                <input type="text" class="form-control" placeholder="Día" require>
+                <input type="text" class="form-control" name="dia" placeholder="Día" require>
               </div>  
               <div class="col">
                 <label for="Mes" class="form-label"></label>
-                <input type="text" class="form-control" placeholder="Mes" require>
+                <input type="text" class="form-control" name="mes" placeholder="Mes" require>
               </div> 
               <div class="col">
                 <label for="Año" class="form-label"></label>
-                <input type="text" class="form-control" placeholder="Año" require>
+                <input type="text" class="form-control" name="año" placeholder="Año" require>
               </div> 
             </div>
           </div>
           <div class="d-grid gap-2 my-4">
             <button class="btn btn-outline-primary"><i class="bi bi-facebook"></i> Registrate con facebook</button>
             <button class="btn btn-outline-primary"><i class="bi bi-google"></i> Registrate con Google</button>
-            <button class="btn btn-success">Crear cuenta</button>
+            <button type="subit" class="btn btn-success">Crear cuenta</button>
             <!--<button class="btn btn-outline-primary"><img src="img/Registro - Google.png" class="icon">Registrate con Google</button>-->
           </div>
           <!--<div class="d-grid">

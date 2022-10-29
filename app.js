@@ -8,7 +8,7 @@ const methodOverride = require('method-override');
 const error404 = require('./src/middlewares/error404Mid')
 
 app.use(express.static(path.join(__dirname , './public')))
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false })); // nos permite capturar la info que se envia en un formulario a traves de POST
 app.use(express.json());
 app.use(methodOverride('_method'));
 

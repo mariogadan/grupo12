@@ -10,11 +10,12 @@
  },
  {
   "id": 2,
-  "nombre": "Flavio",
-  "apellido": "Ogrizovic",
-  "nombreUsuario": "FOgrizovic",
-  "email": "FOgrizovic93@gmail.com",
-  "password": "ogrizovic93",
-  "fechaNacimiento": "21/03/1993"
+  "nombre": "Damian",
+  "apellido": "Palla",
+  "nombreUsuario": "Damito",
+  "email": "damian.palla@live.com",
+  "password": "1231231455",
+  "fechaNacimiento": "11/12/1234",
+  "avatar": "1667261229077.png"
  }
 ]

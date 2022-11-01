@@ -26,7 +26,10 @@
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <img src="/img/Home/Home - Logo new.png" class="icon-tiddy">
 
-        <% if (locals.errores) {
+
+          <!--  Abajo estan los errores, hay que darles estilos-->
+
+        <% if (locals.errores) { 
            errores.forEach(function(e){  %>
 
             <p> - <%= e.msg %> </p>
@@ -37,7 +40,7 @@
         <form method="POST" action="/usuario/registro" class="formulario" enctype="multipart/form-data">
 
           <div class="mb-3 my-4">
-            <label for="nombre" class="form-label" >Nombre </label>
+            <label for="nombre" class="form-label" > Nombre </label>
             <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Introducir nombre" value="<%= locals.old && old.nombre ? old.nombre : ''  %>"  require>
           </div>
           <!-- es un IF abreviado, primero se pone la condicion, despues el ? y lo que debe pasar y despues el : que es el ELSE. SIEMPRE TIENE QUE TENER UN ELSE -->
@@ -67,7 +70,7 @@
           <div class="botonfoto">
           <button  class="selecionafoto"> 
             <label for="files" class="btn">Seleccioná un archivo jpg</label> <!-- for="files"-->
-            <input id="crearCargaImagen" type="file" name="subirImagenRegistro" style=""> </input> <!-- style="visibility:hidden;" -->
+            <input id="subirImagenRegistro" type="file" name="subirImagenRegistro" style=""> </input> <!-- style="visibility:hidden;" -->
           </button>
         </div>
         <br>
@@ -83,8 +86,8 @@
                 <input type="text" class="form-control" name="mes" placeholder="Mes" require>
               </div> 
               <div class="col">
-                <label for="Año" class="form-label"></label>
-                <input type="text" class="form-control" name="año" placeholder="Año" require>
+                <label for="anio" class="form-label"></label>
+                <input type="text" class="form-control" name="anio" placeholder="Año" require>
               </div> 
             </div>
           </div>

@@ -12,18 +12,18 @@ const validacionRegistro = [
     body('email')
         .notEmpty().withMessage('Completar email').bail()   // el bail() detiene las validaciones siguientes en caso de que no se cumpla la que tiene el bail(). Se usa  para hacer mas de una validacion,  
         .isEmail().withMessage('El formato del correo no es válido')  // en este caso si ya el campo esta vacio, no sigue con las validaciones siguientes, y si no esta vacio, valida que sea un mail (para este caso particular)
-];                                                                  
+];
 
 // Login
-router.get("/login", controlador.login);
 
+router.get("/login", controlador.login) ;
 
 // Formulario registro
 
-router.get("/registro", controlador.registro);
+router.get("/registro", controlador.registro) ;
 
 // Proceso registro
-router.post("/registro", validacionRegistro, subirImagenRegistro.single('subirImagenRegistro') /*entre las ' ' va el name del imput del ejs */, controlador.procesoRegistro);
 
+router.post("/registro", subirImagenRegistro.single('subirImagenRegistro') /*entre las ' ' va el name del imput del ejs ,*/, validacionRegistro,  controlador.procesoRegistro) ;
 
 module.exports = router

@@ -20,9 +20,15 @@ const controlador = {
         let errores = validationResult(req);
 
         if (errores.isEmpty()) {
-
+            
             let usuario = req.body;
             let idNuevoUsuario = (usuarios[usuarios.length - 1].id) + 1;
+
+            let avatar = "imagen vacia"
+
+            if (req.file){
+                avatar = req.file.filename
+            }
 
             let nuevoUsuario = {
                 "id": idNuevoUsuario,
@@ -31,8 +37,8 @@ const controlador = {
                 "nombreUsuario": usuario.nombreUsuario,
                 "email": usuario.email,
                 "password": usuario.password,
-                "fechaNacimiento": usuario.dia + "/" + usuario.mes + "/" + usuario.año,
-                "avatar": req.file.filename,
+                "fechaNacimiento": usuario.dia + "/" + usuario.mes + "/" + usuario.anio,
+                "avatar": avatar,
                 
             }
 

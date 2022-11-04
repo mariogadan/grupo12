@@ -17,5 +17,15 @@
   "password": "1231231455",
   "fechaNacimiento": "11/12/1234",
   "avatar": "1667261229077.png"
+ },
+ {
+  "id": 3,
+  "nombre": "hdf",
+  "apellido": "hdf",
+  "nombreUsuario": "hdfd",
+  "email": "hfh@gmai.com",
+  "password": "dasd",
+  "fechaNacimiento": "//",
+  "avatar": "imagen vacia"
  }
 ]

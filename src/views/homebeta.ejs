@@ -17,24 +17,7 @@
     </head>
     <body class="body">
         <header>
-            <!-- HEADER -->
-            <div class="header">
-                    <div class="caja-logo"> 
-                        <div class="contenedor-logo"> 
-                            <a href="/" > <div> <img src="/img/logo.jpg" alt="Logo de la empresa" class="logo"></div> </a>
-                            <a href="/" > <div> <img src="/img/logoNegro.jpg" alt="Logo de la empresa" class="logo-black"> </div></a>
-                        </div>
-                            <div class="contenedor-boton"> 
-                            <div class="boton-menu"> <i class="fa-solid fa-bars"></i></div>                           
-                            
-                            <i class="cursos-menu"> Lanzamientos <a href="./" style="text-decoration: none"></a> </i>
-                            <i class="cursos-menu">  <a href="/cursos" style="color: inherit; text-decoration: none" > Cursos</a> </i>
-                            <a href="/usuario/login" style="color: inherit; text-decoration: none"  target="_blank"> <button type="button" class="iniciar-boton">  Iniciar sesión </button> </a>
-                            <a href="/usuario/registro" style="color: inherit; text-decoration: none"  target="_blank"> <button type="button" class="regitrate-boton"> Registrate </button> </a>
-                        </div>
-                    </div>  
-            </div>  
-            
+            <%- include('partials/header') %>
      
               
             </header>
@@ -179,20 +162,7 @@
 
         <!-- footer -->
         <footer class="footer">
-            <div class="basefooter"> </div>
-            <div class="links">
-                
-                    <div class="links-utiles"> LINKS ÚTILES</div>
-                    <ul>
-                        <li class="items-footer"><a href="/cursos" class="todos-los-links"> Cursos </a></li>
-                        <li class="items-footer"><a href="#" class="todos-los-links"> Términos y condiciones </a></li>
-                        <li class="items-footer"><a href="#" class="todos-los-links"> FAQ's</a></li>
-                        <li class="items-footer"><a href="#" class="todos-los-links"> Contacto</a></li>
-                    </ul>
-                <div class="linea"> </div>
-                <p class="footer-2022">@ 2022 Tidy Code</p>
-                <div class="basefooter"> </div>
-            </div>
+            <%- include('partials/footer') %>
            
 
                   

@@ -1,61 +1,513 @@
 *{
-  font-family: 'DM Sans', sans-serif;
-  margin:0
+  box-sizing: border-box;
+  margin: 0px;
+  margin-right: 0%;
+
+ 
+ 
+
 }
+
+html,body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+
+body{
+  
+  font-family:  'DM Sans', sans-serif;
+  margin: 0px;
+
+}
+
 
 /* HEADER */
 
-#barraNavegacion{ 
-  justify-content: right;
-  margin-right: 100px;
+
+.header{
+  background-color:#6F50F8;
+  padding:22px;
+  display: absolute;
+  height: 100px;
+ 
+
+  
+  
+  
+  }
+
+
+.caja-logo{
+      width:100%;
+      flex-grow: 1;        
+      display: flex; 
+  
+      
+     
+    
+  
+  }
+
+.contenedor-logo{
+      width:20%;
+  }
+
+.logo-black{
+      display: none;
+  }
+  
+.logo{
+      width:100px;
+      margin-left: 15%;
+      position: inline
+  }
+
+.contenedor-boton{
+  position: inline;
+  text-align: right;
+  width: 65%
 }
-.nav-link { 
+
+.boton-menu{
+  color: white;
+  position: inline;
+  margin-top: 2%;
+  
+ 
+ 
+}
+
+.iniciar-boton{
+  display:none
+}
+
+.regitrate-boton{
+  display:none
+}
+
+.cursos-menu{
+  display:none
+}
+
+
+
+
+/* FORMULARIO */
+
+.box-formulario-imagen{
+  box-sizing: border-box;
+  margin-top: -5%; 
+  width: 100%;
+  background-color: #6F50F8;
+  height: 30%;
+  text-align: center;
+}
+
+   /* FORMULARIO */ /* IMAGEN */
+.box-imagen{
+  width:100%;
+  background-color: #6F50F8;
+  
+}
+.violeta{ background-color: #6F50F8;
+  height: 10px; 
+}
+
+.imagen{
+ 
+  width: 60%;
+  margin-left: 15%;
+  
+
+
+}
+
+/*ERRORES*/
+
+.box-errores{
+  background-color: #f2f2f2;
+  width: 85%;
+  border-radius: 4px;
+  
+ 
+}
+.errores{
+  text-align: left;
+  margin-left: 10px;  
+}
+
+  /* FORMULARIO */   /* campos */
+.texto-register{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-block-end: 40px;
+ 
+}
+
+.box-formulario{
+  text-align: center;
+  margin-left: 50px;
+ height: 800px;
+ margin-top: 80px;
+}
+
+.campo{
+  text-align:left;
+  margin-top: 30px;
+  width: 80%;
+}
+
+.selecionafoto{
+  text-align:left;
+  margin-top: -10px;
+}
+
+.boton-crea-cuenta{
+  text-align: center;
+}
+.boton{
+  margin-left:-15%;
+  background-color: #6F50F8; 
+  color: white;
+  padding: 10px;
+  border-radius: 6px ;
   font-weight: bold;
-  color: #6f50f8
+  border: none; 
+  font-size: 17px;
+  width:250px; 
+  margin-top: 40px ;
 }
 
-.div-imagen{
-    background-color: grey;
+/* FOOTER */
+.footer{
+  background-color: #333333;
+  margin-top: 1300px;
 }
+
+.links{
+  margin-left: 37px;
+}
+
+.links-utiles{
+  color: white;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.basefooter{
+  background-color:#333333;
+  height: 35px;
+ 
+}
+.items-footer{
+  color: white;
+  margin-top: 12px;
+}
+
+.todos-los-links{
+  color: white;
+  text-decoration: none; 
+  font-size: 12px;
+
+}
+
+.linea{
+  border-top: 1px solid white;
+  margin-top: 20px;
+  margin-right: 5%;
+}
+.footer-2022{
+  color: white;
+  font-size: 9px;
+  margin-top: 20px;
   
-.center-imagen {
-    display: block;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 399px;
-    height: 421px;
-}
-
-.cohete-imagen {
-    display: block;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;/*550px;*/
-    height: 70%;/*580px;*/
-}
-
-.cohete2-imagen {
-  display: block;
-  margin-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;/*550px;*/
-  height: 80%;/*580px;*/
-}
   
-.icon {
-  width: 25px;
-  height: 25px;
 }
 
-.icon-tiddy {
-  display: block;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 20%; /*143px;*/
-  height: auto; /*40px;*/
+@media only screen and (min-width: 637px) {
+
+
+  /* HEADER */
+  
+  
+  
+  .header{
+          padding:22px;
+          display: absolute;
+          height: 50px;
+         
+       
+          
+          
+          
+          }
+      
+      
+  .caja-logo{
+              width:100%;
+              flex-grow: 1;
+             
+              
+             
+            
+          
+          }
+  .contenedor-logo{
+      width:20%;
+  }
+  
+
+  
+ 
+      
+  
+  
+  .contenedor-boton{         
+         width: 80%;
+          }
+  
+  
+  .boton-menu{
+          display: none;       
+          
+         
+      }
+  
+      .cursos-menu{
+          display:inline;
+          font-size: 12px;
+          font-weight: 600;
+          margin-right: 30px;
+          font-style: normal;
+          text-decoration: none;
+      }
+      
+  .iniciar-boton{
+          display:inline;
+          margin:0px;
+          background-color: #6F50F8;
+         
+          padding: 8px;
+          border-radius: 6px ;
+          border: #6F50F8 solid 2px; 
+          font-size: 12px;
+          width:100px; 
+          margin-top: 5px ;
+          font-weight: bold;
+          margin-right: 10px;
+          text-decoration: none; 
+          color: white;
+      }
+      
+  .regitrate-boton{
+          display:inline;
+          margin:0px;
+          background-color: white ;
+          color: #6F50F8 ;
+          padding: 8px;
+          border-radius: 6px ;
+          border: #6F50F8 solid 2px; 
+          font-size: 12px;
+          width:100px; 
+          margin-top: 5px ;
+          font-weight: bold;
+          margin-right: 10px;
+          text-decoration: none; 
+      }
+    
+    /* FORMULARIO */
+
+.box-formulario-imagen{
+  box-sizing: border-box;
+  margin-top: -5%; 
+  width: 100%;
+  background-color: #6F50F8;
+  height: 30%;
+  text-align: center;
 }
+
+   /* FORMULARIO */ /* IMAGEN */
+.box-imagen{
+  width:100%;
+  background-color: #6F50F8;
+  
+}
+.violeta{ background-color: #6F50F8;
+  height: 10px; 
+}
+
+.imagen{
+ 
+  width: 55%;
+  margin-left: 15%;
+  margin-top: 30px;
+  
+
+
+}
+
+    
+    
+    
+    }
+
+      /* FORMULARIO*/
+
+      @media only screen and (min-width: 774px) {
+
+        /* HEADER */
+    
+.header{
+  background-color:white;
+  padding:22px;
+  display: absolute;
+  height: 50px;
+ 
+
+  
+  
+  
+  }
+
+
+.caja-logo{
+      width:100%;
+      flex-grow: 1;
+     
+      
+     
+    
+  
+  }
+.contenedor-logo{
+width:20%;
+}
+
+.logo{
+display: none;
+}        
+
+
+.logo-black{ display: inline;
+      width:120px;
+      margin-left: 11%;
+      position: inline
+  }
+
+
+
+.contenedor-boton{         
+ width: 80%;
+  }
+
+
+.boton-menu{
+  display: none;       
+  
+ 
+}
+
+.cursos-menu{
+  display:inline;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 30px;
+  font-style: normal;
+}
+
+.iniciar-boton{
+  display:inline;
+  margin:0px;
+  background-color: #6F50F8;
+ 
+  padding: 8px;
+  border-radius: 6px ;
+  border: #6F50F8 solid 2px; 
+  font-size: 12px;
+  width:100px; 
+  margin-top: 5px ;
+  font-weight: bold;
+  margin-right: 10px;
+  text-decoration: none; 
+  color: white;
+}
+
+.regitrate-boton{
+  display:inline;
+  margin:0px;
+  background-color: white ;
+  color: #6F50F8 ;
+  padding: 8px;
+  border-radius: 6px ;
+  border: #6F50F8 solid 2px; 
+  font-size: 12px;
+  width:100px; 
+  margin-top: 5px ;
+  font-weight: bold;
+  margin-right: 10px;
+  text-decoration: none; 
+}
+
+/* FORMULARIO */
+
+.box-formulario-imagen{
+  box-sizing: border-box;
+  margin-top: -5%; 
+  width: 100%;
+  background-color: #6F50F8;
+  height: 30%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+   /* FORMULARIO */ /* IMAGEN */
+.box-imagen{
+  width:100%;
+  background-color: #6F50F8;
+  text-align: center;
+  
+}
+.violeta{ background-color: #6F50F8;
+  height: 10px; 
+}
+
+.imagen{
+ 
+  width: 50%;
+  text-align: center;
+  margin-left: 20%;
+
+  
+
+
+}
+
+.texto-register{
+  margin-left:0;
+}
+
+
+/* FORMULARIO TEXTO*/
+.box-formulario{
+  margin-left: 20%;
+
+}
+
+/*ERRORES*/
+.box-errores{
+  width:80%
+}
+
+/* FOOTER */
+.footer{
+
+  margin-top: 1400px;
+}
+
+      }    

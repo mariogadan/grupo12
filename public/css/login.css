@@ -404,3 +404,270 @@ ul{
   .formlogin{
     margin-left: 30px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  /* MACA */
+
+
+  *{
+    box-sizing: border-box;
+    margin: 0px;
+    margin-right: 0%;
+  
+   
+   
+  
+  }
+  
+  html,body
+  {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+  
+  body{
+    
+    font-family:  'DM Sans', sans-serif;
+    margin: 0px;
+  
+  }
+  
+  
+  /* HEADER */
+  
+  
+  .header{
+    background-color:#6F50F8;
+    padding:22px;
+    display: absolute;
+    height: 100px;
+   
+  
+    
+    
+    
+    }
+  
+  
+  .caja-logo{
+        width:100%;
+        flex-grow: 1;        
+        display: flex; 
+    
+        
+       
+      
+    
+    }
+  
+  .contenedor-logo{
+        width:20%;
+    }
+  
+  .logo-black{
+        display: none;
+    }
+    
+  .logo{
+        width:100px;
+        margin-left: 15%;
+        position: inline
+    }
+  
+  .contenedor-boton{
+    position: inline;
+    text-align: right;
+    width: 65%
+  }
+  
+  .boton-menu{
+    color: white;
+    position: inline;
+    margin-top: 2%;
+    
+   
+   
+  }
+  
+  .iniciar-boton{
+    display:none
+  }
+  
+  .regitrate-boton{
+    display:none
+  }
+  
+  .cursos-menu{
+    display:none
+  }
+  
+  
+  /* FOOTER */
+  .footer{
+    background-color: #333333;
+    margin-top: 50px;
+  }
+  
+  .links{
+    margin-left: 37px;
+  }
+  
+  .links-utiles{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .basefooter{
+    background-color:#333333;
+    height: 35px;
+   
+  }
+  .items-footer{
+    color: white;
+    margin-top: 12px;
+  }
+  
+  .todos-los-links{
+    color: white;
+    text-decoration: none; 
+    font-size: 12px;
+  
+  }
+  
+  .linea{
+    border-top: 1px solid white;
+    margin-top: 20px;
+    margin-right: 5%;
+  }
+  .footer-2022{
+    color: white;
+    font-size: 9px;
+    margin-top: 20px;
+    
+    
+  }
+  
+  
+  
+  @media only screen and (min-width: 637px) {
+  
+  
+    /* HEADER */
+    
+    
+    
+    .header{
+            background-color:white;
+            padding:22px;
+            display: absolute;
+            height: 50px;
+           
+         
+            
+            
+            
+            }
+        
+        
+    .caja-logo{
+                width:100%;
+                flex-grow: 1;
+               
+                
+               
+              
+            
+            }
+    .contenedor-logo{
+        width:20%;
+    }
+    
+    .logo{
+        display: none;
+    }        
+    
+    
+    .logo-black{ display: inline;
+                width:120px;
+                margin-left: 11%;
+                position: inline
+            }
+        
+    
+    
+    .contenedor-boton{         
+           width: 80%;
+            }
+    
+    
+    .boton-menu{
+            display: none;       
+            
+           
+        }
+    
+        .cursos-menu{
+            display:inline;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 30px;
+            font-style: normal;
+            text-decoration: none;
+        }
+        
+    .iniciar-boton{
+            display:inline;
+            margin:0px;
+            background-color: #6F50F8;
+           
+            padding: 8px;
+            border-radius: 6px ;
+            border: #6F50F8 solid 2px; 
+            font-size: 12px;
+            width:100px; 
+            margin-top: 5px ;
+            font-weight: bold;
+            margin-right: 10px;
+            text-decoration: none; 
+            color: white;
+        }
+        
+    .regitrate-boton{
+            display:inline;
+            margin:0px;
+            background-color: white ;
+            color: #6F50F8 ;
+            padding: 8px;
+            border-radius: 6px ;
+            border: #6F50F8 solid 2px; 
+            font-size: 12px;
+            width:100px; 
+            margin-top: 5px ;
+            font-weight: bold;
+            margin-right: 10px;
+            text-decoration: none; 
+        }}
+  
+        @media only screen and (min-width: 889px) {
+  
+          /* HEADER */
+      
+        
+        }    

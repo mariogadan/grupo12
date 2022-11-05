@@ -37,7 +37,8 @@
                 <div class="titulo">  Comenzamos con una breve descripción </div> 
         </div> 
 
-        <form action="/producto/detalle/<%= curso.id %>?_method=PUT" method="POST" class="formulario" enctype="multipart/form-data"> 
+        <!--<form action="/producto/detalle/<%= curso.id %>?_method=PUT" method="POST" class="formulario" enctype="multipart/form-data"> -->
+        <form action="/producto/editar/<%= curso.id %>?_method=PUT" method="POST" class="formulario" enctype="multipart/form-data"> 
 
           <div class="campos1">
             <label for="nombreCurso" class="form-label"> </label>
@@ -79,11 +80,11 @@
               </div>
               <input type="text" name="precio" value="<%=curso.precio%>" class="campo" required>
             </div>
-            
+
             <button type="submit" class="boton"> <a style="text-decoration: none"> Guardar cambios</button></a>
             <button type="reset" class="resetear">Borrar cambios</button>
         </form>
-        <form action="/producto/<%= curso.id %>?_method=DELETE" method="POST">
+        <form action="/producto/editar/<%= curso.id %>?_method=DELETE" method="POST">
             <button type="submit" class="action-button-delete">X Eliminar curso</button>
         </form>
       </div>

@@ -40,12 +40,12 @@
   "imagenCurso": "imagenScience.png"
  },
  {
-    "id": 5,
-    "nombreCurso": "aasd",
-    "descripcion": " Descripcasdasdadión ",
-    "fechaInicio": "2022-10-28",
-    "fechaFin": "2022-11-02",
-    "precio": 22222,
-    "imagenCurso": "1666901320872.png"
-   }
+   "id": 5,
+   "nombreCurso": "aasd",
+   "descripcion": " Descripcasdasdadión ",
+   "fechaInicio": "2022-10-28",
+   "fechaFin": "2022-11-02",
+   "precio": 22222,
+   "imagenCurso": "1666901320872.png"
+  }
 ]

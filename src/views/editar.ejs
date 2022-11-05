@@ -3,7 +3,7 @@
 
   
 <head>        
-<title >Creá tu cuenta</title> 
+<title >Editar curso</title> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content ="width=device-width, initial-scale=1.0">   
@@ -16,23 +16,15 @@
     <link rel="stylesheet" media="screen and (min-width: 769px)" href="/css/editar.css" />
     <link rel="stylesheet" media="screen and (min-width: 1169px)" href="/css/editar.css" />
     
-  </head>    
+</head>    
 <body class="body"> 
     <header>
         <div class="header">
-                <div class="caja-logo"> 
-                    <div> <a href="/"> <img src="/img/logo.jpg" alt="Logo de la empresa" class="logo"> </a></div>
-              </div>  
+            <div class="caja-logo"> 
+                <div> <a href="/"> <img src="/img/logo.jpg" alt="Logo de la empresa" class="logo"> </a></div>
+            </div>  
         </div>  
-        
- 
-          
-        </header>
-   
-   
-        
-        
-
+    </header>
 
     <div class="body-background">
       
@@ -41,11 +33,12 @@
         <h3 class="Crea-cuenta"> Editá el curso </h3>
         <h3 class="nombre-curso"> <%= curso.nombreCurso %></h3>
         <div class= "icono-titulo">
-                
                 <i class="icono"> <i  class="fa-regular fa-pen-to-square" ></i> </i> 
                 <div class="titulo">  Comenzamos con una breve descripción </div> 
         </div> 
-        <form action="/producto/editar/<%= curso.id %>?_method=PUT" method="POST" class="formulario" enctype="multipart/form-data"> 
+
+        <form action="/producto/detalle/<%= curso.id %>?_method=DELETE" method="POST" class="formulario" > 
+
           <div class="campos1">
             <label for="nombreCurso" class="form-label"> </label>
             <input type="text" name="nombreCurso" placeholder="Nombre del curso" value="<%=curso.nombreCurso%>" class="campo" required>
@@ -82,28 +75,18 @@
             </div>
             <div>
               <div class="precio2"> 
-              <label for="precio" class="form-label"> Precio </label>
-            </div>
+                <label for="precio" class="form-label"> Precio </label>
+              </div>
               <input type="text" name="precio" value="<%=curso.precio%>" class="campo" required>
             </div>
-  
-  
+            
             <button type="submit" class="boton"> <a style="text-decoration: none"> Guardar cambios</button></a>
             <button type="reset" class="resetear">Borrar cambios</button>
-            </form>
-            <form action="/producto/<%= curso.id %>?_method=DELETE" method="POST">
-              <button type="submit" class="action-button-delete">X Eliminar curso</button>
-            </form>
-          </div>
-        <!--</form>-->
-        <!--<a href="/producto/<%= curso.id %>?_method=DELETE" 
-        onclick="return confirm('Are you sure?')">X Eliminar curso</a>-->
+        </form>
+        <form action="/producto/<%= curso.id %>?_method=DELETE" method="POST">
+            <button type="submit" class="action-button-delete">X Eliminar curso</button>
+        </form>
       </div>
-     
     </div>
 
- 
-
-    
-     
-  </body></html>
+</body></html>

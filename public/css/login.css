@@ -364,8 +364,8 @@ ul{
       margin-top: 30px;
       margin-left: auto;
       margin-right: auto;
-        width: 80%;
-        height: 40vh
+        width: 60%;
+      
   }
 
   .cohete-imagen2 {
@@ -377,13 +377,10 @@ ul{
     height: 70%;/*580px;*/
 }
   
-  .cohete2-imagen {
-    display: block;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;/*550px;*/
-    height: 80%;/*580px;*/
+  .fondo-imagen{
+    background-color: #f2f2f2;
+    width: 90%;
+    margin-left: 6%;
   }
     
   .icon {
@@ -391,6 +388,12 @@ ul{
     height: 25px;
   }
   
+.campos-formulario{
+    margin-right: 7%;
+    margin-left:7%;
+    margin-top: 13%;
+}
+
   .icon-tiddy {
     display: block;
     margin-top: 15px;

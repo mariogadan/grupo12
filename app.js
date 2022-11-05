@@ -25,7 +25,7 @@ app.use("/producto", mainRoutes);
 
 app.use("/usuario", usuarioRoutes);
 
-app.use("/cursos", usuarioRoutes);
+//app.use("/cursos", usuarioRoutes);
 
 app.use(error404)
 

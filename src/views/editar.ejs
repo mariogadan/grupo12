@@ -37,7 +37,7 @@
                 <div class="titulo">  Comenzamos con una breve descripción </div> 
         </div> 
 
-        <form action="/producto/detalle/<%= curso.id %>?_method=DELETE" method="POST" class="formulario" > 
+        <form action="/producto/detalle/<%= curso.id %>?_method=PUT" method="POST" class="formulario" enctype="multipart/form-data"> 
 
           <div class="campos1">
             <label for="nombreCurso" class="form-label"> </label>

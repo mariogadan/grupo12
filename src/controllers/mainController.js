@@ -82,6 +82,8 @@ const controlador = {
     editarCurso: function (req, res) {
         let idCurso = req.params.id;
         let datosCurso = req.body;
+        console.log('estoy en editar curso'); // agrego para probar
+        console.log(req.params.id); // agrego para aprobar
 
         for (let o of cursos) {
             if (o.id == idCurso) {
@@ -102,6 +104,7 @@ const controlador = {
 
     borrarCurso: function (req, res) {
         let idCursoABorrar = req.params.id;
+        console.log(req.params.id);
 
         let nuevaListaDeCursos = cursos.filter(function(c){
             return c.id!=idCursoABorrar;

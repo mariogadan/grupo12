@@ -85,12 +85,27 @@ const controlador = {
 
         for (let o of cursos) {
             if (o.id == idCurso) {
+                var nombreOriginal = o.imagenCurso;
+                break
+            }
+        }
+        
+        if (!req.file){
+            //console.log('hola, el filename es undefined')
+            var nombreImagen=nombreOriginal;
+        }else{
+            //console.log('hola, el filename no es undefined')
+            var nombreImagen=req.file.filename;
+        }
+ 
+        for (let o of cursos) {
+            if (o.id == idCurso) {
                 o.nombreCurso = datosCurso.nombreCurso,
                 o.descripcion = datosCurso.descripcion,
                 o.fechaInicio = datosCurso.fechaInicio,
                 o.fechaFin = datosCurso.fechaFin,
                 o.precio = parseInt(datosCurso.precio),
-                o.imagenCurso = req.file.filename 
+                o.imagenCurso = nombreImagen
                 break
             }
         }

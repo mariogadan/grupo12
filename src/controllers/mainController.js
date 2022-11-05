@@ -104,6 +104,7 @@ const controlador = {
 
     borrarCurso: function (req, res) {
         let idCursoABorrar = req.params.id;
+        console.log('paso por borrarCurso');
         console.log(req.params.id);
 
         let nuevaListaDeCursos = cursos.filter(function(c){

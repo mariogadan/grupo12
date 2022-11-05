@@ -90,11 +90,14 @@
   
             <button type="submit" class="boton"> <a style="text-decoration: none"> Guardar cambios</button></a>
             <button type="reset" class="resetear">Borrar cambios</button>
+            </form>
             <form action="/producto/<%= curso.id %>?_method=DELETE" method="POST">
               <button type="submit" class="action-button-delete">X Eliminar curso</button>
             </form>
           </div>
-        </form>
+        <!--</form>-->
+        <!--<a href="/producto/<%= curso.id %>?_method=DELETE" 
+        onclick="return confirm('Are you sure?')">X Eliminar curso</a>-->
       </div>
      
     </div>

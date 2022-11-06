@@ -1,5 +1,7 @@
 const fs = require('fs')
 const path = require('path')
+//const bcrypt = require('bcryptj');
+//let passEncriptada = bcrypt.hashSync('password',10);  
 
 const usuariosFilePath = path.join(__dirname, '../database/usuariosDataBase.json');
 const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
@@ -7,13 +9,38 @@ const { validationResult } = require('express-validator')
 
 const controlador = {
 
-    login: function (req, res) {
-        res.render("login");
+   login: function (req, res) {
+      res.render("login");
     },
 
     registro: function (req, res) {
         res.render("registro");
     },
+
+
+    procesoLogin: function (req,res) {
+        let usuarioALoguearse;
+        for (let i=0; i<usuarios.length;i++){
+          if(usuarios[i].email == req.body.email){
+              if(req.body.password==usuarios[i].password){
+                  usuarioALoguearse = usuarios[i];
+                  req.session.usuarioLogueado = usuarioALoguearse;
+                   res.render("beta");  
+                 
+              }
+              else{
+                res.render('login',{ errores: [
+                    {msg:'Credenciales Invalidas'}
+                ]});
+              }
+          } else{
+            res.render('login',{ errores: [
+                {msg:'Credenciales Invalidas'}
+            ]});
+          }
+          
+        }
+},
 
     procesoRegistro: function (req, res) {
 

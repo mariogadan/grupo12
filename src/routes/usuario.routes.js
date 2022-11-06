@@ -5,6 +5,7 @@ const controlador = require("../controllers/usuarioController");
 const { body } = require('express-validator')
 const subirImagenRegistro = require('../middlewares/imgRegistroMid');
 
+
 const validacionRegistro = [
     body('nombre').notEmpty().withMessage('Completar nombre'),
     body('apellido').notEmpty().withMessage('Completar apellido'),
@@ -14,13 +15,16 @@ const validacionRegistro = [
         .isEmail().withMessage('El formato del correo no es válido')  // en este caso si ya el campo esta vacio, no sigue con las validaciones siguientes, y si no esta vacio, valida que sea un mail (para este caso particular)
 ];
 
+
+
 // Login
 
 router.get("/login", controlador.login) ;
+router.post("/login" , controlador.procesoLogin) ;
 
 // Formulario registro
 
-router.get("/registro", controlador.registro) ;
+router.get("/registro",controlador.registro) ;
 
 // Proceso registro
 

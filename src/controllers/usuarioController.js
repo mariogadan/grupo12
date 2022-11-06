@@ -25,7 +25,7 @@ const controlador = {
               if(req.body.password==usuarios[i].password){
                   usuarioALoguearse = usuarios[i];
                   req.session.usuarioLogueado = usuarioALoguearse;
-                   res.render("beta");  
+                   res.render("homebeta");  
                  
               }
               else{

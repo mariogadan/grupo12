@@ -26,10 +26,11 @@ const controlador = {
             let idNuevoUsuario = (usuarios[usuarios.length - 1].id) + 1;
 
             let avatar = "imagen vacia"
-
+            
             if (req.file){
                 avatar = req.file.filename
             }
+
 
             let nuevoUsuario = {
                 "id": idNuevoUsuario,
@@ -51,7 +52,6 @@ const controlador = {
             res.render("registro", { errores: errores.array(),   
                                          old: req.body });
                }
- 
     }
 };
 

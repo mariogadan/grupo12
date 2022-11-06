@@ -41,11 +41,11 @@
  },
  {
   "id": 5,
-  "nombreCurso": "aasd",
-  "descripcion": " Descripcasdasdadión ",
-  "fechaInicio": "2022-10-28",
+  "nombreCurso": "Curso perrito chihuahua AVANZADO",
+  "descripcion": "   Vas a aprender sobre perritos chihuahuas curso avanzado  ",
+  "fechaInicio": "2022-10-15",
   "fechaFin": "2022-11-02",
-  "precio": 22222,
-  "imagenCurso": "1666901320872.png"
+  "precio": 1000,
+  "imagenCurso": "1667658732486.jpg"
  }
 ]

@@ -14,32 +14,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-            <a href="/" class="navbar-brand">
-                <img class="d-inline-block align-top" src="/img/Home/Home - Logo new.png" width="170" height="50">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barraNavegacion" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="barraNavegacion">
-                <ul class="navbar-nav" style="font-size: 1.25em; margin-top: 0.4em">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active">Cursos</a>
-                    </li>        
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active">Comunidad</a>
-                    </li>   
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active">Empresas</a>
-                    </li>  
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active">Nosotros</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <%- include('partials/header') %>
 </header>
 <section class="contenedor-bienvenida container-fluid">
 
@@ -52,11 +27,18 @@
     }    %>
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="fondo-imagen"> 
         <img src="/img/Log in - Imagen.png" class="cohete-imagen"  >
       </div>
+      </div>
       <div class=" col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<<<<<<< HEAD
    
         <form action="/usuario/login" method="POST" >
+=======
+       <div class="campos-formulario"> 
+        <form method="POST" action="/usuario/login">
+>>>>>>> bf945711f1ebdb1672257f5902028e5e2f4c61c4
          
           <div class="mb-3 my-4">
            
@@ -76,50 +58,15 @@
           </div>
         </form>
       </div>
+      </div>
     </div>
   </div>
  
 </body>
 
-<footer class="footer container-fluid">
-  <div class="row">
-      <div class="links-TC col-12">
-          <h4 class="links-utiles"> LINKS ÚTILES</h4>
-          <ul>
-              <li class="items-footer"><a href="#" class="todos-los-links"> Cursos </a></li>
-              <li class="items-footer"><a href="#" class="todos-los-links"> Términos y condiciones </a></li>
-              <li class="items-footer"><a href="#" class="todos-los-links"> FAQ's</a></li>
-              <li class="items-footer"><a href="#" class="todos-los-links"> Contacto</a></li>
-          </ul>
-      </div>
-  </div>
-  <div class="footer2 row">
-      <div class="año-footer col-xs-8 col-sm-8 col-md-9 col-lg-9 col-xl-9">
-          <p class="footer-2022">@ 2022 Tidy Code</p>
-      </div>
-      <div class="redes-sociales col-xs-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 float-right">
-          <div class="row">
-              <div class="redes linkedin col-3">
-                  <a href="https://www.linkedin.com/"> <img src="/img/Home/Home - linkedin.png" alt=""
-                          class="img-redes img-linkedin"> </a>
-              </div>
-              <div class="redes instagram col-3">
-                  <a href="https://www.instagram.com"> <img src="/img/Home/Home - instagram.png" alt=""
-                          class="img-redes img-instagram "> </a>
-              </div>
-              <div class="redes youtube col-3">
-                  <a href="https://www.youtube.com/"> <img src="/img/Home/Home- Youtube.png" alt=""
-                          class="img-redes img-youtube"> </a>
-              </div>
-              <div class="redes twitter col-3">
-                  <a href="https://twitter.com/"> <img src="/img/Home/Home - twitter.png" alt=""
-                          class="img-redes img-twitter"> </a>
-              </div>
-          </div>
-      </div>
-  </div>
+<footer>
+  <%- include('partials/footer') %>
 </footer>  
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>

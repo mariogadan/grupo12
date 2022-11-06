@@ -2,8 +2,8 @@ const { application } = require('express');
 const express = require('express');
 const router = express.Router();
 const controlador = require("../controllers/usuarioController");
-const { body } = require('express-validator')
 const subirImagenRegistro = require('../middlewares/imgRegistroMid');
+const validacionRegistro = require('../middlewares/validacionRegistroMid')
 
 
 const validacionRegistro = [
@@ -16,18 +16,17 @@ const validacionRegistro = [
 ];
 
 
-
 // Login
 
 router.get("/login", controlador.login) ;
 router.post("/login" , controlador.procesoLogin) ;
 
-// Formulario registro
+// Formulario de registro
 
 router.get("/registro",controlador.registro) ;
 
-// Proceso registro
+// Proceso de registro
 
-router.post("/registro", subirImagenRegistro.single('subirImagenRegistro') /*entre las ' ' va el name del imput del ejs ,*/, validacionRegistro,  controlador.procesoRegistro) ;
+router.post("/registro", subirImagenRegistro.single('subirImagenRegistro'), validacionRegistro,  controlador.procesoRegistro) ;
 
 module.exports = router

@@ -11,6 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "bcrypt": "^5.1.0",
+>>>>>>> bf945711f1ebdb1672257f5902028e5e2f4c61c4
     "bcryptjs": "^2.4.3",
     "ejs": "^3.1.8",
     "express": "^4.18.1",

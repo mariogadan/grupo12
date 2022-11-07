@@ -25,19 +25,22 @@ const controlador = {
         let usuarioALoguearse;
         if (errores.isEmpty()) {
             for (let i = 0; i < usuarios.length; i++) {
-                (req.body.email == usuarios[i].email && bcryptjs.compareSync(req.body.password, usuarios[i].password))
-                usuarioALoguearse = usuarios[i];
-                break;
+                if ((req.body.email == usuarios[i].email && bcryptjs.compareSync(req.body.password, usuarios[i].password)))
+                {usuarioALoguearse = usuarios[i];
+                break};
             }
-        req.session.usuarioLogueado = usuarioALoguearse;
-        res.redirect("/"); 
-        }
-        if (usuarioALoguearse == undefined) {
-            return res.render("login", {
-                errores: [{ msg: "Credenciales inválidas" }]
-            })
-        }
-        else {
+            console.log(usuarioALoguearse)
+            if (usuarioALoguearse == undefined) {
+                return res.render("login", {
+                    errores: [{ msg: "Credenciales inválidas" }]
+                })
+
+            }
+            else {
+                req.session.usuarioLogueado = usuarioALoguearse;
+                res.redirect("/")
+            }
+        } else {
             return res.render("login", {
                 errores: errores.array(),
                 old: req.body

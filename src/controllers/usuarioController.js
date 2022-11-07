@@ -20,31 +20,21 @@ const controlador = {
         res.render("registro");
     },
 
-
-    procesoLogin: function (req, res) {
-        let errores = validationResult(req);
+    procesoLogin: function (req,res) {
         let usuarioALoguearse;
-        if (errores.isEmpty()) {
-            for (let i = 0; i < usuarios.length; i++) {
-                if (req.body.email == usuarios[i].email && bcryptjs.compareSync(req.body.password, usuarios[i].password)) {
-                    usuarioALoguearse = usuarios[i];
-                    req.session.usuarioLogueado = usuarioALoguearse;
-                    res.redirect('/')
-                    break;
-                }
-                else {
-                    return res.render('login', {
-                        errores: {
-                            email: {
-                                msg: "Este email no está registrado"
-                            }
-                        }
-                    })
-                }
-
-            }
+        for (let i=0; i<usuarios.length;i++){
+          if(usuarios[i].email == req.body.email && bcryptjs.compareSync(req.body.password, usuarios[i].password)){
+                  usuarioALoguearse = usuarios[i];
+                  req.session.usuarioLogueado = usuarioALoguearse;
+                   res.redirect("homebeta", {cursos:cursos});      
+              }
+              else{
+                res.render('login',{ errores: [ {msg:'Credenciales Invalidas'}
+            ]});
+          }
+          
         }
-    },
+},
 
     procesoRegistro: function (req, res) {
 

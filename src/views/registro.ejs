@@ -38,15 +38,14 @@
         
         <div class="box-errores"> 
          
-        <div class="errores"> 
-        <% if (locals.errores) { 
-           errores.forEach(function(e){  %>
+          <div class="errores">
+            <% if(locals.errores) {
+                errores.forEach(error => { %>
+                <p> <%= error.msg %> </p>
 
-            <p> ⚠️ <%= e.msg %> </p>
-
-        <% })
-           }    %>
-           
+            <% }) 
+            }
+            %>
           </div>
           
         </div>
@@ -109,7 +108,7 @@
           </div>
           <div class="boton-crea-cuenta">
     
-            <button type="subit" class="boton">Crear cuenta</button>
+            <button type="submit" class="boton">Crear cuenta</button>
             <!--<button class="btn btn-outline-primary"><img src="img/Registro - Google.png" class="icon">Registrate con Google</button>-->
           </div>
           <!--<div class="d-grid">

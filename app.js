@@ -1,13 +1,12 @@
 const express = require('express')
 const app = express()
 const path = require('path');
-const port = process.env.PORT || 3000
-const mainRoutes = require("./src/routes/main.routes");
-const usuarioRoutes = require("./src/routes/usuario.routes");
+const port = process.env.PORT || 3000;
 const session = require('express-session');
 const methodOverride = require('method-override');
 const error404 = require('./src/middlewares/error404Mid');
-
+const mainRoutes = require("./src/routes/main.routes");
+const usuarioRoutes = require("./src/routes/usuario.routes");
 
 
 app.use(express.static(path.join(__dirname , './public')))

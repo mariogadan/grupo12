@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const controlador = require("../controllers/usuarioController");
 const subirImagenRegistro = require('../middlewares/imgRegistroMid');
-const validacionRegistro = require('../middlewares/validacionRegistroMid')
+const validacionRegistro = require('../middlewares/validacionRegistroMid');
 
 // Login
 

@@ -138,6 +138,7 @@ body{
 .errores{
   text-align: left;
   margin-left: 10px;  
+ 
 }
 
   /* FORMULARIO */   /* campos */
@@ -170,6 +171,7 @@ body{
 
 .boton-crea-cuenta{
   text-align: center;
+ 
 }
 .boton{
   margin-left:-15%;
@@ -182,12 +184,13 @@ body{
   font-size: 17px;
   width:250px; 
   margin-top: 40px ;
+  
 }
 
 /* FOOTER */
 .footer{
   background-color: #333333;
-  margin-top: 1300px;
+  margin-top: 1350px;
 }
 
 .links{
@@ -507,7 +510,7 @@ display: none;
 /* FOOTER */
 .footer{
 
-  margin-top: 1400px;
+  margin-top: 1500px;
 }
 
       }    

@@ -1,10 +1,11 @@
+
+
+
+
+
 .contenedor-bienvenida{
     box-sizing: border-box;
     margin-top: 40px
-}
-.imagen-bienvenida{
-    width: 100%;
-    height: 80vh
 }
 
 
@@ -57,201 +58,11 @@
 }
 
 
-/* HEADER */
-
-#barraNavegacion{ 
-    justify-content: right;
-    margin-right: 100px;
-}
-.nav-link { 
-    font-weight: bold;
-    color: #6f50f8
-}
 
 
 
 
-/* PRODUCTO */
 
-.titulo
-.contenedor-programa{
-    background-color: #4B4B4B ;
-    color:white;
-}
-
-.acercadelcurso{
-    background-color: #4B4B4B;
-    color:white;
-    font-weight: bold;
-    margin-left: 60;
-}
-
-.contenedor-quevasaprender{
-    margin-top: 60px;
-    width: 85vw;
-    background-color: #e9e6e6;
-    
-}
-
-.titulocursos{
-    color:white;
-    text-align:center;
-}
-.titulo-quevasaprender{
-    color:#6f50f8;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 10px;
-   
-}
-
-.modalidad{
-    width: 8vw; 
-    margin-left: 25px;
-    width: 30%;
-    height: 30%;
-}
-
-.modalidad1{
-    width: 8vw; 
-    margin-left: 35px;
-    margin-top: 10px;
-    width: 30%;
-    height: 30%;
-}
-
-.modulos{
-    text-align: center;
-    margin: 0 3em 0 4.5em;
-
-}
-
-.texto2{
-    font-size: 20px;
-    margin-top: 15px;
-    margin-left:35px;
-}
-
-.boton-descarga-programa{
-    background-color:#6f50f8;
-    color:white;
-}
-
-.enseñanza{
-    background-color: white;
-}
-
-.titulo-recomiendan1{
-    text-align: center;
-    font-size: 22px;
-    color: white;
-    font-weight: bold;
-    margin: 0 2em 0 2em
-}
-
-.titulo-recomiendan2{
-    font-size: 40px;
-    color: white;
-    font-weight: bold;
-    margin: 0 2em 0 2em
-}
-
-.mercadolibre{
-    margin-left: 20vw;
-    margin-bottom: 4.5vh;
-    height: 7vh;
-    align-items: center;
-}
-
-
-.contenedor-cursos{
-    padding-top: 0px;
-    
-}
-
-.elegi-tu-curso{
-    color: white;
-    background-color: #2e2f36;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px 10px 20px 10px;
-    margin-top:60px;
-    margin-bottom: 0;
-    font-size: 3em;
-    word-spacing: 15px;
-    letter-spacing: 7px
-}
-
-.cursos{
-    padding-top: 25px;
-    padding-bottom: 25px;
-     
-       
-}
-
-.curso{
-    border-radius: 20px;
-    background-color: #f2f2f2;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin: 10px 0vw 10px 0vw;
-    border-top: solid #6f50f8 2px;
-    border-bottom: solid #6f50f8 2px;
-    border-left: solid #6f50f8 1px;
-    border-right: solid #6f50f8 1px;
-} 
-
-.nombre-curso{
-    text-decoration: underline;
-    text-align: center;
-}
-
-.curso1{
-    border-left: solid #6f50f8 2px;
-}
-
-.curso3{
-    border-right: solid #6f50f8 2px;
-}
-
-.tiempo-curso{
-    margin-top: 3vh
-}
-.calendario{
-    font-size: 2em;
-    margin-left: 5vw;
-    
-}
-
-.reloj{
-    font-size: 2em;
-    margin-left: 4vw
-}
-
-.texto-tiempo-curso{
-    font-size: 1.3em;
-    margin-left: 3vw;
-}
-
-.texto-dias-clase{
-    font-size: 1.3em;
-    margin-left: 2vw;
-}
-    
-.incluye{
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-ul{
-    margin-left: 4.5vw;
-}
-
-.boton-curso{
-    margin-left: 6.5vw;
-    padding: 10px 4vw 10px 4vw;
-    font-size: 1.4em;
-}
 
 /* FOOTER */
 
@@ -499,14 +310,7 @@ ul{
     width: 65%
   }
   
-  .boton-menu{
-    color: white;
-    position: inline;
-    margin-top: 2%;
-    
-   
-   
-  }
+  
   
   .iniciar-boton{
     display:none
@@ -520,7 +324,20 @@ ul{
     display:none
   }
   
-  
+ 
+  .errores{
+    text-align: center;
+    background-color: #f2f2f2;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 12px;
+    
+ 
+
+   
+  }
+
+
   /* FOOTER */
   .footer{
     background-color: #333333;
@@ -621,7 +438,7 @@ ul{
     
     
     .boton-menu{
-            display: none;       
+              
             
            
         }

@@ -21,14 +21,7 @@
   </header>
   <section class="contenedor-bienvenida container-fluid">
 
-    <div class="errores">
-      <% if(locals.errores) { errores.forEach(error=> { %>
-        <p>
-          <%= error.msg %>
-        </p>
-    
-        <% }) } %>
-    </div>
+   
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <div class="fondo-imagen">
@@ -36,7 +29,7 @@
         </div>
       </div>
       <div class=" col-sm-12 col-md-6 col-lg-6 col-xl-6">
-
+      
         <form action="/usuario/login" method="POST">
 
           <div class="mb-3 my-4">
@@ -47,6 +40,16 @@
 
             <input type="password" class="form-control" id="correo" aria-describedby="emailHelp" name="password"
               placeholder="Contraseña" require>
+          </div>
+          <div clas="box-errores"> 
+            <div class="errores">
+              <% if(locals.errores) { errores.forEach(error=> { %>
+                <p>
+                  ⚠️ <%= error.msg %>
+                </p>
+            
+                <% }) } %>
+            </div>
           </div>
           <div class="d-grid my-4">
             <button class="btn btn-success" type="submit">Iniciar Sesión</button>

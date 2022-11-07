@@ -27,5 +27,15 @@
   "password": "dasd",
   "fechaNacimiento": "//",
   "avatar": "imagen vacia"
+ },
+ {
+  "id": 4,
+  "nombre": "Flavio",
+  "apellido": "Ogrizovic",
+  "nombreUsuario": "fo123",
+  "email": "flavio.ogrizovic@gmail.com",
+  "password": "$2a$10$4ojMXjglKKrx.yOs9veTqeR.E7vWZhJ5prc2ZLRNSIeH1kQJ0Yu5y",
+  "fechaNacimiento": "21/3/1993",
+  "avatar": "1667781728541.jpg"
  }
 ]

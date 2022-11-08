@@ -38,14 +38,5 @@
   "precio": 140000,
   "recomienda": "Nuestra experiencia con el curso Data Science fue excelente",
   "imagenCurso": "imagenScience.png"
- },
- {
-  "id": 5,
-  "nombreCurso": "Curso perrito chihuahua AVANZADO",
-  "descripcion": "   Vas a aprender sobre perritos chihuahuas curso avanzado  ",
-  "fechaInicio": "2022-10-15",
-  "fechaFin": "2022-11-02",
-  "precio": 1000,
-  "imagenCurso": "1667658732486.jpg"
  }
 ]

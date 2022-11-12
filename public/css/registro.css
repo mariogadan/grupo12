@@ -93,6 +93,36 @@ body{
   display:none
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  text-align: left;
+  border-radius: 4px;
+  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
 
@@ -138,6 +168,7 @@ body{
 .errores{
   text-align: left;
   margin-left: 10px;  
+ 
 }
 
   /* FORMULARIO */   /* campos */
@@ -170,6 +201,7 @@ body{
 
 .boton-crea-cuenta{
   text-align: center;
+ 
 }
 .boton{
   margin-left:-15%;
@@ -182,12 +214,13 @@ body{
   font-size: 17px;
   width:250px; 
   margin-top: 40px ;
+  
 }
 
 /* FOOTER */
 .footer{
   background-color: #333333;
-  margin-top: 1300px;
+  margin-top: 1350px;
 }
 
 .links{
@@ -507,7 +540,7 @@ display: none;
 /* FOOTER */
 .footer{
 
-  margin-top: 1400px;
+  margin-top: 1500px;
 }
 
       }    

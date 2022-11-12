@@ -37,5 +37,25 @@
   "password": "$2a$10$KQ52Ftp/FmKIOXlRH99IIeA3H35JaC/jT53umSzarOV4rzOv1LAnu",
   "fechaNacimiento": "3/21/1993",
   "avatar": "1667835808670.jpg"
+ },
+ {
+  "id": 5,
+  "nombre": "Damian",
+  "apellido": "Palla",
+  "nombreUsuario": "dami123",
+  "email": "dami.palla@live.com.ar",
+  "password": "$2a$10$oUp5xch4k3e5xB1tkwjgG.nBesYQBe.wiETbeNmSJZYTU0hoHi9yK",
+  "fechaNacimiento": "3/3/1993",
+  "avatar": "1667858039681.jpg"
+ },
+ {
+  "id": 6,
+  "nombre": "macarena",
+  "apellido": "zappe",
+  "nombreUsuario": "macarena.zapp",
+  "email": "macarena.zappe@gmail.com",
+  "password": "$2a$10$REeui/vMEzXNBjbb.aJEfOSXj7e/qSyoJRumATfPWmUyRZOgXrhbW",
+  "fechaNacimiento": "12/12/1993",
+  "avatar": "imagen vacia"
  }
 ]

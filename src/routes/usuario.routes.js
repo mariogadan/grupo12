@@ -1,16 +1,17 @@
 const  application = require('express');
 const express = require('express');
 const router = express.Router();
-const controlador = require("../controllers/usuarioController");
 const subirImagenRegistro = require('../middlewares/imgRegistroMid');
 const validacionRegistro = require('../middlewares/validacionRegistroMid');
+const validacionLogin = require('../middlewares/validacionLoginMid');
+const controlador = require("../controllers/usuarioController");
 
 
 
 // Login
 
 router.get("/login", controlador.login) ;
-router.post("/login", controlador.procesoLogin) ;
+router.post("/login", validacionLogin, controlador.procesoLogin) ;
 
 // Formulario de registro
 

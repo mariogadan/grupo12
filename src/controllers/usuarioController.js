@@ -20,31 +20,27 @@ const controlador = {
         res.render("registro");
     },
 
-    procesoLogin: function (req,res) {
+    procesoLogin: function (req, res) {
+        let errores = validationResult(req);
         let usuarioALoguearse;
-        for (let i=0; i<usuarios.length;i++){
-          if(usuarios[i].email == req.body.email){
-            console.log(usuarios[i]);  
-            if(req.body.password ==usuarios[i].password){
-                  console.log("Hola, entre");
+        if (errores.isEmpty()) {
+            for (let i = 0; i < usuarios.length; i++) {
+                (req.body.email == usuarios[i].email && bcryptjs.compareSync(req.body.password, usuarios[i].password))
                 usuarioALoguearse = usuarios[i];
-                  req.session.usuarioLogueado = usuarioALoguearse;
-                   res.render("beta");  
-                 
-              }
-              else{
-                res.render('login',{ errores: [
-                    {msg:'Credenciales Invalidas'}
-                ]});
-              }
-          } else{
-            res.render('login',{ errores: [
-                {msg:'Credenciales Invalidas'}
-            ]});
-          }
-          
+                break;
+            }
+        req.session.usuarioLogueado = usuarioALoguearse;
+        res.redirect("/"); 
         }
-},
+        if (usuarioALoguearse == undefined) {
+            return res.render("login", {
+                errores: [{ msg: "Credenciales inválidas" }]
+            })
+        }
+        else {
+            return res.render("login", {errores: errores.errores})
+        }
+    },
 
     procesoRegistro: function (req, res) {
 
@@ -55,11 +51,11 @@ const controlador = {
             let usuario = req.body;
             let idNuevoUsuario = (usuarios[usuarios.length - 1].id) + 1;
 
-            let avatar = "imagen vacia"
+            let avatar = "imagen vacia";
 
             if (req.file) {
                 avatar = req.file.filename
-            }
+            };
             let nuevoUsuario = {
                 "id": idNuevoUsuario,
                 "nombre": usuario.nombre,
@@ -70,7 +66,7 @@ const controlador = {
                 "fechaNacimiento": usuario.dia + "/" + usuario.mes + "/" + usuario.anio,
                 "avatar": avatar,
 
-            }
+            };
 
             usuarios.push(nuevoUsuario);
             fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios, null, " "), "utf-8");

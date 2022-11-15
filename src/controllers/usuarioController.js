@@ -7,7 +7,7 @@ const cursos = JSON.parse(fs.readFileSync(cursosFilePath, 'utf-8'));
 const usuariosFilePath = path.join(__dirname, '../database/usuariosDataBase.json');
 const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
 
-const { validationResult } = require('express-validator');
+const validationResult  = require('express-validator');
 const bcryptjs = require('bcryptjs');
 
 const controlador = {

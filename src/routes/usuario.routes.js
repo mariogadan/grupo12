@@ -1,10 +1,12 @@
-const { application } = require('express');
+const  application = require('express');
 const express = require('express');
 const router = express.Router();
 const subirImagenRegistro = require('../middlewares/imgRegistroMid');
 const validacionRegistro = require('../middlewares/validacionRegistroMid');
 const validacionLogin = require('../middlewares/validacionLoginMid');
 const controlador = require("../controllers/usuarioController");
+
+
 
 // Login
 

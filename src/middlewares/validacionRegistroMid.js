@@ -1,5 +1,4 @@
-const { body } = require('express-validator');
-
+ const { body } = require('express-validator');
 const validacionRegistro = [
     body('nombre').notEmpty().withMessage('Completar nombre'),
     body('apellido').notEmpty().withMessage('Completar apellido'),
@@ -9,6 +8,5 @@ const validacionRegistro = [
         .isEmail().withMessage('El formato del correo no es válido'), // en este caso si ya el campo esta vacio, no sigue con las validaciones siguientes, y si no esta vacio, valida que sea un mail (para este caso particular)
     body('password').isLength({min: 8}).withMessage('La contraseña debe tener al menos 8 caracteres')
     ];
-
 
 module.exports = validacionRegistro;

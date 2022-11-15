@@ -1,4 +1,4 @@
-{
+module.exports = {
   "development": {
     "username": "288614_grupo12",
     "password": "digitalhouse",

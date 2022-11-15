@@ -29,7 +29,6 @@ const controlador = {
                 {usuarioALoguearse = usuarios[i];
                 break};
             }
-            console.log(usuarioALoguearse)
             if (usuarioALoguearse == undefined) {
                 return res.render("login", {
                     errores: [{ msg: "Credenciales inválidas" }]

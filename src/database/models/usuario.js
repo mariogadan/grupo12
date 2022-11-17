@@ -4,32 +4,40 @@ module.exports = function (sequelize, DataTypes) {
         idUsuario: {
             type: DataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            allowNull: false
         },
         nombre: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            allowNull: false
         },
         apellido: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            allowNull: false
         },
         email:
         {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            allowNull: false
         },
         clave: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            allowNull: false
         },
         imagen: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
         },
         admin: {
-            type: DataTypes.INTEGER
+            type: DataTypes.INTEGER,
+            allowNull: false
         },
         superadmin: {
-            type: DataTypes.INTEGER
+            type: DataTypes.INTEGER,
+            allowNull: false
         },
         idAcademia: {
-            type: DataTypes.INTEGER
+            type: DataTypes.INTEGER,
+            allowNull: false
         }
     }
     let config = {

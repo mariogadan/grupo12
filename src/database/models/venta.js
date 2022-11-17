@@ -4,20 +4,25 @@ module.exports = function (sequelize, DataTypes) {
         idVenta: {
             type: DataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            allowNull: false
         },
         monto: {
-            type: DataTypes.INTEGER
+            type: DataTypes.INTEGER,
+            allowNull: false
         },
         fecha: {
-            type: DataTypes.DATE
+            type: DataTypes.DATE,
+            allowNull: false
         },
         idUsuario:
         {
-            type: DataTypes.INTEGER
+            type: DataTypes.INTEGER,
+            allowNull: false
         },
         idCurso: {
-            type: DataTypes.INTEGER
+            type: DataTypes.INTEGER,
+            allowNull: false
         }
 
 

@@ -5,39 +5,48 @@ module.exports = function (sequelize, DataTypes) {
         idCurso: {
             type: DataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            allowNull: false
         },
         nombre: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            allowNull: false
         },
 
         precio: {
-            type: DataTypes.INTEGER
+            type: DataTypes.INTEGER,
+            allowNull: false
         },
         fechaCreacion: {
-            type: DataTypes.DATE
+            type: DataTypes.DATE,
+            allowNull: false
         },
         fechaBaja: {
             type: DataTypes.DATE
         },
         imagen:
         {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
         },
         fechaInicioCurso: {
-            type: DataTypes.DATE
+            type: DataTypes.DATE,
+            allowNull: false
         },
         descripcion: {
-            type: DataTypes.TEXT
+            type: DataTypes.TEXT,
+            allowNull: false
         },
         vacantesTotales: {
-            type: DataTypes.INTEGER
+            type: DataTypes.INTEGER,
+            allowNull: false
         },
         idTipoCurso: {
-            type: DataTypes.INTEGER
+            type: DataTypes.INTEGER,
+            allowNull: false
         },
         adminId: {
-            type: DataTypes.INTEGER
+            type: DataTypes.INTEGER,
+            allowNull: false
         }
     }
 

@@ -10,6 +10,7 @@ const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
 const validationResult  = require('express-validator');
 const bcryptjs = require('bcryptjs');
 
+
 const controlador = {
 
     login: function (req, res) {
@@ -29,7 +30,6 @@ const controlador = {
                 {usuarioALoguearse = usuarios[i];
                 break};
             }
-            console.log(usuarioALoguearse)
             if (usuarioALoguearse == undefined) {
                 return res.render("login", {
                     errores: [{ msg: "Credenciales inválidas" }]

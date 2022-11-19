@@ -1,7 +1,3 @@
-const fs = require('fs')
-const path = require('path')
-const cursosFilePath = path.join(__dirname, '../database/cursosDataBase.json');
-const cursos = JSON.parse(fs.readFileSync(cursosFilePath, 'utf-8'));
 const moment = require("moment");
 
 let db = require("../database/models");
@@ -90,6 +86,10 @@ const controlador = {
                     vacantesTotales: req.body.vacantesTotales,
                     idTipoCurso: req.body.tipoCurso,
                     idAdmin: req.body.idAdmin, //Una vez que tengamos el controller de Usuarios conectado a la base de datos, deberíamos crear un middleware para verificar con Session que somos administradores y eso lo tome el formulario.
+                }, {
+                    where: {
+                        idCurso: req.params.id
+                    }
                 }
         )}
         
@@ -105,22 +105,24 @@ const controlador = {
                     vacantesTotales: req.body.vacantesTotales,
                     idTipoCurso: req.body.tipoCurso,
                     idAdmin: req.body.idAdmin, //Una vez que tengamos el controller de Usuarios conectado a la base de datos, deberíamos crear un middleware para verificar con Session que somos administradores y eso lo tome el formulario.
+                }, {
+                    where: {
+                        idCurso: req.params.id
+                    }
                 }
-        )
-        }
+        )}
         res.redirect("/detalle/" + req.params.id);
     },
 
     borrarCurso: function (req, res) {
-        let idCursoABorrar = req.params.id;
 
-        let nuevaListaDeCursos = cursos.filter(function(c){
-            return c.id!=idCursoABorrar;
+        db.curso.destroy({
+            where: {
+                idCurso: req.params.id
+            }
         })
 
-        fs.writeFileSync(cursosFilePath,JSON.stringify(nuevaListaDeCursos, null, " "),'utf-8');
-
-		res.redirect('/');
+		res.redirect("/cursos")
     }
 }
 module.exports = controlador

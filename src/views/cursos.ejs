@@ -69,7 +69,7 @@
         <div class="fechas-todo-texto"> 
         <div class="fechas-titulo">Conocé nuestros cursos</div>
         <div class="cursos-block"> 
-            <% for (let c of cursos) { %>    
+            <% for (let c of curso) { %>    
         <div class="curso-1"> 
             
         <div class="blanco"> </div>  
@@ -77,13 +77,13 @@
         <div class="fechas-block-cuadrado">
             
             <div class="contenedor-imagen-cursos"> 
-            <img class="imagen-fullstack" src="../img/<%= c.imagenCurso %>" alt="">
+            <img class="imagen-fullstack" src="../img/<%= c.imagen %>" alt="">
         </div>
             <div class="texto-fechas"> 
-            <div class="fecha"> <%= c.nombreCurso %> </div>  <!-- DINÁMICO -->
+            <div class="fecha"> <%= c.nombre %> </div>  <!-- DINÁMICO -->
             <div class="fecha-subtitulos-pequeños"><%= c.descripcion %> </div> 
             </div>
-        <a href="/producto/detalle/<%= c.id %>"> <button type="button" class="fechas-reserva">Ver curso</button> </a>
+        <a href="/producto/detalle/<%= c.idCurso %>"> <button type="button" class="fechas-reserva">Ver curso</button> </a>
          
         </div>
         <div class="base"> </div>        

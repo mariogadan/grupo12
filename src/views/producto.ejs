@@ -29,7 +29,7 @@
 
             <div class="violetabienvenida">
                 <div class="textobienvenida">
-                    <h2 class="titulo-bienvenida"> <%= curso.nombreCurso %> </h2>
+                    <h2 class="titulo-bienvenida"> <%= curso.nombre %> </h2>
                     <div class="titulo-bienvenida2"> Comenza a programar tu futuro</div>
                     <ul class="descripcionbienvenida">
                         <li class="texto">Correccion de Proyectos </li>
@@ -41,14 +41,14 @@
             </div>
 
             <div class="blockimagenbienvenida">
-                <img class="imagen-bienvenida" src="../../img/<%= curso.imagenCurso %>" alt=""> <!-- TEXTO DINÁMICO -->
+                <img class="imagen-bienvenida" src="../../img/<%= curso.imagen %>" alt=""> <!-- TEXTO DINÁMICO -->
     
             </div>
         </div>
 
         <!-- EDITAR -->
         <div class="contenedor-editar">
-        <a href="/producto/editar/<%= curso.id %>" ><img class="editar" src="../../img/edit.png" alt=""> </a>
+        <a href="/producto/editar/<%= curso.idCurso %>" ><img class="editar" src="../../img/edit.png" alt=""> </a>
         </div>
  
 
@@ -105,7 +105,7 @@
                     </div>
                     <div class="recomiendan-quote">
                         <!-- DINAMICO -->
-                        <%= curso.recomienda %>
+                        ¡Nuestra experiencia con el curso <%= curso.nombre %> fue excelente!
                     </div>
                     <div class="recomiendan-logo">
                         <!-- DINAMICO -->

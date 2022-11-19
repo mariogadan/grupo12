@@ -44,14 +44,14 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        adminId: {
+        idAdmin: {
             type: DataTypes.INTEGER,
             allowNull: false
         }
     }
 
     let config = {
-        tablename: "curso",
+        tableName: "curso",
         timestamps: false
     }
 

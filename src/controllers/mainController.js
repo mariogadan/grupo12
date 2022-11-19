@@ -1,36 +1,35 @@
 const fs = require('fs')
 const path = require('path')
-
 const cursosFilePath = path.join(__dirname, '../database/cursosDataBase.json');
 const cursos = JSON.parse(fs.readFileSync(cursosFilePath, 'utf-8'));
+const moment = require("moment");
 
-const controlador = {    
+let db = require("../database/models");
 
-    cursos: function (req, res) {
-        const cursos = JSON.parse(fs.readFileSync(cursosFilePath, 'utf-8'));    
-        res.render("cursos", { cursos: cursos })
+const controlador = {
+    
+    home: function (req, res) {
+        db.curso.findAll()
+        .then(function(curso){
+            return res.render("homebeta", {curso:curso})
+        }
+        )
     },
 
-    home: function (req, res) {
-        const cursos = JSON.parse(fs.readFileSync(cursosFilePath, 'utf-8'));    
-        res.render("homebeta", { cursos: cursos })
+    cursos: function (req, res) {
+        db.curso.findAll()
+        .then(function(curso){
+            return res.render("cursos", {curso:curso})
+        }
+        )
     },
 
     detalleCurso: function (req, res) {
 
-        let idCurso = req.params.id;
-        let curso = cursos.find((c) => c.id == idCurso)
-        res.render("producto", {curso: curso})
-
-//        let idCurso = req.params.id
-//        let cursoEncontrado;
-
-//        if (cursos.find((c) => c.id == idCurso)){
- //           let cursoEncontrado = c
- //           return c
- //       }
-        
- //       res.render("producto", { curso: cursoEncontrado })
+        db.curso.findByPk(req.params.id)
+        .then(function(curso){
+            return res.render("producto", {curso:curso})
+        })
  },
 
     carrito: function (req, res) {
@@ -38,81 +37,78 @@ const controlador = {
     },
 
     crear: function (req, res) {
-        res.render("crear")
+
+        db.tipoCurso.findAll()
+        .then(function(tipoCurso){
+            return res.render("crear", {tipoCurso:tipoCurso})
+        })
+        
     },
 
     crearCurso: function (req, res) {
-        let datosCurso = req.body;
-        let idNuevoCurso = (cursos[cursos.length-1].id)+1;
 
-        let nuevoCurso = {
-            "id": idNuevoCurso,
-            "nombreCurso": datosCurso.nombreCurso,
-            "descripcion": datosCurso.descripcion,
-            "fechaInicio": datosCurso.fechaInicio,
-            "fechaFin": datosCurso.fechaFin,
-            "precio": parseInt(datosCurso.precio),
-            "imagenCurso": req.file.filename,
-            //"imagenCurso": imagenNuevoCurso
-        }
-
-        cursos.push(nuevoCurso);
-        fs.writeFileSync(cursosFilePath,JSON.stringify(cursos, null, " "), "utf-8");
+        db.curso.create(
+            {
+                nombre: req.body.nombre,
+                precio: req.body.precio,
+                fechaCreacion: moment().format("YYYY/MM/DD"), //Usamos la librería Moment para que tome la fecha de creación en el formato correcto para nuestra base de datos.
+                fechaBaja: null,
+                imagen: req.file.filename,
+                fechaInicioCurso: req.body.fechaInicioCurso,
+                descripcion: req.body.descripcion,
+                vacantesTotales: req.body.vacantesTotales,
+                idTipoCurso: req.body.tipoCurso,
+                idAdmin: req.body.idAdmin, //Una vez que tengamos el controller de Usuarios conectado a la base de datos, deberíamos crear un middleware para verificar con Session que somos administradores y eso lo tome el formulario.
+            }
+        );
 
         res.redirect("/");
-        
     },
 
     editar: function (req, res) {
-        let idCurso = req.params.id
-        let cursoBuscado = null
 
-        for (let c of cursos) {
-            if (idCurso == c.id) {
-                cursoBuscado = c;
-                break
-            }
-        }
+        let pedidoCurso = db.curso.findByPk(req.params.id);
 
-        if (cursoBuscado != null) {
-            res.render("editar", { curso: cursoBuscado })
-        }
+        let pedidoTipoCurso = db.tipoCurso.findAll();
+
+        Promise.all([pedidoCurso, pedidoTipoCurso])
+        .then(function([curso, tipoCurso]) {
+            res.render("editar", {curso:curso, tipoCurso:tipoCurso})
+        })
     },
 
     editarCurso: function (req, res) {
-        let idCurso = req.params.id;
-        let datosCurso = req.body;
-
-        for (let o of cursos) {
-            if (o.id == idCurso) {
-                var nombreOriginal = o.imagenCurso;
-                break
-            }
-        }
         
-        if (!req.file){
-            //console.log('hola, el filename es undefined')
-            var nombreImagen=nombreOriginal;
-        }else{
-            //console.log('hola, el filename no es undefined')
-            var nombreImagen=req.file.filename;
+        if (!req.file){ 
+            db.curso.update(
+                {
+                    nombre: req.body.nombre,
+                    precio: req.body.precio,
+                    fechaBaja: null,
+                    fechaInicioCurso: req.body.fechaInicioCurso,
+                    descripcion: req.body.descripcion,
+                    vacantesTotales: req.body.vacantesTotales,
+                    idTipoCurso: req.body.tipoCurso,
+                    idAdmin: req.body.idAdmin, //Una vez que tengamos el controller de Usuarios conectado a la base de datos, deberíamos crear un middleware para verificar con Session que somos administradores y eso lo tome el formulario.
+                }
+        )}
+        
+        else {
+            db.curso.update(
+                {
+                    nombre: req.body.nombre,
+                    precio: req.body.precio,
+                    fechaBaja: null,
+                    imagen: req.file.filename,
+                    fechaInicioCurso: req.body.fechaInicioCurso,
+                    descripcion: req.body.descripcion,
+                    vacantesTotales: req.body.vacantesTotales,
+                    idTipoCurso: req.body.tipoCurso,
+                    idAdmin: req.body.idAdmin, //Una vez que tengamos el controller de Usuarios conectado a la base de datos, deberíamos crear un middleware para verificar con Session que somos administradores y eso lo tome el formulario.
+                }
+        )
         }
- 
-        for (let o of cursos) {
-            if (o.id == idCurso) {
-                o.nombreCurso = datosCurso.nombreCurso,
-                o.descripcion = datosCurso.descripcion,
-                o.fechaInicio = datosCurso.fechaInicio,
-                o.fechaFin = datosCurso.fechaFin,
-                o.precio = parseInt(datosCurso.precio),
-                o.imagenCurso = nombreImagen
-                break
-            }
-        }
-
-        fs.writeFileSync(cursosFilePath,JSON.stringify(cursos, null, " "), "utf-8");
-
-        res.redirect("/");
+        res.redirect("/detalle/" + req.params.id);
     },
 
     borrarCurso: function (req, res) {
@@ -126,8 +122,5 @@ const controlador = {
 
 		res.redirect('/');
     }
-
-    
-
 }
 module.exports = controlador

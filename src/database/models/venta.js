@@ -29,7 +29,7 @@ module.exports = function (sequelize, DataTypes) {
     }
 
     let config = {
-        tablename: "venta",
+        tableName: "venta",
         timestamps: false
     }
 

@@ -57,5 +57,15 @@
   "password": "$2a$10$REeui/vMEzXNBjbb.aJEfOSXj7e/qSyoJRumATfPWmUyRZOgXrhbW",
   "fechaNacimiento": "12/12/1993",
   "avatar": "imagen vacia"
+ },
+ {
+  "id": 7,
+  "nombre": "Mario",
+  "apellido": "Gadan",
+  "nombreUsuario": "mariogadan",
+  "email": "mario@gmail.com",
+  "password": "$2a$10$SOcbvwp/cmokyrv0hmInNeMKtlOtW9/D2tVJ/Zyk.oPfavsvwqjnW",
+  "fechaNacimiento": "05/01/1982",
+  "avatar": "imagen vacia"
  }
 ]

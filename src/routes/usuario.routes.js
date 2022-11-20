@@ -15,10 +15,10 @@ router.post("/login", validacionLogin, controlador.procesoLogin) ;
 
 // Formulario de registro
 
-router.get("/registro",controlador.registro) ;
+router.get("/registro", controlador.registro) ;
 
 // Proceso de registro
 
-router.post("/registro", subirImagenRegistro.single('subirImagenRegistro'), validacionRegistro,  controlador.procesoRegistro) ;
+router.post("/registro", subirImagenRegistro.single('subirImagenRegistro'), validacionRegistro, controlador.procesoRegistro) ;
 
 module.exports = router

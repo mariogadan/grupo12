@@ -53,15 +53,17 @@
             <label for="descripcion" class="form-label"> </label>
             <textarea type="text" name="descripcion" class="campo" required> Descripción </textarea>
           </div>
-          <label class="form-label"> Tipo de curso: </label>
-          <select name="tipoCurso">
+          <div class="campos3">
+        <i class="icono"> <i class="fa-solid fa-arrow-pointer"></i> </i>  
+        <label class="titulo">  Tipo de curso: </label>
+        <select name="tipoCurso" class="menu-desplegable">
             <% for (let tc of tipoCurso) { %>
               <option value="<%= tc.idTipoCurso %>">
                 <%= tc.nombre %>
               </option>
               <% } %>
           </select>
-
+        </div> 
           <div class="icono-titulo">
             <i class="icono"> <i class="fa-sharp fa-solid fa-image"></i> </i>
             <div class="titulo"> Seleccioná la imagen del curso </div>

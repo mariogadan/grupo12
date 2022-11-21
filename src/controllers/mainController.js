@@ -1,6 +1,8 @@
 const moment = require("moment");
+const fs = require("fs");
+const path = require("path");
 
-let db = require("../database/models");
+const db = require("../database/models");
 
 const controlador = {
     
@@ -26,7 +28,7 @@ const controlador = {
         .then(function(curso){
             return res.render("producto", {curso:curso})
         })
- },
+    },
 
     carrito: function (req, res) {
         res.render("carrito")
@@ -116,13 +118,19 @@ const controlador = {
 
     borrarCurso: function (req, res) {
 
+        db.curso.findByPk(req.params.id)
+        .then(function(curso){
+            let nombreImagen = curso.imagen;
+            fs.unlinkSync(path.join(__dirname, "../../public/img", nombreImagen))
+        });
+        
         db.curso.destroy({
             where: {
                 idCurso: req.params.id
             }
-        })
+        });
 
-		res.redirect("/cursos")
+		res.redirect("/cursos");
     }
 }
 module.exports = controlador

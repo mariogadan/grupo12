@@ -6,8 +6,6 @@ const validacionRegistro = require('../middlewares/validacionRegistroMid');
 const validacionLogin = require('../middlewares/validacionLoginMid');
 const controlador = require("../controllers/usuarioController");
 
-
-
 // Login
 
 router.get("/login", controlador.login) ;

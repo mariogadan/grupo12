@@ -122,7 +122,7 @@ const controlador = {
         .then(function(curso){
             let nombreImagen = curso.imagen;
             fs.unlinkSync(path.join(__dirname, "../../public/img", nombreImagen))
-        });
+        }); // Antes de borrar el curso de la base de datos, buscamos la foto que le corresponde y la borramos localmente de nuestra carpeta img.
         
         db.curso.destroy({
             where: {

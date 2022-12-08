@@ -18,8 +18,12 @@
                               </div>
                             <i class="cursos-menu"> Lanzamientos <a href="./" style="text-decoration: none"></a> </i>
                             <i class="cursos-menu">  <a href="/cursos" style="color: inherit; text-decoration: none" > Cursos</a> </i>
+                            <% if (locals.user == undefined) { %>
                             <a href="/usuario/login" style="color: inherit; text-decoration: none"  target="_blank"> <button type="button" class="iniciar-boton">  Iniciar sesión </button> </a>
                             <a href="/usuario/registro" style="color: inherit; text-decoration: none"  target="_blank"> <button type="button" class="regitrate-boton"> Registrate </button> </a>
+                            <% } else { %>
+                                <a href="/usuario/perfil" style="color: inherit; text-decoration: none"  target="_blank"> <button type="button" class="regitrate-boton"> Perfil </button> </a>
+                            <% } %> 
                         </div>
                     </div>  
             </div>  

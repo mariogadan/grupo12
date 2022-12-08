@@ -8,15 +8,19 @@ const controlador = require("../controllers/usuarioController");
 
 // Login
 
-router.get("/login", controlador.login) ;
-router.post("/login", validacionLogin, controlador.procesoLogin) ;
+router.get("/login", controlador.login);
+router.post("/login", validacionLogin, controlador.procesoLogin);
 
 // Formulario de registro
 
-router.get("/registro", controlador.registro) ;
+router.get("/registro", controlador.registro);
 
 // Proceso de registro
 
-router.post("/registro", subirImagenRegistro.single('subirImagenRegistro'), validacionRegistro, controlador.procesoRegistro) ;
+router.post("/registro", subirImagenRegistro.single('subirImagenRegistro'), validacionRegistro, controlador.procesoRegistro);
+
+// Perfil de usuario
+
+router.get("/perfil/:id" , controlador.perfilUsuario);
 
 module.exports = router

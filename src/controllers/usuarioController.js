@@ -66,9 +66,9 @@ const controlador = {
                 email: req.body.email,
                 clave: bcryptjs.hashSync(req.body.password, 10),
                 imagen: avatar,
-                admin: 1, // req.body.admin
+                admin: 0, // req.body.admin
                 superadmin: 0, // req.body.superadmin,
-                idAcademia: 1 // req.body.idAcademia
+                idAcademia: 0 // req.body.idAcademia
             });
             res.redirect('/')
         }
@@ -78,6 +78,13 @@ const controlador = {
                 old: req.body
             });
         }
+    },
+
+    perfilUsuario: function (req, res) {
+        db.usuario.findByPk(req.params.id)
+        .then(function(usuario){
+            return res.render("perfil", {usuario: usuario, usuarioLogueado: req.session.usuarioLogueado})
+        })
     }
 
 };

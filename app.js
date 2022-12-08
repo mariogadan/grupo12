@@ -5,13 +5,18 @@ const port = process.env.PORT || 3000;
 const session = require('express-session');
 const methodOverride = require('method-override');
 const error404 = require('./src/middlewares/error404Mid');
+const usuarioLogueadoMid = require("./src/middlewares/usuarioLogueadoMid")
 const mainRoutes = require("./src/routes/main.routes");
 const usuarioRoutes = require("./src/routes/usuario.routes");
 
 
 app.use(express.static(path.join(__dirname , './public')))
 app.use(express.urlencoded({ extended: false })); // nos permite capturar la info que se envia en un formulario a traves de POST
-app.use(session( {secret: "Este es mi secreto"} ));   // para definir que vas a utilizar información en sesión
+app.use(session( {secret: "Este es mi secreto",
+resave: false,
+saveUninitialized: false}));   // para definir que vas a utilizar información en sesión
+
+app.use(usuarioLogueadoMid);
  
 app.use(express.json());
 app.use(methodOverride('_method'));
@@ -31,6 +36,4 @@ app.use("/usuario", usuarioRoutes);
 
 //app.use("/cursos", usuarioRoutes);
 
-app.use(error404)
-
-
+app.use(error404); 

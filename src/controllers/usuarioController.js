@@ -68,7 +68,7 @@ const controlador = {
                 imagen: avatar,
                 admin: 0, // req.body.admin
                 superadmin: 0, // req.body.superadmin,
-                idAcademia: 0 // req.body.idAcademia
+                idAcademia: 1 // req.body.idAcademia
             });
             res.redirect('/')
         }
@@ -83,7 +83,7 @@ const controlador = {
     perfilUsuario: function (req, res) {
         db.usuario.findByPk(req.params.id)
         .then(function(usuario){
-            return res.render("perfil", {usuario: usuario, usuarioLogueado: req.session.usuarioLogueado})
+            return res.render("perfil", {usuario:usuario, usuarioLogueado: req.session.usuarioLogueado})
         })
     }
 

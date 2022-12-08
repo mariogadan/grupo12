@@ -21,6 +21,6 @@ router.post("/registro", subirImagenRegistro.single('subirImagenRegistro'), vali
 
 // Perfil de usuario
 
-router.get("/perfil/:id" , controlador.perfilUsuario);
+router.get("/perfil/:id", controlador.perfilUsuario);
 
 module.exports = router

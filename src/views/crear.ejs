@@ -41,20 +41,27 @@
       <h3 class="Crea-cuenta"> ¡Cargá un nuevo curso!</h3>
       <div class="icono-titulo">
 
+      <div class="errores">
+        <ul></ul>
+
+      </div>    
+
+
         <i class="icono"> <i class="fa-regular fa-pen-to-square"></i> </i>
         <div class="titulo"> Comenzamos con una breve descripción </div>
       </div>
 
       <form action="/producto/crear" method="POST" class="formulario" enctype="multipart/form-data">
+
         <div class="campos1">
           <div class="primera-parte">
             <label for="nombre" class="form-label"> </label>
-            <input type="text" name="nombre" placeholder="Nombre del curso" class="campo" required>
+            <input type="text" name="nombreCurso" placeholder="Nombre del curso" class="campo nombreCurso">
             <label for="descripcion" class="form-label"> </label>
-            <textarea type="text" name="descripcion" class="campo" required> Descripción </textarea>
+            <textarea type="text" name="descripcion" placeholder="Descripción" class="campo descripcionCurso"></textarea>
           </div>
           <div class="campos3">
-        <i class="icono"> <i class="fa-solid fa-arrow-pointer"></i> </i>  
+        <i class="icono"> <i class="fa-solid fa-arrow-pointer"></i> </i>
         <label class="titulo">  Tipo de curso: </label>
         <select name="tipoCurso" class="menu-desplegable">
             <% for (let tc of tipoCurso) { %>
@@ -72,7 +79,7 @@
           <div class="botonfoto">
             <!--<button  class="selecionafoto">  SACO BUTTON (NO PUEDE IR UN INPUT ADENTRO, VER DEVOLUCION NICO DISCORD)-->
             <label for="files" class="btn"></label> <!-- Seleccioná un archivo jpg</label>-->
-            <input id="crearCargaImagen" type="file" name="crearCargaImagen"> </input> <!-- style="visibility:hidden;" -->
+            <input id="crearCargaImagen" type="file" name="crearCargaImagen" class="crearCargaImagen"> </input> <!-- style="visibility:hidden;" -->
             <!--</button>-->
           </div>
 
@@ -85,27 +92,25 @@
           <div class="campos2">
             <div>
               <label for="fechaInicioCurso" class="form-label"> ¿Cuándo comienza? </label>
-              <input type="date" name="fechaInicioCurso" placeholder="Fecha de inicio" class="campo" required>
+              <input type="date" name="fechaInicioCurso" placeholder="Fecha de inicio" class="campo fechaInicioCurso" >
             </div>
             <div>
               <div class="precio2">
                 <label for="precio" class="form-label"> Precio </label>
-              </div>
-              <div>
-                <input type="text" name="precio" class="campo" required>
+                <input type="text" name="precio" placeholder="0" class="campo precioCurso">
               </div>
             </div>
             <div>
               <label for="vacantesTotales" class="form-label"> Vacantes totales </label>
-              <input type="text" name="vacantesTotales" class="campo" required>
+              <input type="text" name="vacantesTotales" placeholder="0" class="campo vacantesTotales">
             </div>
             <div>
               <label for="idAdmin" class="form-label"> ¿Quién carga el curso? </label>
-              <input type="text" name="idAdmin" class="campo" required> 
+              <input type="text" name="idAdmin" placeholder="Insertar el número 1" class="campo idAdmin"> </input>
             </div>
 
             <button type="submit" class="boton"> <a style="text-decoration: none"> Guardar cambios</button></a>
-            <button type="reset" class="resetear">Borrar cambios</button>
+            <button type="reset" class="resetear"> Borrar cambios</button>
           </div>
       </form>
     </div>
@@ -113,7 +118,7 @@
   </div>
 
 
-
+  <script src="/js/crear.js"></script>
 
 
 </body>

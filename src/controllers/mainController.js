@@ -45,9 +45,14 @@ const controlador = {
 
     crearCurso: function (req, res) {
 
+        if (req.file = ''){
+
+            req.file.filename = 'imagenVacia'
+        }
+
         db.curso.create(
             {
-                nombre: req.body.nombre,
+                nombre: req.body.nombreCurso,
                 precio: req.body.precio,
                 fechaCreacion: moment().format("YYYY/MM/DD"), //Usamos la librería Moment para que tome la fecha de creación en el formato correcto para nuestra base de datos.
                 fechaBaja: null,
@@ -56,7 +61,7 @@ const controlador = {
                 descripcion: req.body.descripcion,
                 vacantesTotales: req.body.vacantesTotales,
                 idTipoCurso: req.body.tipoCurso,
-                idAdmin: req.body.idAdmin, //Una vez que tengamos el controller de Usuarios conectado a la base de datos, deberíamos crear un middleware para verificar con Session que somos administradores y eso lo tome el formulario.
+                idAdmin: 1 //req.body.idAdmin , Una vez que tengamos el controller de Usuarios conectado a la base de datos, deberíamos crear un middleware para verificar con Session que somos administradores y eso lo tome el formulario.
             }
         );
 

@@ -35,6 +35,11 @@
           <!--  Abajo estan los errores, hay que darles estilos-->
     <div class="box-formulario"> 
 
+      <div class="errores1">
+        <ul></ul>
+
+      </div>    
+
       <div class="texto-formulario"> 
         
         <div class="box-errores"> 
@@ -53,7 +58,7 @@
 
 
           <div class="formulario"> 
-          <form method="POST" action="/usuario/registro" class="formulario" enctype="multipart/form-data">
+          <form method="POST" action="/usuario/registro" id="fomularioRegistro" class="formulario" enctype="multipart/form-data">
 
           <div class="campo">
             <label for="nombre" class="form-label" > Nombre </label>
@@ -125,6 +130,9 @@
      <!-- footer -->
      <%- include('partials/footer') %>
      <!-- /footer -->
+
+     <script src="/js/registro.js"></script> <!-- LINKEO A REGISTRO.JS-->
+
      </body>
 
 </html>

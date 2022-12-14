@@ -62,28 +62,28 @@
 
           <div class="campo">
             <label for="nombre" class="form-label" > Nombre </label>
-            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Introducir nombre" value="<%= locals.old && old.nombre ? old.nombre : ''  %>"  require>
+            <input type="text" class="form-control campoNombre" name="nombre" id="nombre" placeholder="Introducir nombre" value="<%= locals.old && old.nombre ? old.nombre : ''  %>"  require>
           </div>
           <!-- es un IF abreviado, primero se pone la condicion, despues el ? y lo que debe pasar y despues el : que es el ELSE. SIEMPRE TIENE QUE TENER UN ELSE -->
 
 
           <div class="campo">
             <label for="apellido" class="form-label" >Apellido</label>
-            <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Introducir apellido" value="<%= locals.old && old.apellido ? old.apellido : ''  %>" require>
+            <input type="text" class="form-control campoApellido" name="apellido" id="apellido" placeholder="Introducir apellido" value="<%= locals.old && old.apellido ? old.apellido : ''  %>" require>
           </div>
 
           <div class="campo">
             <label for="nombreUsuario" class="form-label" >Nombre de usuario</label>
-            <input type="text" class="form-control" name="nombreUsuario" id="nombreUsuario" placeholder="Introducir nombre de usuario" value="<%= locals.old && old.nombreUsuario ? old.nombreUsuario : ''  %>" require>
+            <input type="text" class="form-control campoNombreUsuario" name="nombreUsuario" id="nombreUsuario" placeholder="Introducir nombre de usuario" value="<%= locals.old && old.nombreUsuario ? old.nombreUsuario : ''  %>" require>
           </div>
           <div class="campo">
             <label for="email" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" name="email" id="correo" aria-describedby="emailHelp" placeholder="Introducir tu correo electrónico" value="<%= locals.old && old.email ? old.email : ''  %>" require>
+            <input type="email" class="form-control campoCorreo" name="email" id="correo" aria-describedby="emailHelp" placeholder="Introducir tu correo electrónico" value="<%= locals.old && old.email ? old.email : ''  %>" require>
             <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con terceros.</div>
           </div>   
           <div class="campo">
             <label for="password" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" name="password" id="password" placeholder="Introducir contraseña" require>
+            <input type="password" class="form-control campoPassword" name="password" id="password" placeholder="Introducir contraseña" require>
             <div class="form-text">Debe ser de al menos 8 caracteres alfanuméricos.</div>
           </div>
 

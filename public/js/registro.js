@@ -2,25 +2,59 @@ window.addEventListener('load', function(){
 
     let formularioDeRegistro = document.querySelector('.formulario'); 
 
-// CREO VARIABLES Y HAGO LAS VALIDACIONES
+// VARIABLES Y ETIQUETAS
+
+    let campoNombre = document.querySelector('.campoNombre');
+        
+    campoNombre.addEventListener('click', function () {
+        campoNombre.style.backgroundColor = "#BCB0DE";
+        campoNombre.style.color = "black";
+    })
+
+    let campoApellido = document.querySelector('.campoApellido'); 
+
+    campoApellido.addEventListener('click', function () {
+        campoApellido.style.backgroundColor = "#BCB0DE";
+        campoApellido.style.color = "black";
+    })
+
+    let campoNombreUsuario = document.querySelector('.campoNombreUsuario');
+    
+    campoNombreUsuario.addEventListener('click', function () {
+        campoNombreUsuario.style.backgroundColor = "#BCB0DE";
+        campoNombreUsuario.style.color = "black";
+    })
+
+    let campoCorreo = document.querySelector('.campoCorreo');
+    
+    campoCorreo.addEventListener('click', function () {
+        campoCorreo.style.backgroundColor = "#BCB0DE";
+        campoCorreo.style.color = "black";
+    })
+
+    let campoPassword = document.querySelector('.campoPassword'); // let campoPassword = document.getByElementId('password');
+    let passCheck = /^[A-Za-z]\w{7,15}$/;
+
+    campoPassword.addEventListener('click', function () {
+        campoPassword.style.backgroundColor = "#BCB0DE";
+        campoPassword.style.color = "black";
+    })
+
+
+// VALIDACIONES
 
     formularioDeRegistro.addEventListener('submit', function(e){
         
         let erroresArray = [];
 
-        let campoNombre = document.getElementById('nombre');      
 
         if(campoNombre.value == '' || campoNombre.value.length < 3){
             erroresArray.push('El campo Nombre debe estar completo.');
         }
 
-        let campoApellido = document.getElementById('apellido'); 
-
         if(campoApellido.value == '' || campoApellido.value.length < 3){
             erroresArray.push('El campo Apellido debe estar completo.');
         }
-
-        let campoNombreUsuario = document.getElementById('nombreUsuario'); 
         
         if(campoNombreUsuario.value == ''){
             // alert('El campo Nombre de Usuario debe estar completo.');
@@ -30,15 +64,10 @@ window.addEventListener('load', function(){
             erroresArray.push('El campo Nombre de Usuario debe tener al menos 3 caracteres.');
             }
 
-        let campoCorreo = document.getElementById('correo'); 
-
         if(campoCorreo.value.search("@") == -1){
             // alert('El campo Correo electrónico debe tener el simbolo @.');
             erroresArray.push('El correo electrónico ingresado no es válido.');
         }
-
-        let campoPassword = document.getElementById('password'); // let campoPassword = document.getElementId('password');
-        let passCheck = /^[A-Za-z]\w{7,15}$/;
         
         if(campoPassword.value.match(passCheck) == null){
             // alert('El campo Contraseña debe contener entre 8 y 16 caracteres alfanuméricos.');
@@ -47,7 +76,8 @@ window.addEventListener('load', function(){
 
 
         // CHEQUEO SI HAY ERRORES EN EL ERRORESARRAY
-         if(erroresArray.length > 0){
+        
+        if(erroresArray.length > 0){
             e.preventDefault();
 
             let ulErrores = document.querySelector('div.errores1 ul');

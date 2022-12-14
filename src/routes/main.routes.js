@@ -5,6 +5,7 @@ const controlador = require("../controllers/mainController");
 const path = require('path');
 const subirImagen = require('../middlewares/multerMid');
 const esAdministradorMid = require("../middlewares/esAdministradorMid");
+const crearCursoMid = require("../middlewares/crearCursoMid");
 
 router.get("/cursos", controlador.cursos);  
 router.get("/", controlador.home);

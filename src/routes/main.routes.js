@@ -5,11 +5,12 @@ const controlador = require("../controllers/mainController");
 const path = require('path');
 const subirImagen = require('../middlewares/multerMid');
 const esAdministradorMid = require("../middlewares/esAdministradorMid");
+const crearCursoMid = require("../middlewares/crearCursoMid")
 
 router.get("/cursos", controlador.cursos);  
 router.get("/", controlador.home);
 router.get("/crear", esAdministradorMid, controlador.crear);
-router.post("/crear", subirImagen.single('crearCargaImagen'), controlador.crearCurso);
+router.post("/crear", subirImagen.single('crearCargaImagen'), crearCursoMid, controlador.crearCurso);
 
 router.get('/detalle/:id', controlador.detalleCurso);
 

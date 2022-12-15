@@ -15,7 +15,7 @@ router.post("/crear", subirImagen.single('crearCargaImagen'), crearCursoMid, con
 router.get('/detalle/:id', controlador.detalleCurso);
 
 router.get("/editar/:id", esAdministradorMid, controlador.editar);
-router.put("/editar/:id", subirImagen.single('editarCargaImagen'), controlador.editarCurso);  
+router.put("/editar/:id", subirImagen.single('editarCargaImagen'), crearCursoMid, controlador.editarCurso);  
 router.delete("/editar/:id", esAdministradorMid, controlador.borrarCurso); 
 
 router.get("/carrito", controlador.carrito);

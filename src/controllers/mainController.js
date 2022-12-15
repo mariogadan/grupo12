@@ -45,6 +45,10 @@ const controlador = {
 
     crearCurso: async function (req, res) {
 
+ /*       if (req.file == null){
+            req.file = "imagen vacia"
+        }
+*/
 
         await db.curso.create(
             {

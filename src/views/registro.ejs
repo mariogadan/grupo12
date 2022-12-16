@@ -2,101 +2,109 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6d9e623f2f.js" crossorigin="anonymous"> </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/registro.css">
-    <link rel="stylesheet" media="screen and (min-width: 637px)" href="/css/registro.css" />
-    <link rel="stylesheet" media="screen and (min-width: 774px)" href="/css/registro.css" />   
-    <title> Tiddy Code | Registro de Usuario </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6d9e623f2f.js" crossorigin="anonymous"> </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/registro.css">
+  <link rel="stylesheet" media="screen and (min-width: 637px)" href="/css/registro.css" />
+  <link rel="stylesheet" media="screen and (min-width: 774px)" href="/css/registro.css" />
+  <title> Tiddy Code | Registro de Usuario </title>
 </head>
+
 <body>
   <!-- Header -->
   <%- include('partials/header') %>
-  <!-- /Header -->
+    <!-- /Header -->
 
-  <div class="box-formulario-imagen">
+    <div class="box-formulario-imagen">
 
-    <div class="box-imagen">
-      <div class="imagen"> 
-        <img src="/img/imagenTech.png" class="imagen">
+      <div class="box-imagen">
+        <div class="imagen">
+          <img src="/img/imagenTech.png" class="imagen">
+        </div>
+        <div class="texto-register"> Ingresá tus datos para registrarte </div>
+        <div class="violeta"> </div>
       </div>
-      <div class="texto-register"> Ingresá tus datos para registrarte </div>
-      <div class="violeta"> </div>
-    </div>
-    
-     
 
-          <!--  Abajo estan los errores, hay que darles estilos-->
-    <div class="box-formulario"> 
-
-      <div class="errores1">
+      <div class="errores1" style="color: red; text-align: left">
         <ul></ul>
 
-      </div>    
+      </div>
 
-      <div class="texto-formulario"> 
-        
-        <div class="box-errores"> 
-         
-          <div class="errores">
-            <% if(locals.errores) {
-                errores.forEach(error => { %>
-                <p> ⚠️ <%= error.msg %> </p>
+      <!--  Abajo estan los errores, hay que darles estilos-->
+      <div class="box-formulario">
 
-            <% }) 
-            }
-            %>
-          </div>
-          
-        </div>
+        <div class="texto-formulario">
 
+          <div class="box-errores">
 
-          <div class="formulario"> 
-          <form method="POST" action="/usuario/registro" id="fomularioRegistro" class="formulario" enctype="multipart/form-data">
+            <div class="errores">
+              <% if(locals.errores) { errores.forEach(error=> { %>
+                <p> ⚠️ <%= error.msg %>
+                </p>
 
-          <div class="campo">
-            <label for="nombre" class="form-label" > Nombre </label>
-            <input type="text" class="form-control campoNombre" name="nombre" id="nombre" placeholder="Introducir nombre" value="<%= locals.old && old.nombre ? old.nombre : ''  %>"  require>
-          </div>
-          <!-- es un IF abreviado, primero se pone la condicion, despues el ? y lo que debe pasar y despues el : que es el ELSE. SIEMPRE TIENE QUE TENER UN ELSE -->
+                <% }) } %>
+            </div>
 
-
-          <div class="campo">
-            <label for="apellido" class="form-label" >Apellido</label>
-            <input type="text" class="form-control campoApellido" name="apellido" id="apellido" placeholder="Introducir apellido" value="<%= locals.old && old.apellido ? old.apellido : ''  %>" require>
           </div>
 
-          <div class="campo">
-            <label for="nombreUsuario" class="form-label" >Nombre de usuario</label>
-            <input type="text" class="form-control campoNombreUsuario" name="nombreUsuario" id="nombreUsuario" placeholder="Introducir nombre de usuario" value="<%= locals.old && old.nombreUsuario ? old.nombreUsuario : ''  %>" require>
-          </div>
-          <div class="campo">
-            <label for="email" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control campoCorreo" name="email" id="correo" aria-describedby="emailHelp" placeholder="Introducir tu correo electrónico" value="<%= locals.old && old.email ? old.email : ''  %>" require>
-            <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con terceros.</div>
-          </div>   
-          <div class="campo">
-            <label for="password" class="form-label">Contraseña</label>
-            <input type="password" class="form-control campoPassword" name="password" id="password" placeholder="Introducir contraseña" require>
-            <div class="form-text">Debe ser de al menos 8 caracteres alfanuméricos.</div>
-          </div>
 
-          <p class="campo">Ingresá tu imagen de perfil</p>
-          
-          <div class="selecionafoto"> 
-            <label for="files" class="form-text">Seleccioná un archivo jpg</label> <!-- for="files"-->
-            <input id="subirImagenRegistro" type="file" name="subirImagenRegistro" > </input> <!-- style="visibility:hidden;" -->
+          <div id="formulario">
+            <form method="POST" action="/usuario/registro" id="fomularioRegistro" class="formulario"
+              enctype="multipart/form-data">
+
+              <div class="campo">
+                <label for="nombre" class="form-label"> Nombre </label>
+                <input type="text" class="form-control" name="nombre" id="campoNombre" placeholder="Introducir nombre"
+                  value="<%= locals.old && old.nombre ? old.nombre : ''  %>" require>
+              </div>
+              <!-- es un IF abreviado, primero se pone la condicion, despues el ? y lo que debe pasar y despues el : que es el ELSE. SIEMPRE TIENE QUE TENER UN ELSE -->
+
+
+              <div class="campo">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" name="apellido" id="campoApellido"
+                  placeholder="Introducir apellido" value="<%= locals.old && old.apellido ? old.apellido : ''  %>"
+                  require>
+              </div>
+
+              <div class="campo">
+                <label for="nombreUsuario" class="form-label">Nombre de usuario</label>
+                <input type="text" class="form-control" name="nombreUsuario" id="campoNombreUsuario"
+                  placeholder="Introducir nombre de usuario"
+                  value="<%= locals.old && old.nombreUsuario ? old.nombreUsuario : ''  %>" require>
+              </div>
+              <div class="campo">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" name="email" id="campoCorreo" aria-describedby="emailHelp"
+                  placeholder="Introducir tu correo electrónico"
+                  value="<%= locals.old && old.email ? old.email : ''  %>" require>
+                <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con terceros.</div>
+              </div>
+              <div class="campo">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" name="password" id="campoPassword"
+                  placeholder="Introducir contraseña" require>
+                <div class="form-text">Debe ser de al menos 8 caracteres alfanuméricos.</div>
+              </div>
+
+              <p class="campo">Ingresá tu imagen de perfil</p>
+
+              <div class="selecionafoto">
+                <label for="files" class="form-text">Seleccioná un archivo jpg</label> <!-- for="files"-->
+                <input id="subirImagenRegistro" type="file" name="subirImagenRegistro"> </input>
+                <!-- style="visibility:hidden;" -->
+              </div>
           </div>
-        </div>
-        <br>
-          
-        <!-- 
+          <br>
+
+          <!-- 
            <div class="campo">Fecha de nacimiento
             <div class="row">
               <div class="col">
@@ -115,24 +123,24 @@
           </div>
           -->
           <div class="boton-crea-cuenta">
-    
+
             <button type="submit" class="boton">Crear cuenta</button>
             <!--<button class="btn btn-outline-primary"><img src="img/Registro - Google.png" class="icon">Registrate con Google</button>-->
-          </div>           
+          </div>
         </div>
         </form>
       </div>
-      </div>
- 
+    </div>
+
     </div>
 
 
-     <!-- footer -->
-     <%- include('partials/footer') %>
-     <!-- /footer -->
+    <!-- footer -->
+    <%- include('partials/footer') %>
+      <!-- /footer -->
 
-     <script src="/js/registro.js"></script> <!-- LINKEO A REGISTRO.JS-->
+      <script src="/js/registro.js"></script> <!-- LINKEO A REGISTRO.JS-->
 
-     </body>
+</body>
 
 </html>

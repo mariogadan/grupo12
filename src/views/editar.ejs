@@ -26,7 +26,7 @@
       </div>
     </div>
   </header>
- 
+
 
   <div class="body-background">
 
@@ -35,13 +35,15 @@
             class="fa-solid fa-xmark"></i> </i> </a>
       <h3 class="Crea-cuenta"> Editá el curso </h3>
       <h3 class="nombre-curso"><%= curso.nombre %></h3>
-      <div class="errores" style="color: red">
-        <ul></ul>
-      </div>  
       <div class="icono-titulo">
+        <div class="errores" style="color: red">
+          <ul></ul>
+      
+        </div> 
         <i class="icono"> <i class="fa-regular fa-pen-to-square"></i> </i>
         <div class="titulo"> Comenzamos con una breve descripción </div>
       </div>
+
 
       <form action="/producto/editar/<%= curso.idCurso %>?_method=PUT" method="POST" id="formulario" enctype="multipart/form-data">
 

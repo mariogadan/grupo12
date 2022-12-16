@@ -43,6 +43,7 @@ window.addEventListener('load', function () {
 
     })
 
+
     //Capturando los elementos desde la vista de CARRITO//
 
     let cursoCaja = document.getElementById('cursoCaja');

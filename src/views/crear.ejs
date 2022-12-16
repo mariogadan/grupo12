@@ -3,7 +3,7 @@
 
 
 <head>
-  <title>Creá tu cuenta</title>
+  <title>Creá un curso</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +41,7 @@
       <h3 class="Crea-cuenta"> ¡Cargá un nuevo curso!</h3>
       <div class="icono-titulo">
 
-      <div class="errores">
+      <div class="errores" style="color: red">
         <ul></ul>
 
       </div>    
@@ -51,14 +51,14 @@
         <div class="titulo"> Comenzamos con una breve descripción </div>
       </div>
 
-      <form action="/producto/crear" method="POST" class="formulario" enctype="multipart/form-data">
+      <form action="/producto/crear" method="POST" id="formulario" class="" enctype="multipart/form-data">
 
         <div class="campos1">
           <div class="primera-parte">
             <label for="nombre" class="form-label"> </label>
-            <input type="text" name="nombreCurso" placeholder="Nombre del curso" class="campo nombreCurso">
+            <input type="text" name="nombreCurso" id="nombreCurso" placeholder="Nombre del curso" class="campo">
             <label for="descripcion" class="form-label"> </label>
-            <textarea type="text" name="descripcion" placeholder="Descripción" class="campo descripcionCurso"></textarea>
+            <textarea type="text" name="descripcion" id="descripcionCurso" placeholder="Descripción" class="campo"></textarea>
           </div>
           <div class="campos3">
         <i class="icono"> <i class="fa-solid fa-arrow-pointer"></i> </i>
@@ -77,9 +77,8 @@
           </div>
 
           <div class="botonfoto">
-            <!--<button  class="selecionafoto">  SACO BUTTON (NO PUEDE IR UN INPUT ADENTRO, VER DEVOLUCION NICO DISCORD)-->
             <label for="files" class="btn"></label> <!-- Seleccioná un archivo jpg</label>-->
-            <input id="crearCargaImagen" type="file" name="crearCargaImagen" class="crearCargaImagen"> </input> <!-- style="visibility:hidden;" -->
+            <input id="crearCargaImagen" type="file" name="crearCargaImagen" id="crearCargaImagen" class="crearCargaImagen"></input> <!-- style="visibility:hidden;" -->
             <!--</button>-->
           </div>
 
@@ -91,22 +90,22 @@
           </div>
           <div class="campos2">
             <div>
-              <label for="fechaInicioCurso" class="form-label"> ¿Cuándo comienza? </label>
-              <input type="date" name="fechaInicioCurso" placeholder="Fecha de inicio" class="campo fechaInicioCurso" >
+              <label for="fechaInicioCurso" id="fechaInicioCurso" class="form-label"> ¿Cuándo comienza? </label>
+              <input type="date" name="fechaInicioCurso" id="fechaInicioCurso" placeholder="Fecha de inicio" class="campo" >
             </div>
             <div>
               <div class="precio2">
                 <label for="precio" class="form-label"> Precio </label>
-                <input type="text" name="precio" placeholder="0" class="campo precioCurso">
+                <input type="text" name="precio" id="precioCurso" placeholder="0" class="campo">
               </div>
             </div>
             <div>
               <label for="vacantesTotales" class="form-label"> Vacantes totales </label>
-              <input type="text" name="vacantesTotales" placeholder="0" class="campo vacantesTotales">
+              <input type="text" name="vacantesTotales" id="vacantesTotales" placeholder="0" class="campo vacantesTotales">
             </div>
             <div>
               <label for="idAdmin" class="form-label"> ¿Quién carga el curso? </label>
-              <input type="text" name="idAdmin" placeholder="Insertar el número 1" class="campo idAdmin"> </input>
+              <input type="text" name="idAdmin" id="idAdmin" placeholder="Insertar el número 1" class="campo"> </input>
             </div>
 
             <button type="submit" class="boton"> <a style="text-decoration: none"> Guardar cambios</button></a>

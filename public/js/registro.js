@@ -1,38 +1,38 @@
 window.addEventListener('load', function(){
 
-    let formularioDeRegistro = document.querySelector('.formulario'); 
+    let formularioDeRegistro = document.getElementById('formulario'); 
 
 // VARIABLES Y ETIQUETAS
 
-    let campoNombre = document.querySelector('.campoNombre');
+    let campoNombre = document.getElementById('campoNombre');
         
     campoNombre.addEventListener('click', function () {
         campoNombre.style.backgroundColor = "#BCB0DE";
         campoNombre.style.color = "black";
     })
 
-    let campoApellido = document.querySelector('.campoApellido'); 
+    let campoApellido = document.getElementById('campoApellido'); 
 
     campoApellido.addEventListener('click', function () {
         campoApellido.style.backgroundColor = "#BCB0DE";
         campoApellido.style.color = "black";
     })
 
-    let campoNombreUsuario = document.querySelector('.campoNombreUsuario');
+    let campoNombreUsuario = document.getElementById('campoNombreUsuario');
     
     campoNombreUsuario.addEventListener('click', function () {
         campoNombreUsuario.style.backgroundColor = "#BCB0DE";
         campoNombreUsuario.style.color = "black";
     })
 
-    let campoCorreo = document.querySelector('.campoCorreo');
+    let campoCorreo = document.getElementById('campoCorreo');
     
     campoCorreo.addEventListener('click', function () {
         campoCorreo.style.backgroundColor = "#BCB0DE";
         campoCorreo.style.color = "black";
     })
 
-    let campoPassword = document.querySelector('.campoPassword'); // let campoPassword = document.getByElementId('password');
+    let campoPassword = document.getElementById('campoPassword'); // let campoPassword = document.getByElementId('password');
     let passCheck = /^[A-Za-z]\w{7,15}$/;
 
     campoPassword.addEventListener('click', function () {

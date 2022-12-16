@@ -17,178 +17,185 @@
 </head>
 
 <body class="body">
- <!-- Header -->
- <%- include('partials/header') %>
- <!-- /Header -->
+    <!-- Header -->
+    <%- include('partials/header') %>
+        <!-- /Header -->
 
-    <main>
+        <main>
 
-        <!-- BIENVENIDA PRODUCTO FULL STACK -->
-        <div class="blockbienvenida">
+            <!-- BIENVENIDA PRODUCTO FULL STACK -->
+            <div class="blockbienvenida">
 
+                <div id="idCurso" style="visibility: hidden"><%=curso.idCurso%></div>
 
-            <div class="violetabienvenida">
-                <div class="textobienvenida">
-                    <h2 class="titulo-bienvenida"> <%= curso.nombre %> </h2>
-                    <div class="titulo-bienvenida2"> Comenza a programar tu futuro</div>
-                    <ul class="descripcionbienvenida">
-                        <li class="texto">Correccion de Proyectos </li>
-                        <li class="texto">Tutoria personalizada </li>
-                        <li class="texto">Aprovecha 2 clases de prueba! </li>
-                    </ul>
-                    <button type="button" class="reserva"> <a href="/usuario/login" style="color: inherit; text-decoration: none"  target="_blank"> Reservá tu lugar </a></button>
-                
-                </div>
-            </div>
+                <div class="violetabienvenida">
+                    <div class="textobienvenida">
+                        <h2 class="titulo-bienvenida" id="titulo-curso"><%=curso.nombre%></h2>
+                        <div class="titulo-bienvenida2"> Comenza a programar tu futuro </div>
+                        <ul class="descripcionbienvenida">
+                            <li class="texto">Correccion de Proyectos </li>
+                            <li class="texto">Tutoria personalizada </li>
+                            <li class="texto">Aprovecha 2 clases de prueba! </li>
+                        </ul>
+                        <button type="button" id="reserva" class="reserva" style="cursor: pointer"> Reservá tu lugar 🛒 </button>
 
-            <div class="blockimagenbienvenida">
-                <img class="imagen-bienvenida" src="../../img/<%= curso.imagen %>" alt=""> <!-- TEXTO DINÁMICO -->
-    
-            </div>
-        </div>
-
-        <!-- EDITAR -->
-        <div class="contenedor-editar">
-        <a href="/producto/editar/<%= curso.idCurso %>" ><img class="editar" src="../../img/edit.png" alt=""> </a>
-        </div>
- 
-
-        <!-- ACERCA DEL CURSO -->
-        <div class="block-acerca-curso">
-
-            <div class="titulo-acerca-curso"> ¿Qué vas a aprender? </div>
-            <div class="base"> </div>
-            <div class="block-descripcion-curso">
-
-                <div class="descripcion-curso"> <%= curso.descripcion %> </div>
-                
-                <div class="gran-contenedor">
-                    <div class="contenedores">
-                        <div class="contenedores-imagen"> <img class="imagen-modalidad" src="../../img/Producto -Modalidad.png" alt=""> </div>
-                        <div class="contenedores-bloque-texto">
-                            <div class="titulo-contenedores-bloque-texto"> Modalidad </div>
-                            <div class="subtitulo-contenedores-bloque-texto">Virtual </div>
-                        </div>
-                    </div>
-
-
-                    <div class="contenedores">
-                        <div class="contenedores-imagen"> <img class="imagen-duracion" src="../../img/Producto-duracion.png"
-                                alt="">
-                        </div>
-                        <div class="contenedores-bloque-texto">
-                            <div class="titulo-contenedores-bloque-texto"> Duracion </div>
-                            <div class="subtitulo-contenedores-bloque-texto"> 10 semanas </div>
-                        </div>
-                    </div>
-
-                    <div class="contenedores">
-                        <div class="contenedores-imagen"> <img class="imagen-clases" src="../../img/productos-encuentros.png"
-                                alt=""> 
-                        </div>
-                        <div class="contenedores-bloque-texto">
-                            <div class="titulo-contenedores-bloque-texto"> Clases </div>
-                            <div class="subtitulo-contenedores-bloque-texto"> 2 clases semanales </div>
-                        </div>
                     </div>
                 </div>
 
-        
+                <div class="blockimagenbienvenida">
+                    <img class="imagen-bienvenida" id="imagen-curso" src="../../img/<%=curso.imagen%>" alt=""> <!-- TEXTO DINÁMICO -->
+
+                </div>
+            </div>
+
+            <!-- EDITAR -->
+            <div class="contenedor-editar">
+                <a href="/producto/editar/<%=curso.idCurso%> "> <img class="editar" src="../../img/edit.png" alt="">
+                </a>
+            </div>
+
+
+            <!-- ACERCA DEL CURSO -->
+            <div class="block-acerca-curso">
+
+                <div class="titulo-acerca-curso"> ¿Qué vas a aprender? </div>
                 <div class="base"> </div>
-            </div>
+                <div class="block-descripcion-curso">
 
-            <!-- NOS RECOMIENDAN -->
+                    <div class="descripcion-curso"><%= curso.descripcion %></div>
 
-            <div class="block-recomiendan">
-                <div class="block-recomiendan-texto">
-                    <div class="recomiendan-titulo">
-                        Los empleadores nos recomiendan
-                    </div>
-                    <div class="recomiendan-quote">
-                        <!-- DINAMICO -->
-                        ¡Nuestra experiencia con el curso <%= curso.nombre %> fue excelente!
-                    </div>
-                    <div class="recomiendan-logo">
-                        <!-- DINAMICO -->
-                        <img class="imagen-logo" src="../../img/Home/Home - MercadoLibre.jpg" alt="">
-                    </div>
-                    <div class="recomiendan-texto">
-                        Este curso forma parte de nuestro programa de formación para nuevos empleados. Los resultados
-                        han sido asomboros.
-                    </div>
-
-
-                </div>
-               
-
-                <div class="block-recomiendan-imagen">
-
-                    <img class="imagen-recomiendan" src="../../img/Productos -Empleadores.PNG" alt="">
-
-
-                </div>
-
-
-
-            </div>
-
-
-            <!-- FECHAS DE INICIO -->
-            <div class="fechas-block">
-                <div class="base"> </div>
-                <div class="fechas-todo-texto">
-                    <div class="fechas-titulo">Fechas de inicio</div>
-                    <div class="blanco"> </div>
-                    <div class="fechas-block-cuadrado">
-                        <div class="texto-fechas">
-                            <div class="fecha"> 20 de noviembre </div> <!-- DINÁMICO -->
-                            <div class="fecha-titulos-pequeños">Días</div>
-                            <div class="fecha-subtitulos-pequeños">Lunes y miércoles</div>
-                            <div class="fecha-block-icons">
-                                <div class="icon"> <i class="fa-solid fa-clock"></i> </div>
-                                <dic class="fecha-icons-text"> 40 semanas</dic>
+                    <div class="gran-contenedor">
+                        <div class="contenedores">
+                            <div class="contenedores-imagen"> <img class="imagen-modalidad"
+                                    src="../../img/Producto -Modalidad.png" alt=""> </div>
+                            <div class="contenedores-bloque-texto">
+                                <div class="titulo-contenedores-bloque-texto"> Modalidad </div>
+                                <div class="subtitulo-contenedores-bloque-texto">Virtual </div>
                             </div>
-                            <div class="fecha-block-icons">
-                                <div class="icon"> <i class="fa-solid fa-calendar"></i> </div>
-                                <dic class="fecha-icons-text"> 2 clases semanales</dic>
-                            </div>
-                            <div class="fecha-titulos-pequeños">Pago</div>
-                            <div class="fecha-subtitulos-pequeños">12 cuotas sin interés</div>
-                            <div class="fecha-precio">$8.600</div> <!-- DINÁMICO -->
-
-
-
-
-
-                            <button type="button" class="fechas-reserva"> Reservá tu lugar</button>
                         </div>
-                        <div class="base"> </div>
+
+
+                        <div class="contenedores">
+                            <div class="contenedores-imagen"> <img class="imagen-duracion"
+                                    src="../../img/Producto-duracion.png" alt="">
+                            </div>
+                            <div class="contenedores-bloque-texto">
+                                <div class="titulo-contenedores-bloque-texto"> Duracion </div>
+                                <div class="subtitulo-contenedores-bloque-texto"> 10 semanas </div>
+                            </div>
+                        </div>
+
+                        <div class="contenedores">
+                            <div class="contenedores-imagen"> <img class="imagen-clases"
+                                    src="../../img/productos-encuentros.png" alt="">
+                            </div>
+                            <div class="contenedores-bloque-texto">
+                                <div class="titulo-contenedores-bloque-texto"> Clases </div>
+                                <div class="subtitulo-contenedores-bloque-texto"> 2 clases semanales </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="base"> </div>
+                </div>
+
+                <!-- NOS RECOMIENDAN -->
+
+                <div class="block-recomiendan">
+                    <div class="block-recomiendan-texto">
+                        <div class="recomiendan-titulo">
+                            Los empleadores nos recomiendan
+                        </div>
+                        <div class="recomiendan-quote">
+                            <!-- DINAMICO -->
+                            ¡Nuestra experiencia con el curso <%=curso.nombre%> fue excelente!
+                        </div>
+                        <div class="recomiendan-logo">
+                            <!-- DINAMICO -->
+                            <img class="imagen-logo" src="../../img/Home/Home - MercadoLibre.jpg" alt="">
+                        </div>
+                        <div class="recomiendan-texto">
+                            Este curso forma parte de nuestro programa de formación para nuevos empleados. Los
+                            resultados
+                            han sido asomboros.
+                        </div>
 
 
                     </div>
+
+
+                    <div class="block-recomiendan-imagen">
+
+                        <img class="imagen-recomiendan" src="../../img/Productos -Empleadores.PNG" alt="">
+
+
+                    </div>
+
+
+
                 </div>
-            </div>
 
-            <!-- footer -->
-            <footer class="footer">
-                <div class="basefooter"> </div>
-                <div class="links">
 
-                    <div class="links-utiles"> LINKS ÚTILES</div>
-                    <ul>
-                        <li class="items-footer"><a href="/cursos" class="todos-los-links"> Cursos </a></li>
-                        <li class="items-footer"><a href="#" class="todos-los-links"> Términos y condiciones </a></li>
-                        <li class="items-footer"><a href="#" class="todos-los-links"> FAQ's</a></li>
-                        <li class="items-footer"><a href="#" class="todos-los-links"> Contacto</a></li>
-                    </ul>
-                    <div class="linea"> </div>
-                    <p class="footer-2022">@ 2022 Tidy Code</p>
+                <!-- FECHAS DE INICIO -->
+                <div class="fechas-block">
+                    <div class="base"> </div>
+                    <div class="fechas-todo-texto">
+
+                        <div class="blanco"> </div>
+                        <div class="fechas-block-cuadrado">
+                            <div class="texto-fechas">
+                                <div class="fechas-titulo">Fecha de inicio</div>
+                                <div class="fecha"><%=curso.fechaInicioCurso%></div>
+                                <div class="fecha-titulos-pequeños">Días</div>
+                                <div class="fecha-subtitulos-pequeños">Lunes y miércoles</div>
+                                <div class="fecha-block-icons">
+                                    <div class="icon"> <i class="fa-solid fa-clock"></i> </div>
+                                    <dic class="fecha-icons-text"> 40 semanas</dic>
+                                </div>
+                                <div class="fecha-block-icons">
+                                    <div class="icon"> <i class="fa-solid fa-calendar"></i> </div>
+                                    <dic class="fecha-icons-text"> 2 clases semanales</dic>
+                                </div>
+                                <div class="fecha-titulos-pequeños">Pago</div>
+                                <div class="fecha-subtitulos-pequeños">12 cuotas sin interés</div>
+                                <div class="fecha-precio" id="precioCursoCarrito">$<%=curso.precio%></div>
+
+
+
+
+
+                                <button type="button" class="fechas-reserva" style="cursor: pointer"> Reservá tu lugar</button>
+                            </div>
+                            <div class="base"> </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- footer -->
+                <footer class="footer">
                     <div class="basefooter"> </div>
-                </div>
+                    <div class="links">
+
+                        <div class="links-utiles"> LINKS ÚTILES</div>
+                        <ul>
+                            <li class="items-footer"><a href="/cursos" class="todos-los-links"> Cursos </a></li>
+                            <li class="items-footer"><a href="#" class="todos-los-links"> Términos y condiciones </a>
+                            </li>
+                            <li class="items-footer"><a href="#" class="todos-los-links"> FAQ's</a></li>
+                            <li class="items-footer"><a href="#" class="todos-los-links"> Contacto</a></li>
+                        </ul>
+                        <div class="linea"> </div>
+                        <p class="footer-2022">@ 2022 Tidy Code</p>
+                        <div class="basefooter"> </div>
+                    </div>
 
 
 
 
-            </footer>
-    </main>
+                </footer>
+        </main>
+        <script src="/js/carrito.js"></script>
 </body>

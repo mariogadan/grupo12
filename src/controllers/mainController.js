@@ -43,14 +43,14 @@ const controlador = {
         
     },
 
-    crearCurso: function (req, res) {
+    crearCurso: async function (req, res) {
 
-        if (req.file = ''){
-
-            req.file.filename = 'imagenVacia'
+ /*       if (req.file == null){
+            req.file = "imagen vacia"
         }
+*/
 
-        db.curso.create(
+        await db.curso.create(
             {
                 nombre: req.body.nombreCurso,
                 precio: req.body.precio,
@@ -121,19 +121,22 @@ const controlador = {
         res.redirect("/detalle/" + req.params.id);
     },
 
-    borrarCurso: function (req, res) {
+    borrarCurso: async function (req, res) {
+        
 
-        db.curso.findByPk(req.params.id)
+       await db.curso.findByPk(req.params.id)
         .then(function(curso){
+
             let nombreImagen = curso.imagen;
+            console.log(nombreImagen)
             fs.unlinkSync(path.join(__dirname, "../../public/img", nombreImagen))
+            
         }); // Antes de borrar el curso de la base de datos, buscamos la foto que le corresponde y la borramos localmente de nuestra carpeta img.
         
-        db.curso.destroy({
+       await db.curso.destroy({
             where: {
                 idCurso: req.params.id
-            }
-        });
+            }}) 
 
 		res.redirect("/cursos");
     }

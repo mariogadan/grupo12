@@ -18,7 +18,6 @@ window.addEventListener('load', function () {
 
         if (cursosAgregados == undefined) {
             localStorage.setItem("carrito", JSON.stringify([{
-                id: idCurso,
                 nombre: nombreCurso,
                 img: imagenCurso,
                 precio: precioCurso

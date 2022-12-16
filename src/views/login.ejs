@@ -23,7 +23,8 @@
   </header>
   <section class="contenedor-bienvenida container-fluid">
 
-   
+          
+
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <div class="fondo-imagen">
@@ -31,28 +32,39 @@
         </div>
       </div>
       <div class=" col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      
-        <form action="/usuario/login" method="POST">
+        
+
+           <div class="errores1">
+             <ul></ul>
+    
+           </div>    
+    
+            <div class="box-errores"> 
+             
+                <div class="errores">
+                  <% if(locals.errores) {
+                    errores.forEach(error => { %>
+                    <p> ⚠️ <%= error.msg %> </p>
+                   
+    
+                <% }) 
+                }
+                %>
+              </div>
+            </div>
+
+         
+        <form action="/usuario/login" class="formulario1" method="POST">
 
           <div class="mb-3 my-4">
 
-            <input type="text" class="form-control" id="email" placeholder="Email" name="email" require>
+            <input type="text" class="form-control campoCorreo" id="email" placeholder="Email" name="email">
           </div>
           <div class="mb-3">
 
-            <input type="password" class="form-control" id="correo" aria-describedby="emailHelp" name="password"
-              placeholder="Contraseña" require>
-          </div>
-          <div clas="box-errores"> 
-            <div class="errores">
-              <% if(locals.errores) { errores.forEach(error=> { %>
-                <p>
-                  ⚠️ <%= error.msg %>
-                </p>
-            
-                <% }) } %>
-            </div>
-          </div>
+            <input type="password" class="form-control campoPassword" id="password" aria-describedby="emailHelp" name="password"
+              placeholder="Contraseña">
+          
           <div class="d-grid my-4">
             <button class="btn btn-success" type="submit">Iniciar Sesión</button>
           </div>
@@ -61,16 +73,20 @@
             <button class="btn btn-outline-primary"><i class="bi bi-google"></i> Registrate con Google</button>
           </div>
         </form>
-      </div>
+        </div>
+        </div>
+        
+        </div>
+      
     </div>
-    </div>
-    </div>
+    </section>
 
 </body>
 
 <footer>
   <%- include('partials/footer') %>
 </footer>
+<script src="/js/login.js"></script> <!-- LINKEO A REGISTRO.JS-->
 </body>
 
 </html>

@@ -4,19 +4,10 @@ window.addEventListener('load', function () {
 
     let botonCarrito = document.getElementById('reserva');
 
-    //Capturando los inputs desde la vista de CARRITO//
-
-    let cursoCaja = document.getElementById('cursoCaja');
-
-    let cursoCarrito = document.getElementById('cursoCarrito');
-
-    let imagenCursoCarrito = document.getElementById('imagen-curso');
-
-    let nombreCursoCarrito = document.getElementById('nombreCursoCarrito');
-
-    let precioCursoCarrito = document.getElementById('precioCursoCarrito');
-
+ 
     botonCarrito.addEventListener('click', function (e) {
+
+        //Capturando los elementos desde la vista de PRODUCTO//
 
         let nombreCurso = document.getElementById('titulo-curso').innerHTML;
 
@@ -26,7 +17,7 @@ window.addEventListener('load', function () {
 
         let idCurso = document.getElementById('idCurso').innerHTML;
 
-        let cursosAgregados = JSON.parse(localStorage.getItem("carrito"))
+        let cursosAgregados = JSON.parse(localStorage.getItem("carrito")) || []
 
         if (cursosAgregados == undefined) {
             localStorage.setItem("carrito", JSON.stringify([{
@@ -51,5 +42,35 @@ window.addEventListener('load', function () {
         console.log(JSON.parse(localStorage.getItem("carrito")))
 
     })
+
+    //Capturando los elementos desde la vista de CARRITO//
+
+    let cursoCaja = document.getElementById('cursoCaja');
+/*
+    let cursoCarrito = document.getElementById('cursoCarrito');
+
+    let imagenCursoCarrito = document.getElementById('imagen-curso');
+
+    let nombreCursoCarrito = document.getElementById('nombreCursoCarrito');
+
+    let precioCursoCarrito = document.getElementById('precioCursoCarrito');
+*/
+
+   let cursosAgregados = JSON.parse(localStorage.getItem("carrito"))
+
+   cursosAgregados.forEach((c) => {
+
+    let cursoCarrito = document.createElement('div')
+    cursoCarrito.className = "cursoAgregado";
+    cursoCarrito.innerHTML = `
+    <img src="${c.imagenCurso}">
+    <h2> ${c.nombreCurso} </h2>
+    <p> ${c.precioCurso} </p>
+    `
+
+    cursoCaja.append(cursoCarrito)
+
+
+   })
 
 })

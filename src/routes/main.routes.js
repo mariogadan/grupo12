@@ -19,6 +19,7 @@ router.put("/editar/:id", subirImagen.single('editarCargaImagen'), crearCursoMid
 router.delete("/editar/:id", esAdministradorMid, controlador.borrarCurso); 
 
 router.get("/carrito", controlador.carrito);
+router.get("/carritoV2", controlador.carritoV2);
 
 
 module.exports = router

@@ -26,6 +26,7 @@
       </div>
     </div>
   </header>
+ 
 
   <div class="body-background">
 
@@ -33,22 +34,22 @@
       <i class="menu-icon"> <a href="/producto/detalle/<%= curso.idCurso %>" style="text-decoration: none"><i
             class="fa-solid fa-xmark"></i> </i> </a>
       <h3 class="Crea-cuenta"> Editá el curso </h3>
-      <h3 class="nombre-curso">
-        <%= curso.nombre %>
-      </h3>
+      <h3 class="nombre-curso"><%= curso.nombre %></h3>
+      <div class="errores" style="color: red">
+        <ul></ul>
+      </div>  
       <div class="icono-titulo">
         <i class="icono"> <i class="fa-regular fa-pen-to-square"></i> </i>
         <div class="titulo"> Comenzamos con una breve descripción </div>
       </div>
 
-      <form action="/producto/editar/<%= curso.idCurso %>?_method=PUT" method="POST" class="formulario"
-        enctype="multipart/form-data">
+      <form action="/producto/editar/<%= curso.idCurso %>?_method=PUT" method="POST" id="formulario" enctype="multipart/form-data">
 
         <div class="campos1">
           <label for="nombre" class="form-label"> </label>
-          <input type="text" name="nombre" placeholder="Nombre del curso" value="<%=curso.nombre%>" class="campo nombreCurso">
+          <input type="text" name="nombre" placeholder="Nombre del curso" value="<%=curso.nombre%>" class="campo" id="nombreCurso">
           <label for="descripcion" class="form-label"> </label>
-          <textarea type="text" name="descripcion" class="campo descripcionCurso"> <%=curso.descripcion%> </textarea>
+          <textarea type="text" name="descripcion" class="campo" id="descripcionCurso"><%=curso.descripcion%></textarea>
         </div>
         <div class="campos3"> 
                     <i class="icono"> <i class="fa-solid fa-arrow-pointer"></i> </i>  
@@ -73,19 +74,13 @@
         </div>
 
         <div class="botonfoto">
-          <!--<button  class="selecionafoto"> SACO BUTTON (NO PUEDE IR UN INPUT ADENTRO, VER DEVOLUCION NICO DISCORD)-->
-          <label for="editarCargaImagen" class="btn"></label> <!-- Seleccioná un archivo jpg</label>-->
-          <input id="editarCargaImagen" type="file" name="editarCargaImagen" class="editarCargaImagen"></input>
+          <label for="editarCargaImagen" class="btn"></label>
+          <input id="editarCargaImagen" type="file" name="editarCargaImagen"></input>
           <!-- style="visibility:hidden;" -->
           <!--</button>-->
         </div>
 
         <div class="icono-titulo">
-
-        <div class="errores" style="color: red">
-            <ul></ul>
-    
-        </div>  
 
 
           <i class="icono"><i class="fas fa-chalkboard-teacher"></i></i>
@@ -94,21 +89,21 @@
         <div class="campos2">
           <div>
             <label for="fechaInicioCurso" class="form-label"> ¿Cuándo comienza? </label>
-            <input type="date" name="fechaInicioCurso" placeholder="Fecha de inicio" value="<%=curso.fechaInicioCurso%>" class="campo fechaInicioCurso">
+            <input type="date" name="fechaInicioCurso" placeholder="Fecha de inicio" value="<%=curso.fechaInicioCurso%>" class="campo" id="fechaInicioCurso">
           </div>
           <div>
             <div class="precio2">
               <label for="precio" class="form-label"> Precio </label>
             </div>
-            <input type="text" name="precio" value="<%=curso.precio%>" class="campo precioCurso">
+            <input type="text" name="precio" value="<%=curso.precio%>" class="campo" id="precioCurso">
           </div>
           <div>
             <label for="vacantesTotales" class="form-label"> Vacantes totales </label>
-            <input type="text" name="vacantesTotales" class="campo vacantesTotales">
+            <input type="text" name="vacantesTotales" class="campo" id="vacantesTotales">
           </div>
           <div>
             <label for="idAdmin" class="form-label"> ¿Quién edita el curso? </label>
-            <input type="text" name="idAdmin" class="campo idAdmin">
+            <input type="text" name="idAdmin" class="campo" id="idAdmin">
           </div>
 
           <button type="submit" class="boton"> <a style="text-decoration: none"> Guardar cambios</button></a>

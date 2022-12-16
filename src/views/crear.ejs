@@ -41,10 +41,10 @@
       <h3 class="Crea-cuenta"> ¡Cargá un nuevo curso!</h3>
       <div class="icono-titulo">
 
-      <div class="errores" style="color: red">
-        <ul></ul>
+        <div class="errores" style="color: red">
+          <ul></ul>
 
-      </div>    
+        </div>
 
 
         <i class="icono"> <i class="fa-regular fa-pen-to-square"></i> </i>
@@ -58,19 +58,20 @@
             <label for="nombre" class="form-label"> </label>
             <input type="text" name="nombreCurso" id="nombreCurso" placeholder="Nombre del curso" class="campo">
             <label for="descripcion" class="form-label"> </label>
-            <textarea type="text" name="descripcion" id="descripcionCurso" placeholder="Descripción" class="campo"></textarea>
+            <textarea type="text" name="descripcion" id="descripcionCurso" placeholder="Descripción"
+              class="campo"></textarea>
           </div>
           <div class="campos3">
-        <i class="icono"> <i class="fa-solid fa-arrow-pointer"></i> </i>
-        <label class="titulo">  Tipo de curso: </label>
-        <select name="tipoCurso" class="menu-desplegable">
-            <% for (let tc of tipoCurso) { %>
-              <option value="<%= tc.idTipoCurso %>">
-                <%= tc.nombre %>
-              </option>
-              <% } %>
-          </select>
-        </div> 
+            <i class="icono"> <i class="fa-solid fa-arrow-pointer"></i> </i>
+            <label class="titulo"> Tipo de curso: </label>
+            <select name="tipoCurso" class="menu-desplegable">
+              <% for (let tc of tipoCurso) { %>
+                <option value="<%= tc.idTipoCurso %>">
+                  <%= tc.nombre %>
+                </option>
+                <% } %>
+            </select>
+          </div>
           <div class="icono-titulo">
             <i class="icono"> <i class="fa-sharp fa-solid fa-image"></i> </i>
             <div class="titulo"> Seleccioná la imagen del curso </div>
@@ -78,7 +79,8 @@
 
           <div class="botonfoto">
             <label for="files" class="btn"></label> <!-- Seleccioná un archivo jpg</label>-->
-            <input id="crearCargaImagen" type="file" name="crearCargaImagen" id="crearCargaImagen" class="crearCargaImagen"></input> <!-- style="visibility:hidden;" -->
+            <input id="crearCargaImagen" type="file" name="crearCargaImagen" id="crearCargaImagen"
+              class="crearCargaImagen"></input> <!-- style="visibility:hidden;" -->
             <!--</button>-->
           </div>
 
@@ -91,7 +93,8 @@
           <div class="campos2">
             <div>
               <label for="fechaInicioCurso" id="fechaInicioCurso" class="form-label"> ¿Cuándo comienza? </label>
-              <input type="date" name="fechaInicioCurso" id="fechaInicioCurso" placeholder="Fecha de inicio" class="campo" >
+              <input type="date" name="fechaInicioCurso" id="fechaInicioCurso" placeholder="Fecha de inicio"
+                class="campo">
             </div>
             <div>
               <div class="precio2">
@@ -101,7 +104,8 @@
             </div>
             <div>
               <label for="vacantesTotales" class="form-label"> Vacantes totales </label>
-              <input type="text" name="vacantesTotales" id="vacantesTotales" placeholder="0" class="campo vacantesTotales">
+              <input type="text" name="vacantesTotales" id="vacantesTotales" placeholder="0"
+                class="campo vacantesTotales">
             </div>
             <div>
               <label for="idAdmin" class="form-label"> ¿Quién carga el curso? </label>

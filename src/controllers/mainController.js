@@ -34,6 +34,10 @@ const controlador = {
         res.render("carrito")
     },
 
+    carritoV2: function (req, res) {
+        res.render("carritoV2")
+    },
+
     crear: function (req, res) {
 
         db.tipoCurso.findAll()

@@ -108,11 +108,11 @@
             <input type="text" name="idAdmin" class="campo" id="idAdmin">
           </div>
 
-          <button type="submit" class="boton"> <a style="text-decoration: none"> Guardar cambios</button></a>
-          <button type="reset" class="resetear">Borrar cambios</button>
+          <button type="submit" class="boton" style="cursor: pointer"> <a style="text-decoration: none"> Guardar cambios</button></a>
+          <button type="reset" class="resetear" style="cursor: pointer">Borrar cambios</button>
       </form>
       <form action="/producto/editar/<%= curso.idCurso %>?_method=DELETE" method="POST">
-        <button type="submit" class="action-button-delete">X Eliminar curso</button>
+        <button type="submit" class="action-button-delete" style="cursor: pointer">X Eliminar curso</button>
       </form>
     </div>
   </div>

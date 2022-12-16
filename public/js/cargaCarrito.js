@@ -4,10 +4,7 @@ window.addEventListener('load', function () {
 
     let botonCarrito = document.getElementById('reserva');
 
- 
     botonCarrito.addEventListener('click', function (e) {
-
-        //Capturando los elementos desde la vista de PRODUCTO//
 
         let nombreCurso = document.getElementById('titulo-curso').innerHTML;
 
@@ -17,11 +14,10 @@ window.addEventListener('load', function () {
 
         let idCurso = document.getElementById('idCurso').innerHTML;
 
-        let cursosAgregados = JSON.parse(localStorage.getItem("carrito")) || []
+        let cursosAgregados = JSON.parse(localStorage.getItem("carrito"))
 
         if (cursosAgregados == undefined) {
             localStorage.setItem("carrito", JSON.stringify([{
-                id: idCurso,
                 nombre: nombreCurso,
                 img: imagenCurso,
                 precio: precioCurso

@@ -42,7 +42,7 @@ window.addEventListener('load', function () {
                 img: imagenCurso.textContent,
                 precio: precioCurso.textContent
             })
-            console.log(nombreCurso.textContent)
+            console.log(carrito)
         }
 
     }) 

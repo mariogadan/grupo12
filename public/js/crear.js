@@ -1,15 +1,15 @@
 window.addEventListener('load', function () {
 
-  let formulario = document.querySelector('.formulario')
+  let formulario = document.getElementById('formulario')
 
-  let crearCargaImagen = document.querySelector('.crearCargaImagen')
+  let crearCargaImagen = document.getElementById('crearCargaImagen')
 
   
 
 
   /******** Captura de etiquetas y estilos ********/
 
-  let nombreCurso = document.querySelector('.nombreCurso')
+  let nombreCurso = document.getElementById('nombreCurso')
 
   nombreCurso.addEventListener('click', function () {
     nombreCurso.style.backgroundColor = "#BCB0DE"
@@ -17,7 +17,7 @@ window.addEventListener('load', function () {
   })
 
 
-  let descripcionCurso = document.querySelector('.descripcionCurso')
+  let descripcionCurso = document.getElementById('descripcionCurso')
 
   descripcionCurso.addEventListener('click', function () {
     descripcionCurso.style.backgroundColor = "#BCB0DE"
@@ -26,7 +26,7 @@ window.addEventListener('load', function () {
 
 
 
-  let fechaInicioCurso = document.querySelector('.fechaInicioCurso')
+  let fechaInicioCurso = document.getElementById('fechaInicioCurso')
 
   fechaInicioCurso.addEventListener('click', function () {
     fechaInicioCurso.style.backgroundColor = "#BCB0DE"
@@ -35,7 +35,7 @@ window.addEventListener('load', function () {
 
 
 
-  let precioCurso = document.querySelector('.precioCurso')
+  let precioCurso = document.getElementById('precioCurso')
 
   precioCurso.addEventListener('click', function () {
     precioCurso.style.backgroundColor = "#BCB0DE"
@@ -44,7 +44,7 @@ window.addEventListener('load', function () {
 
 
 
-  let vacantesTotales = document.querySelector('.vacantesTotales')
+  let vacantesTotales = document.getElementById('vacantesTotales')
 
   vacantesTotales.addEventListener('click', function () {
     vacantesTotales.style.backgroundColor = "#BCB0DE"
@@ -53,7 +53,7 @@ window.addEventListener('load', function () {
 
 
 
-  let idAdmin = document.querySelector('.idAdmin')
+  let idAdmin = document.getElementById('idAdmin')
 
   idAdmin.addEventListener('click', function () {
     idAdmin.style.backgroundColor = "#BCB0DE"

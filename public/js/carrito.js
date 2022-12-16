@@ -1,63 +1,55 @@
 window.addEventListener('load', function () {
 
-    //Capturando los inputs desde la vista de PRODUCTO//
+    //Capturando el botón de la vista de PRODUCTO//
 
-    let botonCarrito = document.querySelector('.reserva')
-
-    let nombreCurso = document.querySelector('.titulo-bienvenida')
-
-    let imagenCurso = document.querySelector('.imagen-bienvenida')
-
-    let precioCurso = document.querySelector('.fecha-precio')
-
-    let idCurso = document.querySelector('.idCurso')
-
+    let botonCarrito = document.getElementById('reserva');
 
     //Capturando los inputs desde la vista de CARRITO//
 
-    let cursoCaja = document.querySelector('.cursoCaja')
+    let cursoCaja = document.getElementById('cursoCaja');
 
-    let cursoCarrito = document.querySelector('.cursoCarrito')
+    let cursoCarrito = document.getElementById('cursoCarrito');
 
-    let imagenCursoCarrito = document.querySelector('.imagen-curso')
+    let imagenCursoCarrito = document.getElementById('imagen-curso');
 
-    let nombreCursoCarrito = document.querySelector('.nombreCursoCarrito')
+    let nombreCursoCarrito = document.getElementById('nombreCursoCarrito');
 
-    let precioCursoCarrito = document.querySelector('.precioCursoCarrito')
-
-   
-
-    let carrito = []
-
+    let precioCursoCarrito = document.getElementById('precioCursoCarrito');
 
     botonCarrito.addEventListener('click', function (e) {
 
+        let nombreCurso = document.getElementById('titulo-curso').innerHTML;
 
+        let imagenCurso = document.getElementById('imagen-curso').src;
 
-        if (e.target.classList.contains('reserva')){
+        let precioCurso = document.getElementById('precioCursoCarrito').innerHTML;
 
-            carrito.push({                          // toma la info de la vista producto y crea el objeto curso que se va a mostrar en la vista de carrito
-                id: idCurso.textContent,
-                nombre: nombreCurso.textContent,
-                img: imagenCurso.textContent,
-                precio: precioCurso.textContent
-            })
-            console.log(carrito)
+        let idCurso = document.getElementById('idCurso').innerHTML;
+
+        let cursosAgregados = JSON.parse(localStorage.getItem("carrito"))
+
+        if (cursosAgregados == undefined) {
+            localStorage.setItem("carrito", JSON.stringify([{
+                id: idCurso,
+                nombre: nombreCurso,
+                img: imagenCurso,
+                precio: precioCurso
+            }]))
         }
 
-    }) 
+        else {
+
+            cursosAgregados.push({
+                nombre: nombreCurso,
+                img: imagenCurso,
+                precio: precioCurso
+            })
+
+            localStorage.setItem("carrito", JSON.stringify(cursosAgregados))
+        }
+
+        console.log(JSON.parse(localStorage.getItem("carrito")))
+
+    })
 
 })
-
-
-/*
-
-//     LOCALSTORGAE - SET ITEM     // 
-
-function guardarCarritoLocal () {
-
-localStorage.setItem('carrito', JSON.stringify(carrito))
-
-}
-
-*/

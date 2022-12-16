@@ -26,35 +26,31 @@
             <!-- BIENVENIDA PRODUCTO FULL STACK -->
             <div class="blockbienvenida">
 
-                <div class="idCurso">
-                    <% curso.idCurso %>
-                </div>
+                <div id="idCurso" style="visibility: hidden"><%=curso.idCurso%></div>
 
                 <div class="violetabienvenida">
                     <div class="textobienvenida">
-                        <h2 class="titulo-bienvenida">
-                            <%= curso.nombre %>
-                        </h2>
+                        <h2 class="titulo-bienvenida" id="titulo-curso"><%=curso.nombre%></h2>
                         <div class="titulo-bienvenida2"> Comenza a programar tu futuro </div>
                         <ul class="descripcionbienvenida">
                             <li class="texto">Correccion de Proyectos </li>
                             <li class="texto">Tutoria personalizada </li>
                             <li class="texto">Aprovecha 2 clases de prueba! </li>
                         </ul>
-                        <button type="button" class="reserva" style="cursor: pointer"> Reservá tu lugar 🛒 </button>
+                        <button type="button" id="reserva" class="reserva" style="cursor: pointer"> Reservá tu lugar 🛒 </button>
 
                     </div>
                 </div>
 
                 <div class="blockimagenbienvenida">
-                    <img class="imagen-bienvenida" src="../../img/<%= curso.imagen %>" alt=""> <!-- TEXTO DINÁMICO -->
+                    <img class="imagen-bienvenida" id="imagen-curso" src="../../img/<%=curso.imagen%>" alt=""> <!-- TEXTO DINÁMICO -->
 
                 </div>
             </div>
 
             <!-- EDITAR -->
             <div class="contenedor-editar">
-                <a href="/producto/editar/<%= curso.idCurso %> "> <img class="editar" src="../../img/edit.png" alt="">
+                <a href="/producto/editar/<%=curso.idCurso%> "> <img class="editar" src="../../img/edit.png" alt="">
                 </a>
             </div>
 
@@ -66,9 +62,7 @@
                 <div class="base"> </div>
                 <div class="block-descripcion-curso">
 
-                    <div class="descripcion-curso">
-                        <%= curso.descripcion %>
-                    </div>
+                    <div class="descripcion-curso"><%= curso.descripcion %></div>
 
                     <div class="gran-contenedor">
                         <div class="contenedores">
@@ -115,7 +109,7 @@
                         </div>
                         <div class="recomiendan-quote">
                             <!-- DINAMICO -->
-                            ¡Nuestra experiencia con el curso <%= curso.nombre %> fue excelente!
+                            ¡Nuestra experiencia con el curso <%=curso.nombre%> fue excelente!
                         </div>
                         <div class="recomiendan-logo">
                             <!-- DINAMICO -->
@@ -152,9 +146,7 @@
                         <div class="fechas-block-cuadrado">
                             <div class="texto-fechas">
                                 <div class="fechas-titulo">Fecha de inicio</div>
-                                <div class="fecha">
-                                    <%= curso.fechaInicioCurso %>
-                                </div> <!-- DINÁMICO -->
+                                <div class="fecha"><%=curso.fechaInicioCurso%></div>
                                 <div class="fecha-titulos-pequeños">Días</div>
                                 <div class="fecha-subtitulos-pequeños">Lunes y miércoles</div>
                                 <div class="fecha-block-icons">
@@ -167,15 +159,13 @@
                                 </div>
                                 <div class="fecha-titulos-pequeños">Pago</div>
                                 <div class="fecha-subtitulos-pequeños">12 cuotas sin interés</div>
-                                <div class="fecha-precio"> $ <%= curso.precio %>
-                                </div> <!-- DINÁMICO -->
+                                <div class="fecha-precio" id="precioCursoCarrito">$<%=curso.precio%></div>
 
 
 
 
 
-                                <button type="button" class="fechas-reserva" style="cursor: pointer"> Reservá tu
-                                    lugar</button>
+                                <button type="button" class="fechas-reserva" style="cursor: pointer"> Reservá tu lugar</button>
                             </div>
                             <div class="base"> </div>
 

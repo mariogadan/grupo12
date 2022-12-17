@@ -18,7 +18,7 @@ cursosAgregados.forEach((c) => {
     let cursoEnCarrito = document.createElement("div");
     cursoEnCarrito.className = "cursoEnCarrito";
     cursoEnCarrito.innerHTML = `
-    <h2 class="nombreCursoEnCarrito"> ${c.nombre} </h2>
+    <h2 class="nombreCursoEnCarrito"> • ${c.nombre} </h2>
     <h3 class="precioCursoEnCarrito"> ${c.precio} </h3>
     `
     cursoCaja.append(cursoEnCarrito);

@@ -33,7 +33,7 @@
       
           } 
           if (campoPassword.value == ""){
-            erroresArray.push('El campo de Contraseña  no puede estar vacío')
+            erroresArray.push('El campo de contraseña  no puede estar vacío')
       
           } 
 
@@ -51,7 +51,7 @@
             let ulErrores = document.querySelector('div.errores1 ul');
             for(let i = 0; i < erroresArray.length; i++){
                 ulErrores.innerHTML += "<li>" + erroresArray[i] + "</li>" 
-                console.log("Hola");
+                //console.log("Hola");
             }
         }
     })

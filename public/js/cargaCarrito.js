@@ -39,35 +39,4 @@ window.addEventListener('load', function () {
 
     })
 
-
-    //Capturando los elementos desde la vista de CARRITO//
-
-    let cursoCaja = document.getElementById('cursoCaja');
-/*
-    let cursoCarrito = document.getElementById('cursoCarrito');
-
-    let imagenCursoCarrito = document.getElementById('imagen-curso');
-
-    let nombreCursoCarrito = document.getElementById('nombreCursoCarrito');
-
-    let precioCursoCarrito = document.getElementById('precioCursoCarrito');
-*/
-
-   let cursosAgregados = JSON.parse(localStorage.getItem("carrito"))
-
-   cursosAgregados.forEach((c) => {
-
-    let cursoCarrito = document.createElement('div')
-    cursoCarrito.className = "cursoAgregado";
-    cursoCarrito.innerHTML = `
-    <img src="${c.imagenCurso}">
-    <h2> ${c.nombreCurso} </h2>
-    <p> ${c.precioCurso} </p>
-    `
-
-    cursoCaja.append(cursoCarrito)
-
-
-   })
-
 })

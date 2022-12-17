@@ -23,4 +23,8 @@ router.post("/registro", subirImagenRegistro.single('subirImagenRegistro'), vali
 
 router.get("/perfil/:id",  controlador.perfilUsuario);
 
+// Log out
+
+router.get("/logout", controlador.procesoLogout)
+
 module.exports = router

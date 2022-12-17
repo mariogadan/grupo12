@@ -46,6 +46,13 @@ const controlador = {
         }
     },
 
+    procesoLogout: function(req, res) {
+
+        req.session.destroy()
+        return res.redirect("/")
+
+    },
+
     procesoRegistro: function (req, res) {
 
         let errores = validationResult(req);

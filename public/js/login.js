@@ -23,8 +23,8 @@
     // VALIDACIONES
 
     formularioLogin.addEventListener('submit', function(e){
-        e.preventDefault();
-        
+       console.log("hola entre");
+     
         let erroresArray = [];
  
         if (campoEmail.value == ""){
@@ -47,7 +47,7 @@
      
         if(erroresArray.length > 0){
         
-
+            e.preventDefault();
             let ulErrores = document.querySelector('div.errores1 ul');
             for(let i = 0; i < erroresArray.length; i++){
                 ulErrores.innerHTML += "<li>" + erroresArray[i] + "</li>" 

@@ -1,10 +1,19 @@
 <!DOCTYPE html>
+<body>
+    
+
 <% if (usuario.idUsuario == usuarioLogueado.idUsuario) { %>
 <p> Hola, <%= usuario.nombre %> </p>
 <% } else { %> 
 <p> No estás logueado. </p>
 <% } %>
 
-<button class="btn btn-success" type="submit"> <% usuarioLogueado = "" %> Cerrar Sesión </button>
+<a href="/usuario/logout"><button class="btn btn-success" id="botonCerrarSesion" type="submit"> <% usuarioLogueado = "" %> Cerrar Sesión </button> </a>
+
+<script href="js/perfil.js"></script>
+
+</body>
 
 <!--Tenemos que hacer la lógica de preguntar si el usuario está logueado, porque sino podemos entrar manualmente. 
+
+    

@@ -101,18 +101,18 @@
           </div>
           <div>
             <label for="vacantesTotales" class="form-label"> Vacantes totales </label>
-            <input type="text" name="vacantesTotales" class="campo" id="vacantesTotales">
+            <input type="text" name="vacantesTotales" class="campo" id="vacantesTotales" placeholder="0">
           </div>
           <div>
-            <label for="idAdmin" class="form-label"> ¿Quién edita el curso? </label>
-            <input type="text" name="idAdmin" class="campo" id="idAdmin">
+            <label for="idAdmin" class="form-label" > ¿Quién edita el curso? </label>
+            <input type="text" name="idAdmin" class="campo" id="idAdmin" placeholder="Colocar el número 1">
           </div>
 
-          <button type="submit" class="boton"> <a style="text-decoration: none"> Guardar cambios</button></a>
-          <button type="reset" class="resetear">Borrar cambios</button>
+          <button type="submit" class="boton" style="cursor: pointer"> <a style="text-decoration: none"> Guardar cambios</button></a>
+          <button type="reset" class="resetear" style="cursor: pointer">Borrar cambios</button>
       </form>
       <form action="/producto/editar/<%= curso.idCurso %>?_method=DELETE" method="POST">
-        <button type="submit" class="action-button-delete">X Eliminar curso</button>
+        <button type="submit" class="action-button-delete" style="cursor: pointer">X Eliminar curso</button>
       </form>
     </div>
   </div>

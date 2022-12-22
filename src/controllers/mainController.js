@@ -34,6 +34,10 @@ const controlador = {
         res.render("carrito")
     },
 
+    carritoV2: function (req, res) {
+        res.render("carritoV2")
+    },
+
     crear: function (req, res) {
 
         db.tipoCurso.findAll()
@@ -92,7 +96,7 @@ const controlador = {
                     descripcion: req.body.descripcion,
                     vacantesTotales: req.body.vacantesTotales,
                     idTipoCurso: req.body.tipoCurso,
-                    idAdmin: req.body.idAdmin, //Una vez que tengamos el controller de Usuarios conectado a la base de datos, deberíamos crear un middleware para verificar con Session que somos administradores y eso lo tome el formulario.
+                    idAdmin: 1 //req.body.idAdmin , Una vez que tengamos el controller de Usuarios conectado a la base de datos, deberíamos crear un middleware para verificar con Session que somos administradores y eso lo tome el formulario.
                 }, {
                     where: {
                         idCurso: req.params.id

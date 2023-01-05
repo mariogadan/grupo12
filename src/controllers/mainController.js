@@ -49,11 +49,6 @@ const controlador = {
 
     crearCurso: async function (req, res) {
 
- /*       if (req.file == null){
-            req.file = "imagen vacia"
-        }
-*/
-
         await db.curso.create(
             {
                 nombre: req.body.nombreCurso,
@@ -151,7 +146,7 @@ const controlador = {
         .then(function(cursos){
             resultado.total = cursos.length;
             resultado.cursos = cursos;
-            db.curso.count({attributes: ["idTipoCurso", "tipo_curso.nombre"], group: "idTipoCurso", include: "tipo_curso"}) // el "include" llama al nombre de la asociación entre ambas tablas
+            db.curso.count({attributes: ["idTipoCurso", "tipo_curso.nombre"], group: "idTipoCurso", include: "tipo_curso"}) // El "include" llama al nombre de la asociación entre ambas tablas
             .then(function(resultadoGrupo) {
                 resultado.cursosPorCategoria = resultadoGrupo
                 res.status(200).json(resultado)

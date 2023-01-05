@@ -27,4 +27,9 @@ router.get("/perfil/:id",  controlador.perfilUsuario);
 
 router.get("/logout", controlador.procesoLogout)
 
+// API
+
+router.get("/usuariosAPI", controlador.usuariosAPI);
+router.get("/usuarioAPI/:id", controlador.usuarioUnicoAPI);
+
 module.exports = router

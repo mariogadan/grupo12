@@ -143,6 +143,35 @@ const controlador = {
             }}) 
 
 		res.redirect("/cursos");
+    },
+
+    cursosAPI: function (req, res) {
+        let resultado = {};
+        db.curso.findAll()
+        .then(function(cursos){
+            resultado.total = cursos.length;
+            resultado.cursos = cursos;
+            db.curso.count({attributes: ["idTipoCurso", "tipo_curso.nombre"], group: "idTipoCurso", include: "tipo_curso"}) // el "include" llama al nombre de la asociación entre ambas tablas
+            .then(function(resultadoGrupo) {
+                resultado.cursosPorCategoria = resultadoGrupo
+                res.status(200).json(resultado)
+            })
+      })
+    },
+
+    categoriasAPI: function (req, res) {
+        db.tipoCurso.findAll()
+        .then(function (categorias) {
+            res.status(200).json(categorias);
+        })
+    },
+
+    cursoUnicoAPI: function (req, res) {
+        let cursoId = req.params.id;
+        db.curso.findByPk(cursoId)
+        .then(function (curso) {
+            res.json(curso)
+        })
     }
 }
 module.exports = controlador

@@ -92,8 +92,32 @@ const controlador = {
         .then(function(usuario){
             return res.render("perfil", {usuario:usuario, usuarioLogueado: req.session.usuarioLogueado})
         })
-    }
+    },
 
+    usuariosAPI: function (req, res) {
+        db.usuario.findAll({
+            attributes: ["idUsuario", "nombre", "apellido", "email"]
+        })
+        .then(function (usuarios) {
+            return res.status(200).json({
+                total: usuarios.length,
+                usuarios: usuarios
+            });
+        })
+    },
+
+    usuarioUnicoAPI: function (req, res) {
+        let usuarioId = req.params.id
+        db.usuario.findAll({
+            where: {idUsuario: usuarioId},
+            attributes: ["idUsuario", "nombre", "apellido", "email"]
+        })
+        .then(function (usuario) {
+            return res.status(200).json({
+                usuario: usuario
+            })
+        })
+    }
 };
 
 module.exports = controlador

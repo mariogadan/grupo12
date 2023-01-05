@@ -21,6 +21,11 @@ router.delete("/editar/:id", esAdministradorMid, controlador.borrarCurso);
 router.get("/carrito", controlador.carrito);
 router.get("/carritoV2", controlador.carritoV2);
 
+// API //
+
+router.get("/cursosAPI", controlador.cursosAPI);
+router.get("/categoriasAPI", controlador.categoriasAPI);
+router.get("/cursoUnicoAPI/:id", controlador.cursoUnicoAPI);
 
 module.exports = router
 

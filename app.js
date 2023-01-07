@@ -8,8 +8,9 @@ const error404 = require('./src/middlewares/error404Mid');
 const usuarioLogueadoMid = require("./src/middlewares/usuarioLogueadoMid")
 const mainRoutes = require("./src/routes/main.routes");
 const usuarioRoutes = require("./src/routes/usuario.routes");
+const cors = require('cors');
 
-
+app.use(cors())
 app.use(express.static(path.join(__dirname , './public')))
 app.use(express.urlencoded({ extended: false })); // nos permite capturar la info que se envia en un formulario a traves de POST
 app.use(session( {secret: "Este es mi secreto",

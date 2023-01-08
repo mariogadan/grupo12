@@ -25,7 +25,7 @@ module.exports = function (sequelize, DataTypes) {
 
     tipoCurso.associate = function (models) {
         tipoCurso.hasMany(models.curso, {
-            as: "curso",
+            as: "tipo_curso",
             foreignKey: "idTipoCurso"
         });
 

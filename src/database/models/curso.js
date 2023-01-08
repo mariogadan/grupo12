@@ -64,12 +64,12 @@ module.exports = function (sequelize, DataTypes) {
         });
 
 
-        curso.belongsTo(models.curso, {
+        curso.belongsTo(models.tipoCurso, {
             as: "tipo_curso",
             foreignKey: "idTipoCurso"
         });
 
-        curso.belongsTo(models.curso, {
+        curso.belongsTo(models.usuario, {
             as: "usuario",
             foreignKey: "idAdmin"
         });
